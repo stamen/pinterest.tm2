@@ -1,0 +1,29 @@
+_prefs: 
+  saveCenter: true
+_properties: {}
+attribution: Map data © OpenStreetMap contributors
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -73.99849891662598
+  - 40.689294446662565
+  - 13
+description: Port of Toner to TileMill2, building on Aaron Lidman's Toner-for-TileMill work
+format: "png8:m=h"
+interactivity_layer: ''
+maxzoom: 22
+minzoom: 0
+mtime: 1383781551480
+name: color palette 1
+scale: 1
+source: "mapbox:///mapbox.mapbox-streets-v3"
+styles: 
+  - land.mss
+  - roads.mss
+  - boundaries.mss
+  - palette.mss
+  - labels.mss
+template: ''
