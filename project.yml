@@ -8,16 +8,16 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -73.99849891662598
-  - 40.689294446662565
-  - 13
+  - -0.03776550292968749
+  - 51.64532067947257
+  - 14
 description: Port of Toner to TileMill2, building on Aaron Lidman's Toner-for-TileMill work
 format: "png8:m=h"
 interactivity_layer: ''
 maxzoom: 22
 minzoom: 0
-mtime: 1383781551480
-name: color palette 1
+mtime: 1383859782589
+name: color palette 4
 scale: 1
 source: "mapbox:///mapbox.mapbox-streets-v3"
 styles: 

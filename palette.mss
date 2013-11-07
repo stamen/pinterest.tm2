@@ -1,4 +1,4 @@
-@water: #ACDCDD; //#C0F5F9; //#85D5E0; //#40d1e7;
+@water: #BFD8D5;//#BACBCC;//#c0d4d3;//#CED5E0
 @land:  #f4f4f4;
 
 //@land: url("icons/plain_texture.png");
@@ -6,19 +6,19 @@
 /* roads */
 @highway:               #fff;//#8F9899;//#fff;//#000;
 @highway_case:  @land;
-//zoom 13 - larger roads 
 
-@major:                #649999; //#D2D3D6;//#707072;//#A4A5AD;//#000;
+//zoom 13 - larger roads 
+@major: #C8C9CC;
 //major stroke
 @major_case:    @land;
 //smaller roads 
 
-@minor:                 #999;
+@minor:                 #D6B6C0;//#999;
 @minor_2:               #000;
 //minor stroke
 @minor_case:    @land;
 
-@service:               #000;
+@service:              #000;
 //service stroke
 @service_case:  @land;
 

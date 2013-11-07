@@ -1,8 +1,8 @@
 Map { /* the land */
 	//background-color: @land;
     //background-image: url("icons/4h.png"); 
-    //background-image: url("icons/light_texture.png");
-    background-image: url("icons/texture.png"); 
+    background-image: url("icons/texture14.png");
+    //background-image: url("icons/texture7.png"); 
     //@land: fadein(@color, 20%);
     //@land: fadeout(@color, 20%);
 }
@@ -38,13 +38,17 @@ Map { /* the land */
 /* buildings */
 #building[zoom=13] {
 	//polygon-pattern-file: url('icons/stripe_sm.png');
-	line-width: 0.5;
-	line-color: #aaa;
+	//line-width: 0.25;
+    polygon-fill: #c0c0c0;
+    //line-color: #c0c0c0;
+	//line-color: #aaa;
 }
 #building[zoom=14] {
-	polygon-pattern-file: url('icons/stripe_sm.png');
-	line-width: 0.5; 
-	line-color: #000;
+	//polygon-pattern-file: url('icons/stripe_sm.png');
+	//line-width: 0.5; 
+    polygon-fill: #c0c0c0;
+   // line-color: #aaa;
+	//line-color: #000;
 }
 #building[zoom=15] {
 	polygon-pattern-file: url('icons/stripe_med.png');
@@ -68,18 +72,19 @@ Map { /* the land */
 #landuse {
   **//insert new image / color here //**
   [class='park'],[class='cemetery'],[class='pitch'],[class='sand'] {
-   //polygon-pattern-file: url('icons/halftone2.png');
-    polygon-fill: #F4DDAB; //#8F9899; //D5DFE0
+      polygon-fill: #DDE2C5;
+    //polygon-pattern-file: url('icons/halftone2.png');
+   // polygon-fill: #F4DDAB; //#8F9899; //D5DFE0
   }
 }
 #landuse_overlay {
   [class='wetland'], [class='wetland_noveg'] {
     //polygon-pattern-file: url('icons/halftone2-transparent.png');
-    polygon-fill: #F4DDAB; 
+  //  polygon-fill: #F4DDAB; 
   }
 }
 
 #barrier_line {
-  line-color: #4d4d4d;
-  line-width: 2;
+  line-color: #7f7f7f;//#4d4d4d;
+  line-width: 1.5;
 }

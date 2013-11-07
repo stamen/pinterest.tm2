@@ -12,7 +12,7 @@ Map { font-directory: url(./fonts); }
 	text-wrap-width: 32;
 	text-size: 14;
 	text-fill: #000;
-	text-halo-radius: 3;
+	//text-halo-radius: 3;
 	text-halo-fill: @land;
 	text-line-spacing: -7;
 }
@@ -29,7 +29,7 @@ here helps define exactly which features come in at which zoom levels. */
 	text-wrap-width: 80;
 	text-size: 14;
 	text-fill: #fff;
-	text-halo-radius: 1;
+	//text-halo-radius: 1;
 	text-halo-fill: @water;
 	text-line-spacing: -7;
 }
@@ -46,7 +46,7 @@ here helps define exactly which features come in at which zoom levels. */
 	text-wrap-width: 80;
 	text-size: 13;
 	text-fill: #000;
-	text-halo-radius: 2;
+	//text-halo-radius: 2;
 	text-halo-fill: @land;
 }
 #country_label[zoom=4] {
@@ -65,7 +65,7 @@ here helps define exactly which features come in at which zoom levels. */
 	text-face-name: 'Arial Unicode MS Bold';
 	text-wrap-width: 80;
 	text-fill: #000;
-	text-halo-radius: 2;
+	//text-halo-radius: 2;
 	text-halo-fill: @land;
 }
 
