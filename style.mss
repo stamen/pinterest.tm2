@@ -60,6 +60,14 @@ Map {
     image-filters: agg-stack-blur(5, 5);
   }
   */
+  
+  /*
+  ::outline {
+    line-color: #999;
+    line-gamma: 5;
+    line-width: 1.5;
+  }
+  */
 }
 
 #waterway {

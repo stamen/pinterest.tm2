@@ -8,15 +8,15 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -122.45275497436523
-  - 37.712479593188
+  - -122.42666244506835
+  - 37.80612209172951
   - 13
 description: ''
 format: png
 interactivity_layer: ''
 maxzoom: 22
 minzoom: 0
-mtime: 1383936959297
+mtime: 1383953888367
 name: Pinterest 2
 scale: 1
 source: "mapbox:///mapbox.mapbox-streets-v4"
