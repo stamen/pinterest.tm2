@@ -5,13 +5,13 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Map data © OpenStreetMap contributors]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-122.40726470947266,37.79594930209237,12</Parameter>
+  <Parameter name="center">-122.45275497436523,37.712479593188,13</Parameter>
   <Parameter name="format">png</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[Pinterest 2]]></Parameter>
   <Parameter name="scale">1</Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v3]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v4]]></Parameter>
 </Parameters>
 
 
@@ -97,31 +97,24 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>waterway</StyleName>  </Layer>
 
-<Style name="water-shadow" filter-mode="first" image-filters="agg-stack-blur(1,1)">
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <LineSymbolizer stroke-gamma="1" geometry-transform="translate(-0.5,-0.5)" stroke="#333333" stroke-width="1" />
-  </Rule>
-</Style>
 <Style name="water" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <PolygonPatternSymbolizer gamma="0" file="images/px.png" />
+    <PolygonPatternSymbolizer gamma="0" file="images/felt2.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <PolygonPatternSymbolizer gamma="0.4" file="images/px.png" />
+    <PolygonPatternSymbolizer gamma="0.4" file="images/felt2.png" />
   </Rule>
   <Rule>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <PolygonPatternSymbolizer file="images/px.png" gamma="0.8" />
+    <PolygonPatternSymbolizer file="images/felt2.png" gamma="0.8" />
   </Rule>
 </Style>
 <Layer name="water"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>water</StyleName>
-    <StyleName>water-shadow</StyleName>  </Layer>
+    <StyleName>water</StyleName>  </Layer>
 
 <Style name="aeroway" filter-mode="first" comp-op="color-burn">
   <Rule>
@@ -253,21 +246,21 @@
 
 <Style name="tunnel" filter-mode="first">
   <Rule>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-opacity="0.25" />
+  </Rule>
+  <Rule>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-opacity="0.25" />
-  </Rule>
-  <Rule>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-opacity="0.25" />
   </Rule>
 </Style>
 <Style name="tunnel-outline" filter-mode="first" image-filters="agg-stack-blur(1,1)" comp-op="color-burn">
   <Rule>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.25" />
   </Rule>
   <Rule>
@@ -275,7 +268,7 @@
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.25" />
   </Rule>
   <Rule>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.25" />
   </Rule>
 </Style>
@@ -441,90 +434,90 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="7" stroke-opacity="0.3" stroke="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="5" stroke-opacity="0.4" stroke="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="7" stroke-opacity="0.3" stroke="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="5" stroke-opacity="0.4" stroke="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="7" stroke-opacity="0.3" stroke="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="5" stroke-opacity="0.4" stroke="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="7" stroke-opacity="0.3" stroke="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="5" stroke-opacity="0.4" stroke="#ffffff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-opacity="0.5" />
   </Rule>
   <Rule>
@@ -579,90 +572,90 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="12" stroke="#cb2027" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="10" stroke="#cb2027" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="7" stroke="#cb2027" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="12" stroke="#cb2027" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="10" stroke="#cb2027" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="7" stroke="#cb2027" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="12" stroke="#cb2027" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="10" stroke="#cb2027" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke-width="7" stroke="#cb2027" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([aeroway] = 'runway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link') and ([aeroway] = 'runway')</Filter>
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="12" stroke="#cb2027" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="10" stroke="#cb2027" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="7" stroke="#cb2027" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.5" />
   </Rule>
   <Rule>
@@ -694,34 +687,34 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer offset="-5" stroke-width="0.5" stroke-opacity="0.3" stroke="#cb2027" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer offset="-3.5" stroke-width="0.5" stroke-opacity="0.5" stroke="#cb2027" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer offset="-2.5" stroke-width="0.5" stroke-opacity="0.5" stroke="#cb2027" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer offset="-5" stroke-width="0.5" stroke-opacity="0.3" stroke="#cb2027" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer offset="-3.5" stroke-width="0.5" stroke-opacity="0.5" stroke="#cb2027" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer offset="-2.5" stroke-width="0.5" stroke-opacity="0.5" stroke="#cb2027" />
   </Rule>
 </Style>
@@ -846,46 +839,46 @@
 <Style name="bridge-outline" filter-mode="first" image-filters="agg-stack-blur(1,1)">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="12" stroke="#cb2027" stroke-opacity="0.75" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="10" stroke="#cb2027" stroke-opacity="0.75" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="7" stroke="#cb2027" stroke-opacity="0.75" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.75" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="12" stroke="#cb2027" stroke-opacity="0.75" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="10" stroke="#cb2027" stroke-opacity="0.75" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="7" stroke="#cb2027" stroke-opacity="0.75" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#cb2027" stroke-width="5" stroke-opacity="0.75" />
   </Rule>
   <Rule>
@@ -1013,34 +1006,34 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'hamlet')</Filter>
+    <Filter>([type] = 'suburb')</Filter>
     <TextSymbolizer size="10" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'hamlet')</Filter>
+    <Filter>([type] = 'suburb')</Filter>
     <TextSymbolizer size="9" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'hamlet')</Filter>
+    <Filter>([type] = 'suburb')</Filter>
     <TextSymbolizer halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" size="13" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'suburb')</Filter>
+    <Filter>([type] = 'hamlet')</Filter>
     <TextSymbolizer size="10" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'suburb')</Filter>
+    <Filter>([type] = 'hamlet')</Filter>
     <TextSymbolizer size="9" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'suburb')</Filter>
+    <Filter>([type] = 'hamlet')</Filter>
     <TextSymbolizer halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" size="13" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -1071,52 +1064,15 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="area_label" filter-mode="first">
+<Style name="poi_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([class] = 'park') and ([area] &gt; 500000)</Filter>
-    <TextSymbolizer face-name="Frutiger LT 55 Roman Regular" fill="#226622" halo-fill="#e4cba2" halo-radius="2.5" size="13" wrap-width="100" wrap-before="true" line-spacing="-1" character-spacing="1.5" avoid-edges="true" minimum-distance="128" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'park') and ([area] &gt; 500000)</Filter>
-    <TextSymbolizer face-name="Frutiger LT 55 Roman Regular" fill="#226622" halo-fill="#e4cba2" halo-radius="2.5" size="13" wrap-width="100" wrap-before="true" line-spacing="-1" character-spacing="1.5" avoid-edges="true" minimum-distance="128" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'park') and ([area] &gt; 500000)</Filter>
-    <TextSymbolizer face-name="Frutiger LT 55 Roman Regular" fill="#226622" halo-fill="#e4cba2" halo-radius="2.5" size="13" wrap-width="100" wrap-before="true" line-spacing="-1" character-spacing="1.5" avoid-edges="true" minimum-distance="128" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([class] = 'park') and ([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="Frutiger LT 55 Roman Regular" fill="#226622" halo-fill="#e4cba2" halo-radius="2.5" size="13" wrap-width="100" wrap-before="true" line-spacing="-1" character-spacing="1.5" avoid-edges="true" minimum-distance="128" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'park') and ([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="Frutiger LT 55 Roman Regular" fill="#226622" halo-fill="#e4cba2" halo-radius="2.5" size="13" wrap-width="100" wrap-before="true" line-spacing="-1" character-spacing="1.5" avoid-edges="true" minimum-distance="128" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([class] = 'park')</Filter>
+    <Filter>([type] = 'Park')</Filter>
     <TextSymbolizer face-name="Frutiger LT 55 Roman Regular" fill="#226622" halo-fill="#e4cba2" halo-radius="2.5" size="13" wrap-width="100" wrap-before="true" line-spacing="-1" character-spacing="1.5" avoid-edges="true" minimum-distance="128" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
-<Layer name="area_label"
+<Layer name="poi_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>area_label</StyleName>  </Layer>
-
-<Layer name="rail_station_label"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
-<Layer name="airport_label"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>poi_label</StyleName>  </Layer>
 
 <Style name="road_label" filter-mode="first">
   <Rule>
@@ -1190,10 +1146,6 @@
     <StyleName>road_label</StyleName>  </Layer>
 
 <Layer name="waterway_label"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
-<Layer name="building_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 

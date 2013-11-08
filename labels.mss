@@ -78,24 +78,19 @@
   }
 }
 
-#area_label {
-  [class='park'] {
-    [zoom>=9],  // automatic area filtering @ low zooms
-    [zoom>=14][area>500000],
-    [zoom>=16][area>10000],
-    [zoom>=17] {
-      text-name: @name;
-      text-face-name: "Frutiger LT 55 Roman Regular";
-      text-fill: darken(@park, 60%);
-      text-halo-fill: #e4cba2;
-      text-halo-radius: 2.5;
-      text-size: 13;
-      text-wrap-width: 100;
-      text-wrap-before: true;
-      text-line-spacing: -1;
-      text-character-spacing: 1.5;
-      text-avoid-edges: true;
-      text-min-distance: 128;
-    }
+#poi_label {
+  [type='Park'] {
+    text-name: @name;
+    text-face-name: "Frutiger LT 55 Roman Regular";
+    text-fill: darken(@park, 60%);
+    text-halo-fill: #e4cba2;
+    text-halo-radius: 2.5;
+    text-size: 13;
+    text-wrap-width: 100;
+    text-wrap-before: true;
+    text-line-spacing: -1;
+    text-character-spacing: 1.5;
+    text-avoid-edges: true;
+    text-min-distance: 128;
   }
 }

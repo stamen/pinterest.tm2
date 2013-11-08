@@ -12,9 +12,9 @@ Map {
 }
 
 #water {
-  // polygon-pattern-file: url("images/felt2.png");
+  polygon-pattern-file: url("images/felt2.png");
   // polygon-pattern-file: url("images/fabric2.png");
-  polygon-pattern-file: url("images/px.png");
+  // polygon-pattern-file: url("images/px.png");
   polygon-pattern-gamma: 0.8;
 
   [zoom>=9] {
@@ -30,6 +30,7 @@ Map {
   // polygon-gamma: 0;
   // polygon-fill: #777;
 
+  /*
   [zoom>=11] {
     ::shadow {
       line-gamma: 1;
@@ -39,11 +40,15 @@ Map {
       image-filters: agg-stack-blur(1, 1);
     }
   }
+  */
   
   /*
   ::texture {
-    polygon-pattern-file: url("images/fabric2.png");
+    polygon-pattern-file: url("images/felt2.png");
     polygon-pattern-gamma: 0;
+    // polygon-pattern-comp-op: multiply;
+    polygon-pattern-geometry-transform: scale(100, 100);
+    polygon-pattern-opacity: 0.5;
   }
   */
   
