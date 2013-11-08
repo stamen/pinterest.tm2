@@ -7,6 +7,7 @@
 @park: #cec;
 
 Map {
+  font-directory: url("fonts/");
   background-image: url("images/ricepaper.png");
 }
 
