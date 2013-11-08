@@ -19,7 +19,7 @@
       line-color: @minor;
       [zoom=10] { line-width: 0.2; }
       [zoom=11] { line-width: 0.2; }
-      [zoom=12] { line-width: 0.3; }
+      [zoom=12] { line-width: 0.4; }
       [zoom=13] { line-width: 0.4; }
       [zoom=14] { line-width: 0.8; }
     }
@@ -28,7 +28,7 @@
     ::outline {
       line-color: @major_case;
       //[zoom=11] { line-width: 1.25; }
-      [zoom=11] { line-width: 0.35; }
+      [zoom=11] { line-width: 0.5; }
       //[zoom=12] { line-width: 5; }  // This seems excessive
       [zoom=12] { line-width: 0.5; } 
       //[zoom=13] { line-width: 5; }
@@ -38,7 +38,7 @@
     }
     ::inline {
       line-color: @major;
-      [zoom=9] { line-width: 0.15; }
+      [zoom=9] { line-width: 1; }
       //[zoom=10] { line-width: 0.5; }
       [zoom=10] { line-width: 1; }
       //[zoom=11] { line-width: 0.7; }
@@ -66,6 +66,7 @@
     }
     ::inline {
       line-color: @highway;
+      [zoom=6] { line-width: 1; }
       [zoom=7] { line-width: 1; }
       [zoom=8] { line-width: 1.5; }
       [zoom=9] { line-width: 1.5; }

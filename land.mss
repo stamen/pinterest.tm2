@@ -1,15 +1,15 @@
 Map { /* the land */
 	//background-color: @land;
-    //background-image: url("icons/4h.png"); 
-    background-image: url("icons/texture14.png");
-    //background-image: url("icons/texture7.png"); 
+      background-image: url("icons/texture18.png");
+    //background-image: url("icons/texture.png"); 
     //@land: fadein(@color, 20%);
     //@land: fadeout(@color, 20%);
 }
 
 // Oceans
 #water {
-  polygon-fill: @water;
+  polygon-pattern-file: url("icons/water_texture.png");
+ // polygon-fill: @water;
 }
 
 #waterway {
