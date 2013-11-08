@@ -3,7 +3,7 @@
   text-face-name: 'Frutiger LT 55 Roman Bold';
   text-character-spacing: 2;
   text-transform: uppercase;
-  text-fill: fade(#5f4f2a, 85%);
+  text-fill: rgba(95, 79, 42, 0.85); // fade(#5f4f2a, 85%);
   text-halo-fill: #e4cba2;
   text-halo-radius: 1.5;
   text-size: 13;
@@ -63,6 +63,8 @@
     text-halo-radius: 2;
     text-character-spacing: 1.5;
     text-avoid-edges: true;
+    text-min-distance: 30;
+
 
     [zoom>=12] {
       text-size: 9;

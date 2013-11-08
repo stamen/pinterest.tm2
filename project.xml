@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Map data © OpenStreetMap contributors]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-0.2471923828125,52.12505765485121,9</Parameter>
+  <Parameter name="center">-122.42820739746094,37.74615025290319,13</Parameter>
   <Parameter name="format">png</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -998,50 +998,50 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'neighbourhood')</Filter>
-    <TextSymbolizer size="10" halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="10" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'neighbourhood')</Filter>
-    <TextSymbolizer size="9" halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="9" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'neighbourhood')</Filter>
-    <TextSymbolizer halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" size="13" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" size="13" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'hamlet')</Filter>
-    <TextSymbolizer size="10" halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="10" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'hamlet')</Filter>
-    <TextSymbolizer size="9" halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="9" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'hamlet')</Filter>
-    <TextSymbolizer halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" size="13" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" size="13" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'suburb')</Filter>
-    <TextSymbolizer size="10" halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="10" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'suburb')</Filter>
-    <TextSymbolizer size="9" halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="9" halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'suburb')</Filter>
-    <TextSymbolizer halo-radius="2" character-spacing="1.5" avoid-edges="true" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" size="13" wrap-width="100" minimum-distance="75" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer halo-radius="2" character-spacing="1.5" avoid-edges="true" minimum-distance="30" wrap-before="true" face-name="Frutiger LT 55 Roman Bold" text-transform="uppercase" fill="rgba(95, 79, 42, 0.85)" halo-fill="#e4cba2" size="13" wrap-width="100" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>

@@ -102,7 +102,7 @@ Map {
 
       [class='main'] {
         ::outline {
-            line-color: fade(#cb2027, 20%);
+            line-color: rgba(203, 32, 39, 0.2); // fade(#cb2027, 20%);
             line-width: 2;
         }
         
@@ -110,7 +110,7 @@ Map {
 
         [zoom>=9] {
           ::outline {
-            line-color: fade(#cb2027, 30%);
+            line-color: rgba(203, 32, 39, 0.3); // fade(#cb2027, 30%);
             line-width: 2.5;
           }
         }
@@ -162,7 +162,7 @@ Map {
     
     [class='street'] {
       line-width: 0.75;
-      line-color: fade(#cb2027, 20%);
+      line-color: rgba(203, 32, 39, 0.2); // fade(#cb2027, 20%);
       
       [zoom>=15] {
         line-width: 2;
@@ -170,7 +170,7 @@ Map {
       
       [zoom>=16] {
         line-width: 4;
-        line-color: fade(#cb2027, 35%);
+        line-color: rgba(203, 32, 39, 0.35); // fade(#cb2027, 35%);
       }
 
       [zoom>=17] {
@@ -182,7 +182,7 @@ Map {
     [class='service'] {
       [zoom>=16] {
         line-width: 3;
-        line-color: fade(#cb2027, 35%);
+        line-color: rgba(203, 32, 39, 0.35); // fade(#cb2027, 35%);
       }
 
       [zoom>=17] {

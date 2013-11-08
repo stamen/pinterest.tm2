@@ -1,6 +1,6 @@
 #road_label {
   // text-fill: #5a5c5b;
-  text-fill: fade(#5f4f2a, 85%);
+  text-fill: rgba(95, 79, 42, 0.85); // fade(#5f4f2a, 85%);
   text-name: "''";
   text-face-name: "Frutiger LT 55 Roman Regular";
   text-placement: line;
