@@ -59,12 +59,14 @@ Map {
   }
 }
 
+/*
 #landuse_overlay {
   text-face-name: "Frutiger LT 55 Roman Regular";
   text-name: [class];
   polygon-fill: #ccc;
   polygon-opacity: 0.5;
 }
+*/
 
 #landuse {
   [class='park'] {

@@ -172,15 +172,9 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>building</StyleName>  </Layer>
 
-<Style name="landuse_overlay" filter-mode="first">
-  <Rule>
-    <TextSymbolizer face-name="Frutiger LT 55 Roman Regular" ><![CDATA[[class]]]></TextSymbolizer>
-    <PolygonSymbolizer fill="#cccccc" fill-opacity="0.5" />
-  </Rule>
-</Style>
 <Layer name="landuse_overlay"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>landuse_overlay</StyleName>  </Layer>
+      </Layer>
 
 <Style name="tunnel" filter-mode="first">
   <Rule>
