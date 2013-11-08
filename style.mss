@@ -8,6 +8,7 @@
 Map {
   background-color:#fff;
   background-image: url("images/sand.png");
+  font-directory: url("fonts/");
 }
 
 #water {
@@ -32,7 +33,7 @@ Map {
   [zoom>=11] {
     ::shadow {
       line-gamma: 1;
-      line-geometry-transform: translate(-1, -1);
+      line-geometry-transform: translate(-0.5, -0.5);
       line-color: #333;
       line-width: 1;
       image-filters: agg-stack-blur(1, 1);
