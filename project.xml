@@ -5,11 +5,11 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Map data © OpenStreetMap contributors]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">0,51.508742458803326,3</Parameter>
+  <Parameter name="center">4.903421401977539,52.36543276845041,14</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
-  <Parameter name="name"><![CDATA[Pinterest 3]]></Parameter>
+  <Parameter name="name"><![CDATA[Rice Paper]]></Parameter>
   <Parameter name="scale">1</Parameter>
   <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v4]]></Parameter>
 </Parameters>
