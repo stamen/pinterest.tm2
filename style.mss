@@ -184,7 +184,7 @@ Map {
         [zoom>=9] {
           ::outline {
             // line-color: rgba(203, 32, 39, 0.3); // fade(#cb2027, 30%);
-            line-color: fade(#4a92a8, 30%);
+            line-color: rgba(74, 146, 168, 0.3); // fade(#4a92a8, 30%);
             line-width: 2.5;
           }
         }
@@ -192,7 +192,7 @@ Map {
         [zoom>=10] {
           ::outline {
             // line-color: #cb2027;
-            line-color: fade(#4a92a8, 30%);
+            line-color: rgba(74, 146, 168, 0.3); // fade(#4a92a8, 30%);
             line-width: 2.5;
           }
         
