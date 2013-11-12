@@ -20,13 +20,13 @@ Map {
   }
   
   ::outline {
-    line-color: #ccc;
+    line-color: #5e7884;
     line-gamma: 5;
     line-width: 1.5;
   }
 
   // polygon-pattern-file: url("images/texture18.png");
-  polygon-pattern-file: url("images/pinterest-bg.png");
+  polygon-pattern-file: url("images/blue_paper.png");
   // comp-op: multiply;
   
   /*

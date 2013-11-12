@@ -6,7 +6,8 @@
     [class='motorway_link'] {
       [zoom>=7] {
         ::outline {
-          line-color: darken(#aacacc, 20%);
+          // line-color: darken(#aacacc, 20%);
+          line-color: darken(#b8d0d1, 20%);
           line-width: 2.5;
           // line-opacity: 0.5;
           // comp-op: color-burn;
@@ -14,7 +15,8 @@
         }
 
         // line-color: #6ec7cc;
-        line-color: #aacacc;
+        // line-color: #aacacc;
+        line-color: #b8d0d1;
         line-width: 2;
         // line-opacity: 0.5;
       }

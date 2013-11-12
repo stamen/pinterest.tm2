@@ -35,8 +35,15 @@
 }
 
 #place_label {
+  text-orientation: [osm_id] % 3 - 1.5;
+
+  [osm_id<0] {
+    text-orientation: ([osm_id] * -1) % 3 - 1.5;
+  }
+
   text-name: '';
-  text-face-name: "Frutiger LT 55 Roman Bold";
+  // text-face-name: "Frutiger LT 55 Roman Bold";
+  text-face-name: "KG Second Chances Solid Regular";
   text-fill: #cb2027;
   text-halo-fill: rgba(242, 238, 221, 0.75); // #f2eedd;
   text-transform: uppercase;
@@ -46,6 +53,7 @@
   }
 
   [type='city'][zoom<=15] {
+    text-face-name: "KG Second Chances Sketch Regular";
     text-character-spacing: 4;
     text-halo-radius: 5;
     text-size: 16;
@@ -53,7 +61,7 @@
     text-wrap-width: 100;
     text-wrap-before: true;
     [zoom>=10] { text-size: 18; }
-    [zoom>=12] { text-size: 27; }
+    [zoom>=12] { text-size: 35; }
     
     [zoom>=14] {
       text-character-spacing: 5;
@@ -61,7 +69,9 @@
     }
   }
   [type='town'][zoom<=17] {
-    text-face-name: "Frutiger LT 45 Light Bold";
+    text-face-name: "KG Second Chances Solid Regular";
+    text-fill: lighten(#cb2027, 20%);
+    // text-face-name: "Frutiger LT 45 Light Bold";
     text-character-spacing: 2.5;
     text-halo-radius: 2.5;
     text-size: 14;
@@ -71,7 +81,9 @@
     [zoom>=12] { text-size: 20; }
   }
   [type='village'] {
-    text-face-name: "Frutiger LT 55 Roman Regular";
+    text-face-name: "KG Second Chances Solid Regular";
+    text-fill: lighten(#cb2027, 20%);
+    // text-face-name: "Frutiger LT 55 Roman Regular";
     text-halo-radius: 2.5;
     text-character-spacing: 1.5;
     text-size: 12;
@@ -84,7 +96,9 @@
   [type='hamlet'],
   [type='suburb'],
   [type='neighbourhood'] {
-    text-face-name: "Frutiger LT 45 Light Bold";
+    text-face-name: "KG Second Chances Solid Regular";
+    text-fill: lighten(#cb2027, 20%);
+    // text-face-name: "Frutiger LT 45 Light Bold";
     text-character-spacing: 1.5;
     text-halo-radius: 3;
     text-size: 12;
@@ -95,7 +109,7 @@
     
     [zoom>=14] {
       text-size: 12;
-      text-halo-radius: 4;
+      text-halo-radius: 3;
     }
     
     [zoom>=16] {
