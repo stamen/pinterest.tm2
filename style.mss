@@ -8,7 +8,8 @@
 
 Map {
   font-directory: url("fonts/");
-  background-image: url("images/ricepaper.png");
+  // background-image: url("images/ricepaper.png");
+  background-image: url("images/fresh_snow.png");
 }
 
 #water {
@@ -19,14 +20,23 @@ Map {
     image-filters: agg-stack-blur(2, 2);
   }
   
-  ::outline {
+  ::outline_blur {
     line-color: #5e7884;
+    line-gamma: 5;
+    line-width: 1.5;
+    image-filters: agg-stack-blur(1, 1);
+  }
+  
+  ::outline {
+    line-color: #4d73a0;
     line-gamma: 5;
     line-width: 1.5;
   }
 
+
   // polygon-pattern-file: url("images/texture18.png");
   polygon-pattern-file: url("images/blue_paper.png");
+  // polygon-pattern-file: url("images/pinterest-bg.png");
   // comp-op: multiply;
   
   /*
@@ -35,8 +45,12 @@ Map {
   */
   
   [zoom>=14] {
+    ::outline_blur {
+      line-width: 2;
+    }
+
     ::outline {
-      line-width: 3;
+      line-width: 2;
     }
   }
 }
@@ -68,25 +82,39 @@ Map {
 }
 */
 
+// @park: #cec;
+// @park: #96e296;
+@park: #4c7a4c;
+
 #landuse {
   [class='park'] {
-    polygon-fill: #cec;
-    polygon-opacity: 0.5;
+    polygon-fill: @park;
+    // polygon-opacity: 0.5;
     polygon-comp-op: multiply;
     
     line-color: #999;
-    line-width: 0.25;
+    line-width: 0.75;
     line-opacity: 0.5;
   }
 
   [class='cemetery'],
   [class='pitch'] {
-    polygon-fill: #cec;
-    polygon-opacity: 0.65;
+    polygon-fill: @park;
+    // polygon-opacity: 0.65;
     polygon-comp-op: multiply;
 
     line-color: #999;
-    line-width: 0.25;
+    line-width: 0.75;
+    line-opacity: 0.5;
+  }
+
+  [class='wood'] {
+    polygon-fill: @park;
+    // polygon-opacity: 0.75;
+    polygon-comp-op: multiply;
+
+    line-color: #999;
+    line-width: 0.75;
     line-opacity: 0.5;
   }
 
@@ -96,7 +124,7 @@ Map {
     polygon-comp-op: multiply;
 
     line-color: #999;
-    line-width: 0.25;
+    line-width: 0.75;
     line-opacity: 0.5;
   }
 
@@ -107,24 +135,14 @@ Map {
     polygon-comp-op: multiply;
 
     line-color: #999;
-    line-width: 0.25;
-    line-opacity: 0.5;
-  }
-  
-  [class='wood'] {
-    polygon-fill: #cec;
-    polygon-opacity: 0.75;
-    polygon-comp-op: multiply;
-
-    line-color: #999;
-    line-width: 0.25;
+    line-width: 0.75;
     line-opacity: 0.5;
   }
 }
 
 #building {
   polygon-fill: #f9f9f9;
-  line-color: #eee;
+  line-color: #ccc;
   line-width: 0.25;
   comp-op: multiply;
 }

@@ -1,3 +1,6 @@
+@road: #b3bcbc;
+@minor_road: #4d73a0;
+
 #road {
   ['mapnik::geometry_type'=2] {
     
@@ -7,7 +10,8 @@
       [zoom>=7] {
         ::outline {
           // line-color: darken(#aacacc, 20%);
-          line-color: darken(#b8d0d1, 20%);
+          // line-color: darken(#b8d0d1, 20%);
+          line-color: darken(@road, 20%);
           line-width: 2.5;
           // line-opacity: 0.5;
           // comp-op: color-burn;
@@ -16,8 +20,11 @@
 
         // line-color: #6ec7cc;
         // line-color: #aacacc;
-        line-color: #b8d0d1;
+        line-color: @road;
+        // line-join: round;
+        // line-color: #b8d0d1;
         line-width: 2;
+        // line-pattern-file: url("images/line2.png");
         // line-opacity: 0.5;
       }
 
@@ -86,7 +93,8 @@
     [class='street'] {
       [zoom>=14] {
         line-width: 0.25;
-        line-color: rgba(203, 32, 39, 0.2); // fade(#cb2027, 20%);
+        // line-color: rgba(203, 32, 39, 0.2); // fade(#cb2027, 20%);
+        line-color: rgba(77, 115, 160, 0.2);
       }
       
       [zoom>=15] {
@@ -95,7 +103,8 @@
       
       [zoom>=16] {
         line-width: 4;
-        line-color: rgba(203, 32, 39, 0.35); // fade(#cb2027, 35%);
+        // line-color: rgba(203, 32, 39, 0.35); // fade(#cb2027, 35%);
+        line-color: rgba(77, 115, 160, 0.35);
       }
 
       [zoom>=17] {
@@ -150,43 +159,45 @@
     [class='main'],
     [class='motorway_link'] {
       ::outline {
-        line-color: darken(#aacacc, 10%);
+        line-color: darken(@road, 10%);
         line-width: 3;
       }
 
-      line-color: darken(#aacacc, 5%);
+      line-color: darken(@road, 5%);
       line-width: 2.5;
 
       ::right {
 	    line-offset: 1.75;
         line-width: 0.25;
-        line-color: darken(#aacacc, 30%);
+        line-color: darken(@road, 30%);
       }
     
       ::left {
 	    line-offset: -1.75;
         line-width: 0.25;
-        line-color: darken(#aacacc, 30%);
+        line-color: darken(@road, 30%);
       }
     
+      /*
       [zoom>=15] {
         ::outline {
-          line-width: 7;
+          line-width: 4;
         }
        
-        line-width: 4;
+        line-width: 3;
         line-opacity: 0.55;
 
         ::right {
-	      line-offset: 3.5;
+	      line-offset: 2.5;
           line-width: 0.5;
         }
     
         ::left {
-	      line-offset: -3.5;
+	      line-offset: -2.5;
           line-width: 0.5;
         }
       }
+      */
 
       [zoom>=16] {
         ::outline {

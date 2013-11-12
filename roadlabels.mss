@@ -1,11 +1,17 @@
 #road_label {
-  text-fill: #5a5c5b;
+  // text-fill: #5a5c5b;
+  // text-fill: #333;
+  text-fill: darken(#4d73a0, 15%);
+  text-transform: uppercase;
   // text-fill: rgba(95, 79, 42, 0.85); // fade(#5f4f2a, 85%);
-  text-name: "''";
-  text-face-name: "Frutiger LT 55 Roman Regular";
+  text-name: '';
+  // text-face-name: "Frutiger LT 55 Roman Regular";
+  // text-face-name: "Please write me a song Medium";
+  text-face-name: "Boziene Boziene";
   text-placement: line;
   text-spacing: 100;
   text-avoid-edges: true;
+  text-dy: -8;
 
   //
   // separated highways
@@ -34,15 +40,17 @@
   [class='motorway_link'],
   [class='main'],
   {
-    [zoom>=13] {
+    [zoom>=15] {
       text-name: [name];
-      text-halo-fill: rgba(221, 221, 221, 0.85);
-      text-halo-radius: 1.5;
+      // text-halo-fill: rgba(221, 221, 221, 0.85);
+      text-halo-fill: rgba(230, 230, 230, 0.85);
+      text-halo-radius: 2;
 
-      text-size: 10;
+      text-size: 12;
+      text-character-spacing: 1;
     }
     
-    [zoom>=15] {
+    [zoom>=16] {
       text-size: 12;
       text-spacing: 400;
     }
