@@ -47,9 +47,9 @@
 // TODO pay attention to attributes
 #country_label_line {
   [zoom>=4] {
-    text-face-name: "Frutiger LT 45 Light Bold";
-    text-name: [z];
-    text-fill: white;
+    // text-face-name: "Frutiger LT 45 Light Bold";
+    // text-name: [z];
+    // text-fill: white;
     
     line-color: #4d73a0;
     image-filters: agg-stack-blur(1, 1);

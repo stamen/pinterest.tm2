@@ -12,7 +12,6 @@
 Map {
   font-directory: url("fonts/");
   background-image: url("images/ricepaper_30.png");
-  // background-image: url("images/fresh_snow.png");
 }
 
 #water {
@@ -46,9 +45,7 @@ Map {
     }
   }
 
-  // polygon-pattern-file: url("images/blue_paper_256.png");
   polygon-pattern-file: url("images/blue_paper_512.png");
-  // polygon-pattern-file: url("images/blue_paper_1024.png");
 }
 
 // Political boundaries //
