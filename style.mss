@@ -5,11 +5,14 @@
 @water: #e2e1e2;
 // @water: #f0f;
 @park: #cec;
+// @park: #96e296;
+// @park: mix(#cec, #96e296, 70);
+
 
 Map {
   font-directory: url("fonts/");
-  // background-image: url("images/ricepaper.png");
-  background-image: url("images/fresh_snow.png");
+  background-image: url("images/ricepaper_30.png");
+  // background-image: url("images/fresh_snow.png");
 }
 
 #water {
@@ -33,17 +36,6 @@ Map {
     line-width: 1.5;
   }
 
-
-  // polygon-pattern-file: url("images/texture18.png");
-  polygon-pattern-file: url("images/blue_paper.png");
-  // polygon-pattern-file: url("images/pinterest-bg.png");
-  // comp-op: multiply;
-  
-  /*
-  line-color: #999;
-  line-width: 1;
-  */
-  
   [zoom>=14] {
     ::outline_blur {
       line-width: 2;
@@ -53,98 +45,8 @@ Map {
       line-width: 2;
     }
   }
-}
 
-#waterway {
-  [type='river'],
-  [type='canal'] {
-    line-color: @water;
-    line-width: 0.5;
-    [zoom>=12] { line-width: 1; }
-    [zoom>=14] { line-width: 2; }
-    [zoom>=16] { line-width: 3; }
-  }
-  [type='stream'] {
-    line-color: @water;
-    line-width: 0.5;
-    [zoom>=14] { line-width: 1; }
-    [zoom>=16] { line-width: 2; }
-    [zoom>=18] { line-width: 3; }
-  }
-}
-
-/*
-#landuse_overlay {
-  text-face-name: "Frutiger LT 55 Roman Regular";
-  text-name: [class];
-  polygon-fill: #ccc;
-  polygon-opacity: 0.5;
-}
-*/
-
-// @park: #cec;
-// @park: #96e296;
-@park: #4c7a4c;
-
-#landuse {
-  [class='park'] {
-    polygon-fill: @park;
-    // polygon-opacity: 0.5;
-    polygon-comp-op: multiply;
-    
-    line-color: #999;
-    line-width: 0.75;
-    line-opacity: 0.5;
-  }
-
-  [class='cemetery'],
-  [class='pitch'] {
-    polygon-fill: @park;
-    // polygon-opacity: 0.65;
-    polygon-comp-op: multiply;
-
-    line-color: #999;
-    line-width: 0.75;
-    line-opacity: 0.5;
-  }
-
-  [class='wood'] {
-    polygon-fill: @park;
-    // polygon-opacity: 0.75;
-    polygon-comp-op: multiply;
-
-    line-color: #999;
-    line-width: 0.75;
-    line-opacity: 0.5;
-  }
-
-  [class='sand'] {
-    polygon-fill: #f2eedd;
-    polygon-opacity: 0.5;
-    polygon-comp-op: multiply;
-
-    line-color: #999;
-    line-width: 0.75;
-    line-opacity: 0.5;
-  }
-
-  [class='hospital'],
-  [class='school'] {
-    polygon-fill: lighten(#aacacc, 10%);
-    polygon-opacity: 0.25;
-    polygon-comp-op: multiply;
-
-    line-color: #999;
-    line-width: 0.75;
-    line-opacity: 0.5;
-  }
-}
-
-#building {
-  polygon-fill: #f9f9f9;
-  line-color: #ccc;
-  line-width: 0.25;
-  comp-op: multiply;
+  polygon-pattern-file: url("images/blue_paper_1024.png");
 }
 
 // Political boundaries //
@@ -156,7 +58,7 @@ Map {
       line-join: round;
       line-width: 1;
       line-color: #a8a7a5;
-      image-filters: agg-stack-blur(5, 5);
+      image-filters: agg-stack-blur(4, 4);
     }
     
     line-width: 1;
@@ -197,6 +99,99 @@ Map {
     }
     line-width: 0;
     line-color: transparent;
+  }
+}
+
+
+#waterway {
+  [type='river'],
+  [type='canal'] {
+    line-color: @water;
+    line-width: 0.5;
+    [zoom>=12] { line-width: 1; }
+    [zoom>=14] { line-width: 2; }
+    [zoom>=16] { line-width: 3; }
+  }
+  [type='stream'] {
+    line-color: @water;
+    line-width: 0.5;
+    [zoom>=14] { line-width: 1; }
+    [zoom>=16] { line-width: 2; }
+    [zoom>=18] { line-width: 3; }
+  }
+}
+
+/*
+#landuse_overlay {
+  text-face-name: "Frutiger LT 55 Roman Regular";
+  text-name: [class];
+  polygon-fill: #ccc;
+  polygon-opacity: 0.5;
+}
+*/
+
+#landuse {
+  [class='park'] {
+    polygon-fill: @park;
+    polygon-comp-op: multiply;
+    
+    line-color: #999;
+    line-width: 0.75;
+    line-opacity: 0.5;
+  }
+
+  [class='cemetery'],
+  [class='pitch'] {
+    polygon-fill: @park;
+    polygon-comp-op: multiply;
+
+    line-color: #999;
+    line-width: 0.75;
+    line-opacity: 0.5;
+  }
+
+  [class='wood'] {
+    polygon-fill: @park;
+    polygon-comp-op: multiply;
+
+    line-color: #999;
+    line-width: 0.75;
+    line-opacity: 0.5;
+  }
+
+  [class='sand'] {
+    polygon-fill: #f2eedd;
+    polygon-opacity: 0.5;
+    polygon-comp-op: multiply;
+
+    line-color: #999;
+    line-width: 0.75;
+    line-opacity: 0.5;
+  }
+
+  [class='hospital'],
+  [class='school'] {
+    // polygon-fill: lighten(#aacacc, 10%);
+    polygon-fill: lighten(#fc0, 40%);
+    polygon-opacity: 0.25;
+    polygon-comp-op: multiply;
+
+    line-color: #999;
+    line-width: 0.75;
+    line-opacity: 0.5;
+  }
+}
+
+#building {
+  polygon-fill: #f9f9f9;
+  line-color: #ddd;
+  line-width: 0.25;
+  comp-op: multiply;
+  
+  [zoom>=16] {
+    line-width: 0.75;
+    building-fill: #f9f9f9;
+    building-height: 1;
   }
 }
 
