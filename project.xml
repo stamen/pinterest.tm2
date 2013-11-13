@@ -809,7 +809,6 @@
 <Style name="country_label_line" filter-mode="first" image-filters="agg-stack-blur(1,1)">
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <TextSymbolizer face-name="Frutiger LT 45 Light Bold" fill="#ffffff" ><![CDATA[[z]]]></TextSymbolizer>
     <LineSymbolizer stroke="#4d73a0" />
   </Rule>
 </Style>
