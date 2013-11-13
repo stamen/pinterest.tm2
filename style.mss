@@ -34,21 +34,24 @@ Map {
     line-color: #4d73a0;
     line-gamma: 5;
     line-width: 1.5;
+    line-smooth: 1;
   }
 
   [zoom>=14] {
     ::outline_blur {
-      line-width: 2;
+      line-width: 1.5;
+      line-smooth: 1;
     }
-
+    
     ::outline {
       line-width: 2;
     }
   }
 
-  // polygon-pattern-file: url("images/blue_paper_256.png");
   polygon-pattern-file: url("images/blue_paper_512.png");
+  polygon-pattern-smooth: 1;
   // polygon-pattern-file: url("images/blue_paper_1024.png");
+  // polygon-pattern-file: url("images/blue_paper_256.png");
 }
 
 // Political boundaries //
@@ -69,7 +72,6 @@ Map {
     [zoom>=3] {
       line-color: #999;
     }
-
     
     [zoom>=6] {
       line-width: 1;
@@ -118,7 +120,9 @@ Map {
     line-color: @water;
     line-width: 0.5;
     [zoom>=14] { line-width: 1; }
+    [zoom>=15] { line-width: 1.5; }
     [zoom>=16] { line-width: 2; }
+    [zoom>=17] { line-width: 2.5; }
     [zoom>=18] { line-width: 3; }
   }
 }
@@ -136,10 +140,23 @@ Map {
   [class='park'] {
     polygon-fill: @park;
     polygon-comp-op: multiply;
-    
-    line-color: #999;
+  
+    line-color: #6AA874;
     line-width: 0.75;
     line-opacity: 0.5;
+    
+    [zoom>=16] { 
+      line-width: 1; 
+      line-opacity: 0.75;
+    }
+    
+    [zoom>=17] {
+      line-width: 1.25; 
+    }
+    
+    [zoom>=18] { 
+      line-width: 2; 
+    }
   }
 
   [class='cemetery'],
@@ -147,28 +164,74 @@ Map {
     polygon-fill: @park;
     polygon-comp-op: multiply;
 
-    line-color: #999;
-    line-width: 0.75;
+    line-color: lighten(#518757, 20%);
+    line-width: 0.25;
     line-opacity: 0.5;
+    
+    [zoom>=15] {
+      line-width: 0.5;
+      line-opacity: 0.75; 
+    }
+   
+    [zoom>=16] {
+      line-width: 0.75;
+      line-opacity: 1;
+    }
+    
+    [zoom>=17] {
+      line-width: 1.25; 
+    }
+    
+    [zoom>=18] {
+      line-width: 1.25; 
+    }
   }
 
   [class='wood'] {
     polygon-fill: @park;
     polygon-comp-op: multiply;
 
-    line-color: #999;
+    line-color: #6AA874;
     line-width: 0.75;
     line-opacity: 0.5;
+    
+    [zoom>=15] { 
+      line-width: 0.5; 
+    }
+    
+    [zoom>=16] { 
+      line-width: 0.75; 
+    }
+    
+    [zoom>=17] { 
+      line-width: 1; 
+    }
   }
 
   [class='sand'] {
+    //do not change 
     polygon-fill: #f2eedd;
     polygon-opacity: 0.5;
     polygon-comp-op: multiply;
-
-    line-color: #999;
+    
+    //outline
+    line-color: #CEBF7A;
     line-width: 0.75;
     line-opacity: 0.5;
+    
+    [zoom>=16] { 
+      line-width: 0.75; 
+      line-opacity: 0.75;
+    }
+    
+     [zoom>=17] { 
+      line-width: 1; 
+      line-opacity: 1;
+    }
+    
+    [zoom>=18] { 
+      line-width: 1.25; 
+     }
   }
 
   [class='hospital'],
@@ -181,6 +244,23 @@ Map {
     line-color: #999;
     line-width: 0.75;
     line-opacity: 0.5;
+    
+     [zoom>=17] { 
+      line-color: #999;
+      line-width: 1;
+      line-opacity: 0.75;
+    }
+    
+    [zoom>=18] { 
+      line-width: 1.25;
+      line-opacity: 0.75;
+    }
+    
+     [zoom>=19] { 
+      line-width: 1.5;
+      line-opacity: 1;
+    }
+    
   }
 }
 
@@ -191,10 +271,22 @@ Map {
   comp-op: multiply;
   
   [zoom>=16] {
-    line-width: 0.75;
+    line-width: 0.5;
     building-fill: #f9f9f9;
     building-height: 1;
   }
+  
+  [zoom>=17] {
+    line-width: 1.5;
+    building-fill: #f9f9f9;
+    building-height: 1.5;
+  }
+  
+  [zoom>=18] {
+    line-width: 2;
+    building-fill: #f9f9f9;
+    building-height: 2;
+  } 
 }
 
 /*

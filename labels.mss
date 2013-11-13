@@ -89,11 +89,32 @@
     [zoom>=10] { text-size: 27; }
     [zoom>=12] { text-size: 52; }
     
-    [zoom>=14] {
+      [zoom>=13] {
       text-size: 40;
       text-character-spacing: 5;
       text-line-spacing: -7;
     }
+     [zoom>=14] {
+      text-size: 40;
+      text-character-spacing: 5;
+      text-line-spacing: -7;
+    }
+    [zoom>=15] {
+      text-size: 50;
+      text-character-spacing: 5;
+      text-line-spacing: -7;
+    }   
+    
+    [zoom>=16] {
+      text-size: 55;
+      text-character-spacing: 5;
+      text-line-spacing: -7;
+    }  
+    
+    [zoom>=18] {
+      text-size: 0;
+    } 
+    
   }
   [type='town'][zoom<=17] {
     text-face-name: "KG Second Chances Sketch Regular";

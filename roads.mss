@@ -146,12 +146,29 @@
       */
     }
     
+    //foot path
     [class='path'] {
+      
+      [zoom>=15] {
+       line-width: 0.25;
+       line-color: #56452e;
+       line-opacity: 0.35;
+       line-dasharray: 5,2;
+      }
+      
       [zoom>=16] {
-        line-width: 1;
+        line-width: 0.5;
         line-color: #56452e;
         line-opacity: 0.35;
         line-dasharray: 5,2;
+      }
+      
+      [zoom>=17] {
+        line-width: 0.75;
+      }
+      
+       [zoom>=18] {
+        line-width: 1;
       }
 
       /*
