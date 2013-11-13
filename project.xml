@@ -5,11 +5,11 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Map data © OpenStreetMap contributors]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-0.1925182342529297,51.48090181941534,16</Parameter>
+  <Parameter name="center">-13.24951171875,49.28214015975995,6</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
-  <Parameter name="name"><![CDATA[Pinterest 7]]></Parameter>
+  <Parameter name="name"><![CDATA[Pinterest 8]]></Parameter>
   <Parameter name="scale">1</Parameter>
   <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v4]]></Parameter>
 </Parameters>
@@ -133,7 +133,7 @@
 
 <Style name="water" filter-mode="first">
   <Rule>
-    <PolygonPatternSymbolizer file="images/blue_paper_1024.png" />
+    <PolygonPatternSymbolizer file="images/blue_paper_512.png" />
   </Rule>
 </Style>
 <Style name="water-outline" filter-mode="first">
