@@ -148,7 +148,8 @@
     text-fill: lighten(@label, 15%);
     text-character-spacing: 1.5;
     text-halo-radius: 3;
-    text-size: 16;
+    text-size: 24;
+    text-line-spacing: -10;
     text-wrap-width: 100;
     text-wrap-before: true;
     text-avoid-edges: true;

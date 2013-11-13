@@ -275,106 +275,105 @@
   }
 }
 
-
-/*
-#aeroway[type='runway'] {
+#aeroway {
   line-color: #cb2027;
   line-opacity: 0.2;
+  line-width: 0;
   comp-op: color-burn;
 
-  [zoom>=11] {
-    line-width: 0.75;
-  }
-
-  [zoom>=12] {
-    line-width: 1.5;
+  [type='apron'] {
+    polygon-fill: #f0f;
   }
   
-  [zoom>=13] {
-    line-width: 3;
-  }
-
-  [zoom>=14] {
-    line-width: 8;
-  }
-
-  [zoom>=15] {
-    line-width: 16;
-  }
-
-  [zoom>=16] {
-    line-width: 32;
-  }
-
-  [zoom>=17] {
-    line-width: 64;
-  }
-
-  [zoom>=18] {
-    line-width: 128;
-  }
-
-  [zoom>=18] {
-    line-width: 256;
-  }
-}
-
-#aeroway[type='taxiway'] {
-  line-color: #cb2027;
-  line-opacity: 0.2;
-  comp-op: color-burn;
-
-  [zoom>=11] {
-    line-width: 0.25;
-  }
-
-  [zoom>=12] {
-    line-width: 0.75;
-  }
-
-  [zoom>=13] {
-    line-width: 1.5;
-  }
-
-  [zoom>=14] {
-    line-width: 3;
-  }
-
-  [zoom>=15] {
-    line-width: 4;
-  }
-
-  [zoom>=16] {
-    line-width: 8;
-  }
-
-  [zoom>=17] {
-    line-width: 20;
-  }
-
-  [zoom>=18] {
-    line-width: 40;
-  }
-
-  [zoom>=19] {
-    line-width: 80;
-  }
-}
-
-#road[aeroway='runway'] {
-  ['mapnik::geometry_type'=2] {
-    ::outline {
-      line-color: #cb2027;
-      line-width: 5;
-      line-opacity: 0.25;
-      comp-op: color-burn;
-      image-filters: agg-stack-blur(1, 1);
+  [type='runway'] {
+    [zoom>=11] {
+      line-width: 0.75;
     }
 
-    line-color: white;
-    line-width: 2;
-    line-opacity: 0.25;
+    [zoom>=12] {
+      line-width: 1.5;
+    }
+  
+    [zoom>=13] {
+      line-width: 3;
+    }
+
+    [zoom>=14] {
+      line-width: 8;
+    }
+
+    [zoom>=15] {
+      line-width: 16;
+    }
+
+    [zoom>=16] {
+      line-width: 32;
+    }
+
+    [zoom>=17] {
+      line-width: 64;
+    }
+
+    [zoom>=18] {
+      line-width: 128;
+    }
+
+    [zoom>=18] {
+      line-width: 256;
+    }
+  }
+  
+  [type='taxiway'] {
+    [zoom>=11] {
+      line-width: 0.25;
+    }
+
+    [zoom>=12] {
+      line-width: 0.75;
+    }
+
+    [zoom>=13] {
+      line-width: 1.5;
+    }
+
+    [zoom>=14] {
+      line-width: 3;
+    }
+
+    [zoom>=15] {
+      line-width: 4;
+    }
+
+    [zoom>=16] {
+      line-width: 8;
+    }
+
+    [zoom>=17] {
+      line-width: 20;
+    }
+
+    [zoom>=18] {
+      line-width: 40;
+    }
+
+    [zoom>=19] {
+      line-width: 80;
+    }
+  }
+
+  [type='runway'] {
+    ['mapnik::geometry_type'=2] {
+      ::outline {
+        line-color: #cb2027;
+        line-width: 5;
+        line-opacity: 0.25;
+        comp-op: color-burn;
+        image-filters: agg-stack-blur(1, 1);
+      }
+
+      line-color: white;
+      line-width: 2;
+      line-opacity: 0.25;
+    }
   }
 }
-
-*/
