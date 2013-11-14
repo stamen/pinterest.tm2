@@ -3,7 +3,7 @@
   // text-fill: #333;
   text-fill: darken(#4d73a0, 15%);
   // text-halo-fill: rgba(230, 230, 230, 0.85);
-  text-halo-fill: @label_halo;
+  text-halo-fill: @halo;
   text-halo-radius: 2;
   text-character-spacing: 1;
   text-transform: uppercase;

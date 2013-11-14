@@ -1,7 +1,7 @@
-@label: #cb2027;
-// @label: #4d73a0;
-// @label_halo: rgba(242, 242, 242, 0.90);
-@label_halo: rgba(245, 242, 231, 0.90);
+@primary_label: #cb2027;
+@label: #4d73a0;
+
+@halo: rgba(245, 242, 231, 0.90);
 
 #country_label[zoom>=3] {
   text-orientation: [osm_id] % 3 - 1.5;
@@ -16,7 +16,7 @@
   text-wrap-width: 100;
   text-wrap-before: true;
   text-fill: lighten(@label, 10%);
-  text-halo-fill: @label_halo;
+  text-halo-fill: @halo;
   text-halo-radius: 2;
   text-size: 11;
   text-min-distance: 25;
@@ -42,6 +42,10 @@
     text-character-spacing: 2.5;
     text-size: 17;
   }
+  
+  [zoom>=9] {
+    text-name: '';
+  }
 }
 
 // TODO pay attention to attributes
@@ -65,40 +69,101 @@
   }
 
   text-name: '';
-  // text-face-name: "Frutiger LT 55 Roman Bold";
   text-face-name: "KG Second Chances Solid Regular";
   text-fill: @label;
-  // text-halo-fill: rgba(242, 238, 221, 0.75); // #f2eedd;
-  text-halo-fill: @label_halo;
+  text-halo-fill: @halo;
   text-transform: uppercase;
   text-min-padding: 0;
   
-  [zoom>=7] {
-    text-name: @name;
-  }
-
   [type='city'] {
-    // text-face-name: "KG Second Chances Solid Regular";
-    text-face-name: "KG Second Chances Sketch Regular";
+    text-face-name: "KG Second Chances Solid Regular";
     text-character-spacing: 4;
+    text-fill: lighten(@label, 20%);
     text-halo-radius: 3;
-    text-size: 24;
+    text-size: 27;
     text-line-spacing: -4;
     text-wrap-width: 100;
     text-wrap-before: true;
-    [zoom>=10] { text-size: 27; }
-    [zoom>=12] { text-size: 52; }
     
-      [zoom>=13] {
+    [zoom>=8] {
+      text-name: @name;
+  
+      text-size: 21;
+      text-character-spacing: 2;
+      text-line-spacing: -5;
+      
+      text-min-distance: 50;
+      // debug-mode: collision;
+      
+      [scalerank<=7] {
+        // text-name: [scalerank] + ': ' + [name_en];
+        text-face-name: "KG Second Chances Sketch Regular";
+        text-size: 24;
+        text-fill: @primary_label;
+        text-min-distance: 25;
+      }
+      
+      [scalerank<=4] {
+        text-size: 26;
+      }
+      
+      [scalerank<=1] {
+        text-size: 28;
+      }
+    }
+    
+    [zoom>=9] {
+      text-name: @name;
+  
+      text-size: 21;
+      text-character-spacing: 2;
+      text-line-spacing: -5;
+      
+      text-min-distance: 50;
+      // debug-mode: collision;
+      
+      [scalerank<=10] {
+        // text-name: [scalerank] + ': ' + [name_en];
+        text-face-name: "KG Second Chances Sketch Regular";
+        text-size: 24;
+        text-fill: @primary_label;
+        text-min-distance: 25;
+      }
+      
+      [scalerank<=5] {
+        text-size: 26;
+      }
+      
+      [scalerank<=1] {
+        text-size: 28;
+      }
+    }
+    
+    [zoom>=11] {
+      // text-name: @name;
+      // text-name: [scalerank] + ': ' + [name_en];
+      text-face-name: "KG Second Chances Sketch Regular";
+      text-fill: @primary_label;
+
+      text-size: 40;
+      text-character-spacing: 5;
+      text-line-spacing: -7;
+      
+      text-min-distance: 25;
+      // debug-mode: collision;
+    }
+    
+    [zoom>=13] {
+      text-min-distance: 0;
+      text-min-padding: 0;
+    }
+    
+    [zoom>=14] {
       text-size: 40;
       text-character-spacing: 5;
       text-line-spacing: -7;
     }
-     [zoom>=14] {
-      text-size: 40;
-      text-character-spacing: 5;
-      text-line-spacing: -7;
-    }
+    
     [zoom>=15] {
       text-size: 50;
       text-character-spacing: 5;
@@ -114,30 +179,68 @@
     [zoom>=18] {
       text-size: 0;
     } 
-    
   }
+
   [type='town'][zoom<=17] {
-    text-face-name: "KG Second Chances Sketch Regular";
-    // text-fill: lighten(#cb2027, 10%);
-    // text-face-name: "Frutiger LT 45 Light Bold";
-    text-character-spacing: 2.5;
+    text-face-name: "KG Second Chances Solid Regular";
+    text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
     text-size: 21;
     text-wrap-width: 100;
     text-wrap-before: true;
-    [zoom>=10] { text-size: 24; }
-    [zoom>=12] { text-size: 30; }
+    
+    [zoom>=9] {
+      text-name: @name;
+      text-size: 16;
+      text-character-spacing: 1.5;
+      text-min-distance: 10;
+      text-min-padding: 0;
+    }
+
+    [zoom>=11] {
+      text-face-name: "KG Second Chances Sketch Regular";
+      text-fill: @label;
+      text-size: 24;
+      text-character-spacing: 2.5;
+    }
+    
+    [zoom>=12] {
+      text-name: @name;
+      text-size: 30;
+      text-min-distance: 10;
+    }
+    
+    [zoom>=13] {
+      text-min-distance: 0;
+    }
   }
+
   [type='village'] {
     text-face-name: "KG Second Chances Solid Regular";
-    text-fill: lighten(@label, 10%);
-    // text-face-name: "Frutiger LT 55 Roman Regular";
+    text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
-    text-character-spacing: 1.5;
-    text-size: 12;
     text-wrap-width: 100;
     text-wrap-before: true;
-    [zoom>=12] { text-size: 21; }
+
+    [zoom>=10] {
+      text-name: @name;
+      text-size: 12;
+      text-character-spacing: 1.5;
+    }
+    
+    [zoom>=11] {
+      text-size: 15;
+    }
+    
+    [zoom>=12] {
+      text-size: 21;
+      text-min-distance: 50;
+    }
+    
+    [zoom>=13] {
+      text-min-distance: 0;
+    }
+    
     [zoom>=14] { text-size: 27; }
   }
   
@@ -148,17 +251,45 @@
     text-fill: lighten(@label, 15%);
     text-character-spacing: 1.5;
     text-halo-radius: 3;
-    text-size: 24;
+    text-size: 26;
     text-line-spacing: -10;
     text-wrap-width: 100;
     text-wrap-before: true;
     text-avoid-edges: true;
     text-min-distance: 5;
     
+    [zoom>=13] {
+      [type='suburb'],
+      [type='neighbourhood'] {
+        text-name: @name;
+      }
+    }
+    
     [zoom>=14] {
+      [type='hamlet'] {
+        text-name: @name;
+      }
+      
       text-size: 32;
       text-line-spacing: -13;
       text-halo-radius: 3;
     }
+  }
+}
+
+#poi_label {
+  [type='Park'] {
+    text-name: @name;
+    text-face-name: "LA Headlights BTN Cond Bold";
+    text-fill: darken(@park, 60%);
+    text-halo-fill: @halo;
+    text-halo-radius: 2.5;
+    text-size: 16;
+    text-wrap-width: 100;
+    text-wrap-before: true;
+    text-line-spacing: -1;
+    text-character-spacing: 2;
+    text-avoid-edges: true;
+    // text-min-distance: 128;
   }
 }

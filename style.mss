@@ -1,5 +1,5 @@
 // Languages: name (local), name_en, name_fr, name_es, name_de
-@name: '[name_en]';
+@name: [name_en];
 
 // Common Colors //
 @water: #e2e1e2;
@@ -19,6 +19,8 @@ Map {
     line-color: #ccc;
     line-gamma: 20;
     line-width: 2;
+    line-simplify-algorithm: visvalingam-whyatt;
+    line-simplify: 5;
     image-filters: agg-stack-blur(2, 2);
   }
   
@@ -26,6 +28,8 @@ Map {
     line-color: #5e7884;
     line-gamma: 5;
     line-width: 1.5;
+    line-simplify-algorithm: visvalingam-whyatt;
+    line-simplify: 5;
     image-filters: agg-stack-blur(1, 1);
   }
   
@@ -33,73 +37,98 @@ Map {
     line-color: #4d73a0;
     line-gamma: 5;
     line-width: 1.5;
-    line-smooth: 1;
+    line-simplify-algorithm: visvalingam-whyatt;
+    line-simplify: 5;
+    // line-smooth: 1;
+  }
+
+  polygon-pattern-file: url("images/blue_paper_512.png");
+  
+  [zoom>=9] {
+  ::shadow {
+      line-simplify-algorithm: visvalingam-whyatt;
+      line-simplify: 5;
+    }
+  
+    ::outline_blur {
+      line-simplify-algorithm: visvalingam-whyatt;
+      line-simplify: 5;
+    }
+  
+    ::outline {
+      line-simplify-algorithm: visvalingam-whyatt;
+      line-simplify: 5;
+      // line-smooth: 1;
+    }
+    
+    // polygon-pattern-smooth: 1;
+    polygon-pattern-simplify-algorithm: visvalingam-whyatt;
+    polygon-pattern-simplify: 5;
   }
 
   [zoom>=14] {
     ::outline_blur {
       line-width: 1.5;
-      line-smooth: 1;
+      // line-smooth: 1;
     }
     
     ::outline {
       line-width: 2;
     }
   }
-
-  polygon-pattern-file: url("images/blue_paper_512.png");
-  polygon-pattern-smooth: 1;
 }
 
 // Political boundaries //
 
 #admin {
-  // Countries
-  [admin_level=2] {
-    ::blur {
-      line-join: round;
+  [zoom<=9] {
+    // Countries
+    [admin_level=2] {
+      ::blur {
+        line-join: round;
+        line-width: 1;
+        line-color: #a8a7a5;
+        image-filters: agg-stack-blur(4, 4);
+      }
+    
       line-width: 1;
-      line-color: #a8a7a5;
-      image-filters: agg-stack-blur(4, 4);
-    }
+      line-color: #bbb;
     
-    line-width: 1;
-    line-color: #bbb;
+      [zoom>=3] {
+        line-color: #999;
+      }
     
-    [zoom>=3] {
-      line-color: #999;
-    }
+      [zoom>=6] {
+        line-width: 1;
+      }
     
-    [zoom>=6] {
-      line-width: 1;
-    }
+      [zoom>=8] {
+        line-width: 4;
+      }
     
-    [zoom>=8] {
-      line-width: 4;
+      [disputed=1] {
+        line-dasharray: 4,4;
+      }
     }
-    
-    [disputed=1] {
-      line-dasharray: 4,4;
-    }
-  }
   
-  /*
-  // States / Provices / Subregions
-  [admin_level>=3] {
-    line-width: 0.4;
-    line-dasharray: 10,3,3,3;
-    [zoom>=6] { line-width: 1; }
-    [zoom>=8] { line-width: 2; }
-    [zoom>=12] { line-width: 3; }
-  }
-  */
-
-  [maritime=1] {
-    ::blur {
-      line-width: 0;
+    /*
+    // States / Provices / Subregions
+    [admin_level>=3] {
+      line-width: 0.4;
+      line-dasharray: 10,3,3,3;
+      [zoom>=6] { line-width: 1; }
+      [zoom>=8] { line-width: 2; }
+      [zoom>=12] { line-width: 3; }
     }
-    line-width: 0;
-    line-color: transparent;
+    */
+
+    [maritime=1] {
+      ::blur {
+        line-width: 0;
+      }
+      line-width: 0;
+      line-color: transparent;
+    }
   }
 }
 
@@ -134,13 +163,35 @@ Map {
 */
 
 #landuse {
-  [class='park'] {
-    polygon-fill: @park;
-    polygon-comp-op: multiply;
+  polygon-fill: transparent;
+  polygon-comp-op: multiply;
+  line-width: 0;
   
-    line-color: #6AA874;
+  [zoom>=8] {
+    polygon-opacity: 1;
+  }
+  
+  [zoom>=9] {
+    polygon-opacity: 0.8;
+  }
+  
+  [zoom>=10] {
+    polygon-opacity: 0.6;
+  }
+  
+  [zoom>=11] {
+    polygon-opacity: 0.8;
+  }
+  
+  [zoom>=12] {
     line-width: 0.75;
     line-opacity: 0.5;
+    polygon-opacity: 1;
+  }
+
+  [class='park'] {
+    polygon-fill: @park;
+    line-color: #6AA874;
     
     [zoom>=16] { 
       line-width: 1; 
@@ -159,11 +210,11 @@ Map {
   [class='cemetery'],
   [class='pitch'] {
     polygon-fill: @park;
-    polygon-comp-op: multiply;
-
     line-color: lighten(#518757, 20%);
-    line-width: 0.25;
-    line-opacity: 0.5;
+
+    [zoom>=12] {
+      line-width: 0.25;
+    }
     
     [zoom>=15] {
       line-width: 0.5;
@@ -186,11 +237,7 @@ Map {
 
   [class='wood'] {
     polygon-fill: @park;
-    polygon-comp-op: multiply;
-
     line-color: #6AA874;
-    line-width: 0.75;
-    line-opacity: 0.5;
     
     [zoom>=15] { 
       line-width: 0.5; 
@@ -209,12 +256,9 @@ Map {
     //do not change 
     polygon-fill: #f2eedd;
     polygon-opacity: 0.5;
-    polygon-comp-op: multiply;
     
     //outline
     line-color: #CEBF7A;
-    line-width: 0.75;
-    line-opacity: 0.5;
     
     [zoom>=16] { 
       line-width: 0.75; 
@@ -233,16 +277,14 @@ Map {
 
   [class='hospital'],
   [class='school'] {
-    // polygon-fill: lighten(#aacacc, 10%);
     polygon-fill: lighten(#fc0, 40%);
     polygon-opacity: 0.25;
-    polygon-comp-op: multiply;
 
-    line-color: #999;
-    line-width: 0.75;
-    line-opacity: 0.5;
+  	[zoom>=12] {
+      line-color: #999;
+    }
     
-     [zoom>=17] { 
+    [zoom>=17] { 
       line-color: #999;
       line-width: 1;
       line-opacity: 0.75;
@@ -257,15 +299,25 @@ Map {
       line-width: 1.5;
       line-opacity: 1;
     }
-    
+  }
+  
+  [class='industrial'] {
+    // TODO
+    // polygon-fill: #f0f;
   }
 }
 
 #building {
-  polygon-fill: #f9f9f9;
-  line-color: #ddd;
-  line-width: 0.25;
-  comp-op: multiply;
+  [zoom>=13] {
+    polygon-fill: #eee;
+    comp-op: multiply;
+  }
+  
+  [zoom>=14] {
+    polygon-fill: #f9f9f9;
+    line-color: #ddd;
+    line-width: 0.25;
+  }
   
   [zoom>=16] {
     line-width: 0.5;
