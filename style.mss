@@ -83,7 +83,7 @@ Map {
 }
 
 // Political boundaries //
-
+//////////////////////////\\\\\\\\\\\\\\//////////////\\\\\\\\\//////
 #admin {
   ::outline {
     line-cap: round;
@@ -135,30 +135,40 @@ Map {
     line-width: 0;
     
     [zoom>=4] {
-      line-color: #bbb;
-      line-width: 1;
-      line-dasharray: 10,3,3,3;
-      // line-simplify: 10;
+     // line-color: darken(#bbb, 20%);
+     line-color: #bbb;
+     line-width: 1;
+     //line-dasharray: 10,3,3,3;
+     //line-simplify: 10;
       
-      [zoom>=6] { line-width: 1; }
+      [zoom>=6] { line-width: 1.5; }
       
       [zoom>=7] {
-        ::outline {
-          line-width: 2;
-          line-dasharray: 10,3,3,3;
-        }
+       // ::outline {
+          line-width: 1.25;
+          line-color: darken(#bbb, 15%);
+        // line-dasharray: 10,3,3,3;
+       // }
       }
 
       [zoom>=8] {
-        ::outline {
-          line-width: 3.5;
-          line-dasharray: 10,3,3,3;
-        }
+       // ::outline {
+         // line-width: 3;
+        //  line-width: 3.5;
+        //  line-dasharray: 10,3,3,3;
+       // }
         
-        line-width: 2;
+        line-color: darken(#bbb, 15%); 
+        line-width: 1.5;
       }
       
-      [zoom>=12] { line-width: 3; }
+      [zoom>=9] { 
+        line-width: 2; 
+        line-color: darken(#bbb, 10%);
+      }
+      [zoom>=10] { line-width: 2.25; }
+      [zoom>=11] { line-width: 2.5; }
+      [zoom>=12] { line-width: 2.75; }
     }
   }
 
@@ -171,7 +181,7 @@ Map {
   }
 }
 
-
+//////////////////////////\\\\\\\\\\\\\\//////////////\\\\\\\\\//////
 #waterway {
   [type='river'],
   [type='canal'] {
@@ -231,18 +241,27 @@ Map {
   [class='park'] {
     polygon-fill: @park;
     line-color: #6AA874;
+   
+    [zoom>=12] {
+      line-width: 0.25;
+    }
+    
+    [zoom>=13] {
+      line-width: 0.5;
+      line-opacity: 0.75;
+    }
     
     [zoom>=16] { 
-      line-width: 1; 
+      line-width: 0.75; 
       line-opacity: 0.75;
     }
     
     [zoom>=17] {
-      line-width: 1.25; 
+      line-width: 1; 
     }
     
     [zoom>=18] { 
-      line-width: 2; 
+      line-width: 1.5; 
     }
   }
 
@@ -273,10 +292,14 @@ Map {
       line-width: 1.25; 
     }
   }
-
+/////\/\/\/\/\/\/////\/\/\/\/\
   [class='wood'] {
     polygon-fill: @park;
     line-color: #6AA874;
+    
+    [zoom>=13] { 
+      line-width: 0.25; 
+    }
     
     [zoom>=15] { 
       line-width: 0.5; 
@@ -315,37 +338,51 @@ Map {
   }
 
   [class='hospital'],
-  [class='school'] {
-    polygon-fill: lighten(#fc0, 40%);
+  [class='school'],
+  [class='parking'],
+  [class='industrial'],
+  {
+    polygon-fill: #EFE9DA;
+    //polygon-fill: lighten(#fc0, 40%);
     polygon-opacity: 0.25;
-
-  	[zoom>=12] {
-      line-color: #999;
+     
+    [zoom>=12] {
+     line-color: darken(#efe9da, 10%);
+     line-width: 0.5;
     }
+    [zoom>=13] {
+      line-color: darken(#efe9da, 20%);
+      line-width: 0.5;
+      }
     
+  	[zoom>=15] {
+      line-color: darken(#efe9da, 20%);
+      line-width: 0.5;
+    }
+  
     [zoom>=17] { 
-      line-color: #999;
-      line-width: 1;
-      line-opacity: 0.75;
+      line-color: darken(#efe9da, 20%);
+      line-width: 0.75;
     }
     
     [zoom>=18] { 
-      line-width: 1.25;
-      line-opacity: 0.75;
-    }
-    
-     [zoom>=19] { 
-      line-width: 1.5;
-      line-opacity: 1;
+      line-width: 1;
     }
   }
+ 
   
-  [class='parking'],
+ /* [class='parking'],
   [class='industrial'] {
     // TODO
-    line-width: 0;
-    // polygon-fill: #f0f;
+    polygon-fill: #EFE9DA;
+    polygon-opacity: 0.5;
+    
+    [zoom>=13] {
+      line-color: darken(#efe9da, 20%);
+      line-width: 0.5;
+     }
   }
+ */ 
 }
 
 #building {

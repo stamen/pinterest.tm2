@@ -290,7 +290,10 @@
   [type='hamlet'],
   [type='suburb'],
   [type='neighbourhood'] {
-    text-face-name: "Supernett cn Light";
+    //new type options here
+    text-face-name: "Supernett cn Regular";
+    //text-face-name: "Supernett cn Bold";
+   // text-face-name: "Supernett cn Light";
     text-fill: lighten(@label, 10%);
     text-character-spacing: 0.5;
     text-halo-radius: 2.5;
@@ -325,11 +328,13 @@
     // text-name: [localrank] + '/' + [scalerank] + ' ' + @name;
     // text-name: @name;
     text-name: '';
-    text-transform: lowercase;
-    text-face-name: "Supernett cn Light Italic";
+    text-transform: uppercase;
+   // text-transform: lowercase;
+    text-face-name: "Supernett cn Light";
+   // text-face-name: "Supernett cn Light Italic";
     text-fill: darken(#9ae89a, 40%);
     text-halo-fill: mix(@park, @halo, 50);
-    text-halo-radius: 2;
+    text-halo-radius: 1.8;
     text-size: 16;
     text-wrap-width: 100;
     text-wrap-before: true;
@@ -343,7 +348,7 @@
     }
 
     [zoom>=15][scalerank<=2] {
-      text-size: 18;
+      text-size: 16;
     }
     
     [zoom>=15][scalerank<=2] {
