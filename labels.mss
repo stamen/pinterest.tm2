@@ -43,7 +43,52 @@
     text-size: 17;
   }
   
-  [zoom>=9] {
+  [zoom>=5][scalerank=1] {
+    text-fill: @primary_label;
+    text-face-name: "KG Second Chances Sketch Regular";
+    text-size: 30;
+    text-line-spacing: -8;
+  }
+  
+  [zoom>=6][scalerank=1] {
+    text-face-name: "KG Second Chances Sketch Regular";
+    text-size: 36;
+  }
+  
+  [zoom>=8] {
+    text-name: '';
+  }
+}
+
+#state_label {
+  text-name: '';
+  text-face-name: "KG Second Chances Solid Regular";
+  text-transform: uppercase;
+  text-fill: lighten(@label, 10%);
+  text-halo-fill: @halo;
+  text-halo-radius: 2;
+  text-size: 12;
+  text-character-spacing: 1;
+  text-line-spacing: -2;
+  text-wrap-width: 100;
+  text-wrap-before: true;
+  
+  [zoom>=5] {
+    text-name: @name;
+  }
+  
+  [zoom>=6] {
+    text-size: 22;
+    text-halo-radius: 2.5;
+    text-character-spacing: 2;
+    text-line-spacing: -4;
+  }
+  
+  [zoom>=7] {
+    text-size: 26;
+  }
+  
+  [zoom>=8] {
     text-name: '';
   }
 }
@@ -80,39 +125,36 @@
     text-character-spacing: 4;
     text-fill: lighten(@label, 20%);
     text-halo-radius: 3;
-    text-size: 27;
+    text-size: 10;
     text-line-spacing: -4;
     text-wrap-width: 100;
     text-wrap-before: true;
     
     [zoom>=8] {
-      text-name: @name;
+      [scalerank<=6] {
+        text-name: @name;
+        // text-name: [ldir] + ' / ' + @name;
   
-      text-size: 21;
-      text-character-spacing: 2;
-      text-line-spacing: -5;
+        text-size: 21;
+        text-character-spacing: 2;
+        text-line-spacing: -5;
       
-      text-min-distance: 50;
-      // debug-mode: collision;
-      
-      [scalerank<=7] {
-        // text-name: [scalerank] + ': ' + [name_en];
-        text-face-name: "KG Second Chances Sketch Regular";
-        text-size: 24;
-        text-fill: @primary_label;
-        text-min-distance: 25;
+        text-min-distance: 50;
+        // debug-mode: collision;
       }
       
       [scalerank<=4] {
+        text-face-name: "KG Second Chances Sketch Regular";
+        text-fill: @primary_label;
         text-size: 26;
       }
       
-      [scalerank<=1] {
+      [scalerank<=2] {
         text-size: 28;
       }
     }
     
-    [zoom>=9] {
+    [zoom>=9][scalerank<=9] {
       text-name: @name;
   
       text-size: 21;
@@ -127,7 +169,6 @@
         text-face-name: "KG Second Chances Sketch Regular";
         text-size: 24;
         text-fill: @primary_label;
-        text-min-distance: 25;
       }
       
       [scalerank<=5] {
@@ -145,6 +186,7 @@
       text-face-name: "KG Second Chances Sketch Regular";
       text-fill: @primary_label;
 
+      // TODO specificity around scalerank is preventing this from applying
       text-size: 40;
       text-character-spacing: 5;
       text-line-spacing: -7;
@@ -189,7 +231,7 @@
     text-wrap-width: 100;
     text-wrap-before: true;
     
-    [zoom>=9] {
+    [zoom>=10] {
       text-name: @name;
       text-size: 16;
       text-character-spacing: 1.5;
@@ -207,6 +249,7 @@
     [zoom>=12] {
       text-name: @name;
       text-size: 30;
+      text-line-spacing: -8;
       text-min-distance: 10;
     }
     
@@ -247,12 +290,12 @@
   [type='hamlet'],
   [type='suburb'],
   [type='neighbourhood'] {
-    text-face-name: "Songbird Regular", "MisterEarl XLt BT Extra Light";
-    text-fill: lighten(@label, 15%);
-    text-character-spacing: 1.5;
-    text-halo-radius: 3;
-    text-size: 26;
-    text-line-spacing: -10;
+    text-face-name: "Supernett cn Light";
+    text-fill: lighten(@label, 10%);
+    text-character-spacing: 0.5;
+    text-halo-radius: 2.5;
+    text-size: 20;
+    text-line-spacing: -7;
     text-wrap-width: 100;
     text-wrap-before: true;
     text-avoid-edges: true;
@@ -270,8 +313,8 @@
         text-name: @name;
       }
       
-      text-size: 32;
-      text-line-spacing: -13;
+      text-size: 24;
+      text-line-spacing: -9;
       text-halo-radius: 3;
     }
   }
@@ -279,17 +322,32 @@
 
 #poi_label {
   [type='Park'] {
-    text-name: @name;
-    text-face-name: "LA Headlights BTN Cond Bold";
-    text-fill: darken(@park, 60%);
-    text-halo-fill: @halo;
-    text-halo-radius: 2.5;
+    // text-name: [localrank] + '/' + [scalerank] + ' ' + @name;
+    // text-name: @name;
+    text-name: '';
+    text-transform: lowercase;
+    text-face-name: "Supernett cn Light Italic";
+    text-fill: darken(#9ae89a, 40%);
+    text-halo-fill: mix(@park, @halo, 50);
+    text-halo-radius: 2;
     text-size: 16;
     text-wrap-width: 100;
     text-wrap-before: true;
-    text-line-spacing: -1;
-    text-character-spacing: 2;
-    text-avoid-edges: true;
+    text-line-spacing: -5;
+    text-character-spacing: 1.5;
+    // text-avoid-edges: true;
     // text-min-distance: 128;
+    
+    [zoom>=14][scalerank<=1] {
+      text-name: @name;
+    }
+
+    [zoom>=15][scalerank<=2] {
+      text-size: 18;
+    }
+    
+    [zoom>=15][scalerank<=2] {
+      text-name: @name;
+    }
   }
 }

@@ -9,16 +9,15 @@
   text-transform: uppercase;
   // text-fill: rgba(95, 79, 42, 0.85); // fade(#5f4f2a, 85%);
   text-name: '';
-  // text-face-name: "Frutiger LT 55 Roman Regular";
-  // text-face-name: "Please write me a song Medium";
   // text-face-name: "Boziene Boziene";
-  text-face-name: "LA Headlights BTN Cond Bold";
+  // text-face-name: "LA Headlights BTN Cond Bold";
+  text-face-name: "Supernett cn Light";
   text-placement: line;
-  text-spacing: 100;
+  // text-spacing: 100;
   text-min-distance: 100;
   text-avoid-edges: true;
   text-dy: -7;
-  text-size: 13;
+  text-size: 12;
 
   //
   // separated highways
@@ -66,12 +65,11 @@
   // local roads
   //
   [class='street'],
-  [class='street_limited'],
   [class='service'],
   {
     [zoom>=17] {
       text-name: [name];
-      text-halo-fill: rgba(221, 221, 221, 0.85);
+      text-halo-fill: @road_halo;
       text-halo-radius: 1.5;
       text-spacing: 400;
 

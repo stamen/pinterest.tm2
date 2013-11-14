@@ -19,8 +19,6 @@ Map {
     line-color: #ccc;
     line-gamma: 20;
     line-width: 2;
-    line-simplify-algorithm: visvalingam-whyatt;
-    line-simplify: 5;
     image-filters: agg-stack-blur(2, 2);
   }
   
@@ -28,8 +26,6 @@ Map {
     line-color: #5e7884;
     line-gamma: 5;
     line-width: 1.5;
-    line-simplify-algorithm: visvalingam-whyatt;
-    line-simplify: 5;
     image-filters: agg-stack-blur(1, 1);
   }
   
@@ -37,14 +33,22 @@ Map {
     line-color: #4d73a0;
     line-gamma: 5;
     line-width: 1.5;
-    line-simplify-algorithm: visvalingam-whyatt;
-    line-simplify: 5;
-    // line-smooth: 1;
   }
 
-  polygon-pattern-file: url("images/blue_paper_512.png");
+  polygon-pattern-file: url("images/blue_paper3.png");
   
-  [zoom>=9] {
+  [zoom>=6] {
+    ::shadow,
+    ::outline_blur,
+    ::outline {
+      line-gamma: 10;
+      line-width: 0.5;
+    }
+    
+    polygon-pattern-gamma: 0;
+  }
+  
+  [zoom>=16] {
   ::shadow {
       line-simplify-algorithm: visvalingam-whyatt;
       line-simplify: 5;
@@ -81,54 +85,89 @@ Map {
 // Political boundaries //
 
 #admin {
-  [zoom<=9] {
-    // Countries
-    [admin_level=2] {
-      ::blur {
-        line-join: round;
-        line-width: 1;
-        line-color: #a8a7a5;
-        image-filters: agg-stack-blur(4, 4);
-      }
+  ::outline {
+    line-cap: round;
+    line-join: miter;
+    line-width: 0;
+    line-color: @road_halo;
+  }
+
+  line-join: round;
+
+  // Countries
+  [admin_level=2] {
+    line-width: 2;
+    line-color: #bbb;
     
-      line-width: 1;
-      line-color: #bbb;
+    [zoom>=3] {
+      line-color: #999;
+    }
     
-      [zoom>=3] {
-        line-color: #999;
-      }
+    [zoom>=6] {
+      line-width: 2;
+    }
     
-      [zoom>=6] {
-        line-width: 1;
+    [zoom>=7] {
+      ::outline {
+        line-width: 5;
       }
+
+      line-color: #888;
+    }
     
-      [zoom>=8] {
-        line-width: 4;
+    [zoom>=8] {
+      ::outline {
+        line-width: 10;
       }
-    
-      [disputed=1] {
-        line-dasharray: 4,4;
-      }
+
+      line-width: 2.5;
+      // line-dasharray: 12,4;
     }
   
-    /*
-    // States / Provices / Subregions
-    [admin_level>=3] {
-      line-width: 0.4;
+    [disputed=1] {
+      line-dasharray: 4,4;
+    }
+  }
+  
+  // States / Provices / Subregions
+  [admin_level=3],
+  [admin_level=4], {
+    line-width: 0;
+    
+    [zoom>=4] {
+      line-color: #bbb;
+      line-width: 1;
       line-dasharray: 10,3,3,3;
+      // line-simplify: 10;
+      
       [zoom>=6] { line-width: 1; }
-      [zoom>=8] { line-width: 2; }
+      
+      [zoom>=7] {
+        ::outline {
+          line-width: 2;
+          line-dasharray: 10,3,3,3;
+        }
+      }
+
+      [zoom>=8] {
+        ::outline {
+          line-width: 3.5;
+          line-dasharray: 10,3,3,3;
+        }
+        
+        line-width: 2;
+      }
+      
       [zoom>=12] { line-width: 3; }
     }
-    */
+  }
 
-    [maritime=1] {
-      ::blur {
-        line-width: 0;
-      }
+  [maritime=1][admin_level>=0][zoom>=0] {
+    ::outline {
       line-width: 0;
-      line-color: transparent;
     }
+
+    line-width: 0;
   }
 }
 
@@ -166,13 +205,13 @@ Map {
   polygon-fill: transparent;
   polygon-comp-op: multiply;
   line-width: 0;
-  
+
   [zoom>=8] {
-    polygon-opacity: 1;
+    polygon-opacity: 0.4;
   }
   
   [zoom>=9] {
-    polygon-opacity: 0.8;
+    polygon-opacity: 0.5;
   }
   
   [zoom>=10] {
@@ -301,8 +340,10 @@ Map {
     }
   }
   
+  [class='parking'],
   [class='industrial'] {
     // TODO
+    line-width: 0;
     // polygon-fill: #f0f;
   }
 }
@@ -340,39 +381,6 @@ Map {
 
 /*
 // Places //
-
-#country_label[zoom>=3] {
-  text-name: @name;
-  text-face-name: 'Source Sans Pro Bold';
-  text-wrap-width: 100;
-  text-wrap-before: true;
-  text-fill: #66a;
-  text-size: 12;
-  [zoom>=3][scalerank=1],
-  [zoom>=4][scalerank=2],
-  [zoom>=5][scalerank=3],
-  [zoom>=6][scalerank>3] {
-    text-size: 14;
-  }
-  [zoom>=4][scalerank=1],
-  [zoom>=5][scalerank=2],
-  [zoom>=6][scalerank=3],
-  [zoom>=7][scalerank>3] {
-    text-size: 16;
-  }
-}
-
-#country_label_line {
-  line-color: #324;
-  line-opacity: 0.05;
-}
-
-// Water Features //
-
-#water {
-  polygon-fill: @water;
-  polygon-gamma: 0.6;
-}
 
 #water_label {
   [zoom<=13],  // automatic area filtering @ low zooms
