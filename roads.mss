@@ -216,6 +216,44 @@
       }
       */
     }
+    
+    [class='major_rail'],
+    [class='minor_rail'] {
+      [zoom>=12] {
+        line-width: 0.25;
+        line-color: #ccc;
+      }
+      
+      [zoom>=15] {
+        line-color: #aaa;
+      }
+      
+      [zoom>=16] {
+        ::left {
+          line-offset: 0.25;
+          line-color: #aaa;
+          line-dasharray: 1, 5;
+        }
+        
+        line-width: 0.5;
+      }
+      
+      [zoom>=17] {
+        ::left {
+          line-offset: 0.5;
+          line-dasharray: 1, 7.5;
+        }
+
+        line-width: 0.75;
+      }
+      
+      [zoom>=18] {
+        ::left {
+          line-offset: 1;
+          line-dasharray: 1, 10;
+        }
+      }
+    }
   }
 }
 
@@ -233,6 +271,28 @@
       line-color: lighten(#aacacc, 10%);
       line-width: 2.5;
     }
+    
+    [class='major_rail'],
+    [class='minor_rail'] {
+      [zoom>=12] {
+        line-width: 0.5;
+        line-color: #ccc;
+        line-opacity: 0.2;
+      }
+      
+      [zoom>=15] {
+        line-color: #aaa;
+      }
+      
+      [zoom>=16] {
+        line-width: 0.75;
+      }
+      
+      [zoom>=17] {
+        line-width: 1;
+      }
+    }
+
   }
 }
 */
@@ -241,6 +301,12 @@
   ::shadow {
     line-width: 0;
     line-cap: butt;
+  }
+  
+  ::outline {
+    line-color: @road_halo;
+    line-width: 0;
+    line-cap: square;
   }
   
   ::left {
@@ -454,6 +520,57 @@
         
         line-width: 7;
         line-opacity: 0.3;
+      }
+    }
+    
+    [class='major_rail'],
+    [class='minor_rail'] {
+      [zoom>=12] {
+        ::outline {
+          line-width: 2;
+        }
+      
+        line-width: 0.25;
+        line-color: #ccc;
+      }
+      
+      [zoom>=15] {
+        line-color: #aaa;
+      }
+      
+      [zoom>=16] {
+        ::outline {
+          line-width: 4;
+        }
+
+        ::left {
+          line-width: 1;
+          line-offset: 0.25;
+          line-color: #aaa;
+          line-dasharray: 1, 5;
+        }
+        
+        line-width: 0.5;
+      }
+      
+      [zoom>=17] {
+        ::left {
+          line-offset: 0.5;
+          line-dasharray: 1, 7.5;
+        }
+
+        line-width: 0.75;
+      }
+      
+      [zoom>=18] {
+        ::outline {
+          line-width: 8;
+        }
+
+        ::left {
+          line-offset: 1;
+          line-dasharray: 1, 10;
+        }
       }
     }
   }
