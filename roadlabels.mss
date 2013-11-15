@@ -39,6 +39,14 @@
   {
     [zoom>=15] {
       text-name: [name];
+      
+      [len>1000] {
+        text-character-spacing: 0;
+      }
+      
+      [len<250] {
+        text-character-spacing: 0.6;
+      }
     }
     
     [zoom>=16] {

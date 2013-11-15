@@ -3167,6 +3167,38 @@
 
 <Style name="road_label" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'main') and ([len] &lt; 250)</Filter>
+    <TextSymbolizer character-spacing="0.6" size="12" halo-radius="2" dy="-8" fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" fontset-name="fontset-2" placement="line" minimum-distance="100" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'main') and ([len] &lt; 250)</Filter>
+    <TextSymbolizer character-spacing="0.6" fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" fontset-name="fontset-2" placement="line" minimum-distance="100" minimum-padding="1" dy="-6" size="11" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'main') and ([len] &lt; 250)</Filter>
+    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="0.5" fontset-name="fontset-2" placement="line" minimum-distance="100" minimum-padding="1" dy="-6" size="11" ><![CDATA[]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'main') and ([len] &gt; 1000)</Filter>
+    <TextSymbolizer character-spacing="0" size="12" halo-radius="2" dy="-8" fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" fontset-name="fontset-2" placement="line" minimum-distance="100" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'main') and ([len] &gt; 1000)</Filter>
+    <TextSymbolizer character-spacing="0" fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" fontset-name="fontset-2" placement="line" minimum-distance="100" minimum-padding="1" dy="-6" size="11" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'main') and ([len] &gt; 1000)</Filter>
+    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="0.5" fontset-name="fontset-2" placement="line" minimum-distance="100" minimum-padding="1" dy="-6" size="11" ><![CDATA[]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([class] = 'street')</Filter>
     <TextSymbolizer halo-fill="#f5f2e7" halo-radius="1.5" dy="-6" size="11" character-spacing="0.5" fill="#344e6c" fontset-name="fontset-2" placement="line" minimum-distance="100" minimum-padding="1" ><![CDATA[[name]]]></TextSymbolizer>
