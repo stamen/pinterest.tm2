@@ -2,7 +2,7 @@
 //@name: [name_en];
 @name: [name];
 // Common Colors //
-@water: #e2e1e2;
+@water: #7ba4ae;
 // @water: #f0f;
 @park: #cec;
 // @park: #96e296;
