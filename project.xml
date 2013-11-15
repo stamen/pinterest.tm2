@@ -30,6 +30,10 @@
   <Font face-name="Supernett cn Light"/>
   <Font face-name="Arial Unicode MS Regular"/>
 </FontSet>
+<FontSet name="fontset-4">
+  <Font face-name="Frutiger LT 45 Light Regular"/>
+  <Font face-name="Arial Unicode MS Regular"/>
+</FontSet>
 <Style name="landuse" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -3191,41 +3195,41 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([class] = 'street')</Filter>
-    <TextSymbolizer halo-fill="#f5f2e7" halo-radius="1.5" spacing="400" size="11" fill="#344e6c" character-spacing="1" text-transform="uppercase" fontset-name="fontset-3" placement="line" minimum-distance="100" avoid-edges="true" dy="-7" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer halo-fill="#f5f2e7" halo-radius="1.5" spacing="400" dy="-6" size="11" character-spacing="0.5" fill="#344e6c" fontset-name="fontset-4" placement="line" minimum-distance="100" avoid-edges="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'street')</Filter>
-    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="1" text-transform="uppercase" fontset-name="fontset-3" placement="line" minimum-distance="100" avoid-edges="true" dy="-7" size="12" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="0.5" fontset-name="fontset-4" placement="line" minimum-distance="100" avoid-edges="true" dy="-6" size="11" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([class] = 'service')</Filter>
-    <TextSymbolizer halo-fill="#f5f2e7" halo-radius="1.5" spacing="400" size="11" fill="#344e6c" character-spacing="1" text-transform="uppercase" fontset-name="fontset-3" placement="line" minimum-distance="100" avoid-edges="true" dy="-7" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer halo-fill="#f5f2e7" halo-radius="1.5" spacing="400" dy="-6" size="11" character-spacing="0.5" fill="#344e6c" fontset-name="fontset-4" placement="line" minimum-distance="100" avoid-edges="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'service')</Filter>
-    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="1" text-transform="uppercase" fontset-name="fontset-3" placement="line" minimum-distance="100" avoid-edges="true" dy="-7" size="12" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="0.5" fontset-name="fontset-4" placement="line" minimum-distance="100" avoid-edges="true" dy="-6" size="11" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <TextSymbolizer size="14" halo-radius="2.5" character-spacing="1.25" dy="-8" fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" fontset-name="fontset-3" placement="line" minimum-distance="100" avoid-edges="true" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" character-spacing="0" halo-radius="2" dy="-8" fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" fontset-name="fontset-4" placement="line" minimum-distance="100" avoid-edges="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="1" text-transform="uppercase" fontset-name="fontset-3" placement="line" minimum-distance="100" avoid-edges="true" dy="-7" size="12" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="0.5" fontset-name="fontset-4" placement="line" minimum-distance="100" avoid-edges="true" dy="-6" size="11" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="1" text-transform="uppercase" fontset-name="fontset-3" placement="line" minimum-distance="100" avoid-edges="true" dy="-7" size="12" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="0.5" fontset-name="fontset-4" placement="line" minimum-distance="100" avoid-edges="true" dy="-6" size="11" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="1" text-transform="uppercase" fontset-name="fontset-3" placement="line" minimum-distance="100" avoid-edges="true" dy="-7" size="12" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer fill="#344e6c" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="2" character-spacing="0.5" fontset-name="fontset-4" placement="line" minimum-distance="100" avoid-edges="true" dy="-6" size="11" ><![CDATA[]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="road_label"

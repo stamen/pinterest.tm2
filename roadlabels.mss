@@ -5,22 +5,17 @@
   // text-halo-fill: rgba(230, 230, 230, 0.85);
   text-halo-fill: @halo;
   text-halo-radius: 2;
-  text-character-spacing: 1;
-  text-transform: uppercase;
+  text-character-spacing: 0.5;
+  // text-transform: uppercase;
   // text-fill: rgba(95, 79, 42, 0.85); // fade(#5f4f2a, 85%);
   text-name: '';
-  // text-face-name: "Boziene Boziene";
-  // text-face-name: "LA Headlights BTN Cond Bold";
-
-  //original font:
-  text-face-name: "Supernett cn Light", "Arial Unicode MS Regular";
- // text-face-name: "Arial Unicode MS Regular";
+  text-face-name: "Frutiger LT 45 Light Regular", "Arial Unicode MS Regular";
   text-placement: line;
   // text-spacing: 100;
   text-min-distance: 100;
   text-avoid-edges: true;
-  text-dy: -7;
-  text-size: 12;
+  text-dy: -6;
+  text-size: 11;
 
   //
   // separated highways
@@ -55,12 +50,10 @@
     }
     
     [zoom>=16] {
-      text-size: 14;
-      text-halo-radius: 2.5;
-      text-character-spacing: 1.25;
+      text-size: 12;
+      text-character-spacing: 0;
+      text-halo-radius: 2;
       text-dy: -8;
-      // text-spacing: 400;
-      // text-min-distance: 400;
     }
   }
 
@@ -75,8 +68,10 @@
       text-halo-fill: @road_halo;
       text-halo-radius: 1.5;
       text-spacing: 400;
+      text-dy: -6;
 
       text-size: 11;
+      text-character-spacing: 0.5;
     }
   }
 }
