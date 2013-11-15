@@ -621,12 +621,7 @@
 
 <Style name="water" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <PolygonPatternSymbolizer simplify-algorithm="visvalingam-whyatt" simplify="5" gamma="0" file="images/blue_paper3.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
     <PolygonPatternSymbolizer gamma="0" file="images/blue_paper3.png" />
   </Rule>
   <Rule>
@@ -636,12 +631,7 @@
 </Style>
 <Style name="water-outline" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="2" simplify-algorithm="visvalingam-whyatt" simplify="5" stroke-gamma="10" stroke="#4d73a0" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
     <LineSymbolizer stroke-width="2" stroke-gamma="10" stroke="#4d73a0" />
   </Rule>
   <Rule>
@@ -656,12 +646,7 @@
 </Style>
 <Style name="water-outline_blur" filter-mode="first" image-filters="agg-stack-blur(1,1)">
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="1.5" simplify-algorithm="visvalingam-whyatt" simplify="5" stroke-gamma="10" stroke="#5e7884" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
     <LineSymbolizer stroke-width="1.5" stroke-gamma="10" stroke="#5e7884" />
   </Rule>
   <Rule>
@@ -676,12 +661,7 @@
 </Style>
 <Style name="water-shadow" filter-mode="first" image-filters="agg-stack-blur(2,2)">
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <LineSymbolizer simplify-algorithm="visvalingam-whyatt" simplify="5" stroke-gamma="10" stroke-width="0.5" stroke="#cccccc" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
     <LineSymbolizer stroke-gamma="10" stroke-width="0.5" stroke="#cccccc" />
   </Rule>
   <Rule>
