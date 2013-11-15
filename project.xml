@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Map data © OpenStreetMap contributors]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">172.62027740478516,-43.55949595288937,11</Parameter>
+  <Parameter name="center">-79.024658203125,42.61779143282346,6</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -290,137 +290,137 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="1.25" stroke-opacity="1" stroke="#87b78c" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="1.25" stroke-opacity="1" stroke="#87b78c" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="0.75" stroke-opacity="1" stroke="#87b78c" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="0.5" stroke-opacity="0.75" stroke="#87b78c" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="0.25" stroke="#87b78c" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="0.8" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="0.6" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="0.5" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="0.4" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#cceecc" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="1.25" stroke-opacity="1" stroke="#87b78c" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="1.25" stroke-opacity="1" stroke="#87b78c" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="0.75" stroke-opacity="1" stroke="#87b78c" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="0.5" stroke-opacity="0.75" stroke="#87b78c" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="1" comp-op="multiply" />
     <LineSymbolizer stroke-width="0.25" stroke="#87b78c" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="0.8" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="0.6" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="0.5" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" fill-opacity="0.4" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
   <Rule>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#cceecc" comp-op="multiply" />
     <LineSymbolizer stroke="#87b78c" stroke-width="0" />
   </Rule>
@@ -661,7 +661,7 @@
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-gamma="10" stroke="#5e7884" stroke-width="0.5" />
+    <LineSymbolizer stroke-width="2" stroke-gamma="10" stroke="#5e7884" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -1854,58 +1854,58 @@
 <Style name="admin" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#bbbbbb" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#bbbbbb" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
@@ -1946,106 +1946,106 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="2.75" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="2.5" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="2.25" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="2" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke="#959595" stroke-width="1.5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="1.25" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="1.5" stroke="#bbbbbb" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke="#bbbbbb" stroke-width="1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="2.75" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="2.5" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="2.25" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="2" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke="#959595" stroke-width="1.5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="1.25" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="1.5" stroke="#bbbbbb" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke="#bbbbbb" stroke-width="1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>

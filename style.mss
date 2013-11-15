@@ -45,12 +45,15 @@ Map {
     ::outline {
       line-gamma: 10;
     }
+    
+    ::outline_blur {
+      line-width: 2;
+    }
   }
   
   [zoom>=14] {
     ::outline_blur {
       line-width: 1.5;
-      // line-smooth: 1;
     }
     
     ::outline {
