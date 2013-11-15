@@ -11,7 +11,7 @@
 
 Map {
   font-directory: url("fonts/");
-  background-image: url("images/ricepaper_30.png");
+  background-image: url("images/ricepaper_15.png");
 }
 
 #water {
