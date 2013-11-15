@@ -275,25 +275,26 @@
     text-size: 21;
     text-wrap-width: 100;
     text-wrap-before: true;
+    text-placement-type: simple;
     
     [zoom>=10] {
       text-name: @name;
-      text-size: 16;
+      text-placements: "X,16,15,14";
       text-character-spacing: 1.5;
       text-min-distance: 100;
-      text-min-padding: 1;
     }
 
     [zoom>=11] {
       text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
       text-fill: @label;
-      text-size: 24;
-      text-character-spacing: 2.5;
+      text-placements: "X,24,23,22,21,20";
+      text-character-spacing: 2;
     }
     
     [zoom>=12] {
       text-name: @name;
       text-size: 30;
+      text-placements: "X,30,28,26,24";
       text-line-spacing: -8;
       text-min-distance: 10;
     }
