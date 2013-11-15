@@ -10,12 +10,24 @@
     line-width: 0;
   }
 
-  // line-width: 0.25;
-  // line-color: red;
-  
   ['mapnik::geometry_type'=2] {
     [class='motorway'] {
-      [zoom>=8] {
+      [zoom>=5] {
+        ::outline {
+          line-width: 2;
+          line-color: @road_halo;
+        }
+
+        line-color: @road;
+        line-width: 1;
+      }
+
+      [zoom>=6] {
+        line-color: @road;
+        line-width: 1.25;
+      }
+
+      [zoom>=7] {
         ::outline {
           line-width: 4;
           line-color: @road_halo;
@@ -76,7 +88,7 @@
     }
     
     [class='main'] {
-      [zoom>=10] {
+      [zoom>=7] {
         ::outline {
           line-width: 1.5;
           line-color: @road_halo;

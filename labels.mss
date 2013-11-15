@@ -25,8 +25,15 @@
   
   [zoom=4] {
     text-min-distance: 2;
+    
+    [scalerank=1] {
+      text-size: 24;
+      text-character-spacing: 2.5;
+      text-line-spacing: -5;
+    }
   }
-  
+
+/*
   [zoom>=3][scalerank=1],
   [zoom>=4][scalerank=2],
   [zoom>=5][scalerank=3],
@@ -42,6 +49,7 @@
     text-character-spacing: 2.5;
     text-size: 17;
   }
+  */
   
   [zoom>=5][scalerank=1] {
     text-fill: @primary_label;
@@ -64,10 +72,10 @@
   text-name: '';
   text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
   text-transform: uppercase;
-  text-fill: lighten(@label, 10%);
+  text-fill: lighten(@label, 15%);
   text-halo-fill: @halo;
   text-halo-radius: 2;
-  text-size: 12;
+  text-size: 14;
   text-character-spacing: 1;
   text-line-spacing: -2;
   text-wrap-width: 100;
@@ -79,9 +87,10 @@
   
   [zoom>=6] {
     text-size: 22;
-    text-halo-radius: 2.5;
-    text-character-spacing: 2;
-    text-line-spacing: -4;
+    text-halo-radius: 3;
+    text-character-spacing: 2.5;
+    text-line-spacing: -5;
+    text-min-distance: 5;
   }
   
   [zoom>=7] {
@@ -101,8 +110,7 @@
     // text-fill: white;
     
     line-color: #4d73a0;
-    image-filters: agg-stack-blur(1, 1);
-    // line-opacity: 0.05;
+    line-opacity: 0.5;
   }
 }
 
@@ -122,25 +130,40 @@
   
   [type='city'] {
     text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
-    text-character-spacing: 4;
     text-fill: lighten(@label, 20%);
     text-halo-radius: 3;
-    text-size: 10;
-    text-line-spacing: -4;
+    text-size: 16;
+    text-line-spacing: -5;
+    text-character-spacing: 2;
     text-wrap-width: 100;
     text-wrap-before: true;
+    
+    [zoom>=6] {
+      [scalerank<=3] {
+        text-name: @name;
+        text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+        text-fill: @primary_label;
+        text-min-distance: 25;
+      }
+    }
+
+    [zoom>=7] {
+      [scalerank<=3] {
+        text-name: @name;
+        text-size: 21;
+      }
+    }
     
     [zoom>=8] {
       [scalerank<=6] {
         text-name: @name;
-        // text-name: [ldir] + ' / ' + @name;
+        text-fill: lighten(@label, 20%);
   
         text-size: 21;
         text-character-spacing: 2;
         text-line-spacing: -5;
       
         text-min-distance: 50;
-        // debug-mode: collision;
       }
       
       [scalerank<=4] {
@@ -265,14 +288,12 @@
     text-wrap-width: 100;
     text-wrap-before: true;
 
-    [zoom>=10] {
-      text-name: @name;
-      text-size: 12;
-      text-character-spacing: 1.5;
-    }
-    
     [zoom>=11] {
+      text-name: @name;
       text-size: 15;
+      text-character-spacing: 1.5;
+      text-min-distance: 100;
+      text-min-padding: 1;
     }
     
     [zoom>=12] {
