@@ -407,5 +407,6 @@
     text-size: 16;
     text-wrap-width: 60;
     text-wrap-before: true;
+    text-min-padding: 1;
   }
 }

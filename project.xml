@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Map data © OpenStreetMap contributors]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-122.47010350227353,37.80518116749381,17</Parameter>
+  <Parameter name="center">-122.46047973632812,37.801103690609615,11</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -3121,30 +3121,30 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([area] &gt; 500000)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([area] &gt; 500000)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-2" fill="#7ba4ae" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.25" size="16" wrap-width="60" wrap-before="true" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="water_label"
