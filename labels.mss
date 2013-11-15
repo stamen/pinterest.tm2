@@ -175,6 +175,9 @@
     text-character-spacing: 2;
     text-wrap-width: 100;
     text-wrap-before: true;
+    text-min-padding: 1;
+    text-placement-type: simple;
+    text-placements: "X";
     
     [zoom>=6] {
       [scalerank<=3] {
@@ -225,7 +228,6 @@
       }
       
       [scalerank<=10] {
-        // text-name: [scalerank] + ': ' + [name_en];
         text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
         text-size: 24;
       }
@@ -250,6 +252,7 @@
 
       [scalerank<=10] {
         text-size: 36;
+        text-placements: "X,36,35,34,33,32";
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
@@ -257,6 +260,7 @@
       
       [scalerank<=5] {
         text-size: 40;
+        text-placements: "X,40,38,36,34,32";
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
