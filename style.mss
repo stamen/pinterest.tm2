@@ -1,8 +1,8 @@
 //Languages: name (local), name_en, name_fr, name_es, name_de
-//@name: [name_en];
-@name: [name];
+@name: [name_en];
+//@name: [name];
 // Common Colors //
-@water: #7ba4ae;
+@water: #e2e1e2;
 // @water: #f0f;
 @park: #cec;
 // @park: #96e296;
@@ -48,6 +48,28 @@ Map {
     polygon-pattern-gamma: 0;
   }
   
+  [zoom>=16] {
+  ::shadow {
+      line-simplify-algorithm: visvalingam-whyatt;
+      line-simplify: 5;
+    }
+  
+    ::outline_blur {
+      line-simplify-algorithm: visvalingam-whyatt;
+      line-simplify: 5;
+    }
+  
+    ::outline {
+      line-simplify-algorithm: visvalingam-whyatt;
+      line-simplify: 5;
+      // line-smooth: 1;
+    }
+    
+    // polygon-pattern-smooth: 1;
+    polygon-pattern-simplify-algorithm: visvalingam-whyatt;
+    polygon-pattern-simplify: 5;
+  }
+
   [zoom>=14] {
     ::outline_blur {
       line-width: 1.5;

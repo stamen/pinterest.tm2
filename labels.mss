@@ -291,16 +291,17 @@
   [type='suburb'],
   [type='neighbourhood'] {
     //new type options here
-    text-face-name: "Supernett cn Regular", "Arial Unicode MS Regular";
-   // text-face-name: "Roboto Condensed";
+    //text-face-name: "Supernett cn Regular", "Arial Unicode MS Regular";
+    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
     //text-face-name: "Supernett cn Bold";
    // text-face-name: "Supernett cn Light";
     text-fill: lighten(@label, 10%);
-    text-character-spacing: 0.5;
+    text-character-spacing: 1;
     text-halo-radius: 2.5;
-    text-size: 20;
-    text-line-spacing: -7;
-    text-wrap-width: 100;
+    //text-size: 20;
+    text-size: 12;
+    text-line-spacing: -2;
+    text-wrap-width: 60;
     text-wrap-before: true;
     text-avoid-edges: true;
     text-min-distance: 5;
@@ -316,9 +317,9 @@
       [type='hamlet'] {
         text-name: @name;
       }
-      
-      text-size: 24;
-      text-line-spacing: -9;
+      text-size: 17;
+     // text-size: 24;
+      text-line-spacing: -4;
       text-halo-radius: 3;
     }
   }
