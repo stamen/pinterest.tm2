@@ -161,7 +161,7 @@
   text-fill: @label;
   text-halo-fill: @halo;
   text-transform: uppercase;
-  text-min-padding: 2;
+  text-min-padding: 1;
   
   [type='city'][zoom>=6][zoom<15] {
     text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
@@ -274,7 +274,7 @@
       
       [scalerank<=5] {
         text-size: 30;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,30,29,28,27,26,25,24";
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,30,29,28,27,26,25,24,20,15";
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
@@ -335,6 +335,7 @@
     text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
     text-dx: 2;
     text-dy: 2;
+    text-min-padding: 1.4; // Prebbleton, NZ (near Christchurch)
 
     [zoom>=11] {
       text-name: @name;
