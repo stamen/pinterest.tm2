@@ -1,14 +1,13 @@
-//Languages: name (local), name_en, name_fr, name_es, name_de
+// Languages: name (local), name_en, name_fr, name_es, name_de
 @name: [name_en];
-//@name: [name];
-// Common Colors //
-// @water: #7ba4ae;
-@water: #719399;
-// @water: #f0f;
-@park: #cec;
-// @park: #96e296;
-// @park: mix(#cec, #96e296, 70);
 
+// Common Colors //
+@water: #719399;
+@park: #cec;
+
+@road_font: "Frutiger LT 45 Light Regular", "Arial Unicode MS Regular";
+@solid_label_font: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+@sketch_label_font: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
 
 Map {
   font-directory: url("fonts/");

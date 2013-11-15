@@ -10,7 +10,7 @@
   }
 
   text-name: @name;
-  text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+  text-face-name: @solid_label_font;
   text-transform: uppercase;
   text-wrap-width: 100;
   text-wrap-before: true;
@@ -67,14 +67,14 @@
   [zoom>=5] {
     [scalerank=1] {
       text-fill: @primary_label;
-      text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+      text-face-name: @sketch_label_font;
       text-size: 30;
       text-placements: "X,W,E,N,S,NW,NE,SE,SW,30,29,28,27,26";
       text-line-spacing: -8;
     }
 
     [scalerank=2] {
-      text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+      text-face-name: @sketch_label_font;
       text-size: 24;
       text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
     }
@@ -93,7 +93,7 @@
   }
   
   [zoom>=6][scalerank=1] {
-    text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+    text-face-name: @sketch_label_font;
     text-size: 36;
   }
   
@@ -104,7 +104,7 @@
 
 #state_label {
   text-name: '';
-  text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+  text-face-name: @solid_label_font;
   text-transform: uppercase;
   text-fill: lighten(@label, 15%);
   text-halo-fill: @halo;
@@ -157,14 +157,14 @@
   }
 
   text-name: '';
-  text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+  text-face-name: @solid_label_font;
   text-fill: @label;
   text-halo-fill: @halo;
   text-transform: uppercase;
   text-min-padding: 1;
   
   [type='city'][zoom>=6][zoom<15] {
-    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+    text-face-name: @solid_label_font;
     text-fill: lighten(@label, 20%);
     text-halo-radius: 3;
     text-size: 16;
@@ -180,7 +180,7 @@
     [zoom>=6] {
       [scalerank<=3] {
         text-name: @name;
-        text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+        text-face-name: @sketch_label_font;
         text-fill: @primary_label;
         text-min-distance: 25;
       }
@@ -214,7 +214,7 @@
       }
       
       [scalerank<=4] {
-        text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+        text-face-name: @sketch_label_font;
         text-fill: @primary_label;
         text-size: 20;
         text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
@@ -237,7 +237,7 @@
       }
       
       [scalerank<=10] {
-        text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+        text-face-name: @sketch_label_font;
         text-size: 18;
         text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
       }
@@ -254,7 +254,7 @@
     }
     
     [zoom>=11] {
-      text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+      text-face-name: @sketch_label_font;
       text-fill: @primary_label;
 
       text-size: 20;
@@ -283,7 +283,7 @@
   }
 
   [type='town'][zoom<=17] {
-    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+    text-face-name: @solid_label_font;
     text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
     text-size: 16;
@@ -302,7 +302,7 @@
     }
 
     [zoom>=11] {
-      text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
+      text-face-name: @sketch_label_font;
       text-fill: @label;
       text-size: 18;
       text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
@@ -324,7 +324,7 @@
   }
 
   [type='village'] {
-    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+    text-face-name: @solid_label_font;
     text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
     text-size: 15;
@@ -356,7 +356,7 @@
   [type='hamlet'],
   [type='suburb'],
   [type='neighbourhood'] {
-    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+    text-face-name: @solid_label_font;
     text-fill: lighten(@label, 15%);
     text-character-spacing: 1;
     text-halo-radius: 2.5;
@@ -394,8 +394,7 @@
   [type='Park'] {
     text-name: '';
     text-transform: uppercase;
-    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
-    // text-fill: darken(#9ae89a, 35%);
+    text-face-name: @solid_label_font;
     text-fill: #80aa80;
     text-halo-fill: mix(@park, @halo, 50);
     text-halo-radius: 1.8;
@@ -437,7 +436,7 @@
   [zoom>=16][area>10000],
   [zoom>=17] {
     text-name: @name;
-    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
+    text-face-name: @solid_label_font;
     text-fill: @water;
     text-halo-fill: @halo;
     text-halo-radius: 1.8;

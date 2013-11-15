@@ -4,7 +4,7 @@
   text-halo-radius: 2;
   text-character-spacing: 0.5;
   text-name: '';
-  text-face-name: "Frutiger LT 45 Light Regular", "Arial Unicode MS Regular";
+  text-face-name: @road_font;
   text-placement: line;
   text-min-distance: 100;
   text-min-padding: 1;
