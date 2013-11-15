@@ -1,19 +1,13 @@
 #road_label {
-  // text-fill: #5a5c5b;
-  // text-fill: #333;
   text-fill: darken(#4d73a0, 15%);
-  // text-halo-fill: rgba(230, 230, 230, 0.85);
   text-halo-fill: @halo;
   text-halo-radius: 2;
   text-character-spacing: 0.5;
-  // text-transform: uppercase;
-  // text-fill: rgba(95, 79, 42, 0.85); // fade(#5f4f2a, 85%);
   text-name: '';
   text-face-name: "Frutiger LT 45 Light Regular", "Arial Unicode MS Regular";
   text-placement: line;
-  // text-spacing: 100;
   text-min-distance: 100;
-  text-avoid-edges: true;
+  text-min-padding: 1;
   text-dy: -6;
   text-size: 11;
 
@@ -45,8 +39,6 @@
   {
     [zoom>=15] {
       text-name: [name];
-      // text-halo-fill: rgba(221, 221, 221, 0.85);
-
     }
     
     [zoom>=16] {
@@ -67,7 +59,6 @@
       text-name: [name];
       text-halo-fill: @road_halo;
       text-halo-radius: 1.5;
-      text-spacing: 400;
       text-dy: -6;
 
       text-size: 11;
