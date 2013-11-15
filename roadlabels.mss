@@ -11,7 +11,10 @@
   text-name: '';
   // text-face-name: "Boziene Boziene";
   // text-face-name: "LA Headlights BTN Cond Bold";
-  text-face-name: "Supernett cn Light";
+
+  //original font:
+  text-face-name: "Supernett cn Light", "Arial Unicode MS Regular";
+ // text-face-name: "Arial Unicode MS Regular";
   text-placement: line;
   // text-spacing: 100;
   text-min-distance: 100;

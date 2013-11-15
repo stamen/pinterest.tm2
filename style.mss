@@ -1,6 +1,6 @@
-// Languages: name (local), name_en, name_fr, name_es, name_de
-@name: [name_en];
-
+//Languages: name (local), name_en, name_fr, name_es, name_de
+//@name: [name_en];
+@name: [name];
 // Common Colors //
 @water: #e2e1e2;
 // @water: #f0f;
@@ -399,12 +399,12 @@ Map {
   
   [zoom>=16] {
     line-width: 0.5;
-    building-fill: #f9f9f9;
-    building-height: 1;
+  //  building-fill: #f9f9f9;
+//    building-height: 1;
   }
   
   [zoom>=17] {
-    line-width: 1.5;
+    
     building-fill: #f9f9f9;
     building-height: 1.5;
   }
