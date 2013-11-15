@@ -373,15 +373,15 @@
   [type='Park'] {
     text-name: '';
     text-transform: uppercase;
-    text-face-name: "Supernett cn Light", "Arial Unicode MS Regular";
+    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
     text-fill: darken(#9ae89a, 40%);
     text-halo-fill: mix(@park, @halo, 50);
     text-halo-radius: 1.8;
-    text-size: 16;
-    text-wrap-width: 100;
+    text-size: 11;
+    text-wrap-width: 60;
     text-wrap-before: true;
-    text-line-spacing: -5;
-    text-character-spacing: 1.5;
+    text-line-spacing: -1;
+    // text-character-spacing: 1.5;
     text-min-padding: 1;
     // text-min-distance: 128;
     
@@ -390,7 +390,11 @@
     }
 
     [zoom>=15][scalerank<=2] {
-      text-size: 16;
+      text-wrap-width: 100;
+      text-size: 12;
+      text-halo-radius: 2;
+      text-character-spacing: 1;
+      text-line-spacing: -1;
     }
     
     [zoom>=15][scalerank<=2] {
@@ -405,11 +409,13 @@
   [zoom>=16][area>10000],
   [zoom>=17] {
     text-name: @name;
-    text-face-name: "Supernett cn Italic", "Arial Unicode MS Regular";
+    text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
     text-fill: @water;
     text-halo-fill: @halo;
-    text-halo-radius: 1.25;
-    text-size: 16;
+    text-halo-radius: 1.8;
+    text-size: 13;
+    text-character-spacing: 1;
+    text-line-spacing: -2;
     text-wrap-width: 60;
     text-wrap-before: true;
     text-min-padding: 1;
