@@ -280,6 +280,10 @@
         text-min-distance: 25;
       }
     }
+    
+    [zoom>=13] {
+        text-min-padding: 2; // Boston, MA
+    }
   }
 
   [type='town'][zoom<=17] {
