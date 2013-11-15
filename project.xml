@@ -640,11 +640,11 @@
 <Style name="water" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <PolygonPatternSymbolizer gamma="0" file="images/blue_paper3.png" />
+    <PolygonPatternSymbolizer gamma="0" file="images/blue_paper.png" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <PolygonPatternSymbolizer file="images/blue_paper3.png" />
+    <PolygonPatternSymbolizer file="images/blue_paper.png" />
   </Rule>
 </Style>
 <Style name="water-outline" filter-mode="first">

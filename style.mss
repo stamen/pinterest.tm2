@@ -35,7 +35,7 @@ Map {
     line-width: 0.5;
   }
 
-  polygon-pattern-file: url("images/blue_paper3.png");
+  polygon-pattern-file: url("images/blue_paper.png");
   
   [zoom>=6] {
     ::shadow,
