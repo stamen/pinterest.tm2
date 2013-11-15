@@ -129,12 +129,12 @@ Map {
     }
   }
   
-  // States / Provices / Subregions
+  // States / Provinces / Subregions
   [admin_level=3],
   [admin_level=4], {
     line-width: 0;
     
-    [zoom>=4] {
+    [zoom>=5] {
      // line-color: darken(#bbb, 20%);
      line-color: #bbb;
      line-width: 1;
