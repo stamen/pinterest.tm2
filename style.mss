@@ -2,7 +2,7 @@
 @name: [name_en];
 //@name: [name];
 // Common Colors //
-@water: #e2e1e2;
+@water: #7ba4ae;
 // @water: #f0f;
 @park: #cec;
 // @park: #96e296;
@@ -18,21 +18,21 @@ Map {
   ::shadow {
     line-color: #ccc;
     line-gamma: 20;
-    line-width: 2;
+    line-width: 1;
     image-filters: agg-stack-blur(2, 2);
   }
   
   ::outline_blur {
     line-color: #5e7884;
     line-gamma: 5;
-    line-width: 1.5;
+    line-width: 0.5;
     image-filters: agg-stack-blur(1, 1);
   }
   
   ::outline {
     line-color: #4d73a0;
     line-gamma: 5;
-    line-width: 1.5;
+    line-width: 0.5;
   }
 
   polygon-pattern-file: url("images/blue_paper3.png");
@@ -42,7 +42,6 @@ Map {
     ::outline_blur,
     ::outline {
       line-gamma: 10;
-      line-width: 0.5;
     }
     
     polygon-pattern-gamma: 0;
@@ -186,14 +185,16 @@ Map {
   [type='river'],
   [type='canal'] {
     line-color: @water;
-    line-width: 0.5;
+    line-width: 0;
+    [zoom>=11]  { line-width: 0.5; }
     [zoom>=12] { line-width: 1; }
     [zoom>=14] { line-width: 2; }
     [zoom>=16] { line-width: 3; }
   }
   [type='stream'] {
     line-color: @water;
-    line-width: 0.5;
+    line-width: 0;
+    [zoom>=11]  { line-width: 0.5; }
     [zoom>=14] { line-width: 1; }
     [zoom>=15] { line-width: 1.5; }
     [zoom>=16] { line-width: 2; }
@@ -295,6 +296,7 @@ Map {
 /////\/\/\/\/\/\/////\/\/\/\/\
   [class='wood'] {
     polygon-fill: @park;
+    line-gamma: 12;
     line-color: #6AA874;
     
     [zoom>=13] { 
@@ -369,20 +371,6 @@ Map {
       line-width: 1;
     }
   }
- 
-  
- /* [class='parking'],
-  [class='industrial'] {
-    // TODO
-    polygon-fill: #EFE9DA;
-    polygon-opacity: 0.5;
-    
-    [zoom>=13] {
-      line-color: darken(#efe9da, 20%);
-      line-width: 0.5;
-     }
-  }
- */ 
 }
 
 #building {
@@ -415,21 +403,3 @@ Map {
     building-height: 2;
   } 
 }
-
-/*
-// Places //
-
-#water_label {
-  [zoom<=13],  // automatic area filtering @ low zooms
-  [zoom>=14][area>500000],
-  [zoom>=16][area>10000],
-  [zoom>=17] {
-    text-name: @name;
-    text-face-name: 'Source Sans Pro Italic';
-    text-fill: darken(@water, 30%);
-    text-size: 13;
-    text-wrap-width: 100;
-    text-wrap-before: true;
-  }
-}
-*/

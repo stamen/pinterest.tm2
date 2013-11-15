@@ -276,7 +276,7 @@
       text-name: @name;
       text-size: 16;
       text-character-spacing: 1.5;
-      text-min-distance: 10;
+      text-min-distance: 100;
       text-min-padding: 1;
     }
 
@@ -366,11 +366,8 @@
 
 #poi_label {
   [type='Park'] {
-    // text-name: [localrank] + '/' + [scalerank] + ' ' + @name;
-    // text-name: @name;
     text-name: '';
     text-transform: uppercase;
-   // text-transform: lowercase;
     text-face-name: "Supernett cn Light", "Arial Unicode MS Regular";
     text-fill: darken(#9ae89a, 40%);
     text-halo-fill: mix(@park, @halo, 50);
@@ -380,7 +377,7 @@
     text-wrap-before: true;
     text-line-spacing: -5;
     text-character-spacing: 1.5;
-    // text-avoid-edges: true;
+    text-min-padding: 1;
     // text-min-distance: 128;
     
     [zoom>=14][scalerank<=1] {
@@ -394,5 +391,21 @@
     [zoom>=15][scalerank<=2] {
       text-name: @name;
     }
+  }
+}
+
+#water_label {
+  [zoom<=13],  // automatic area filtering @ low zooms
+  [zoom>=14][area>500000],
+  [zoom>=16][area>10000],
+  [zoom>=17] {
+    text-name: @name;
+    text-face-name: "Supernett cn Italic", "Arial Unicode MS Regular";
+    text-fill: @water;
+    text-halo-fill: @halo;
+    text-halo-radius: 1.25;
+    text-size: 16;
+    text-wrap-width: 60;
+    text-wrap-before: true;
   }
 }
