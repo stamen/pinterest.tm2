@@ -1,6 +1,5 @@
 @primary_label: #cb2027;
 @label: #4d73a0;
-
 @halo: rgba(245, 242, 231, 0.90);
 
 #country_label[zoom>=3] {
@@ -22,18 +21,25 @@
   text-min-distance: 25;
   text-character-spacing: 1;
   text-line-spacing: -2;
+  text-placement-type: simple;
+  text-placements: "X,W,E,N,S,NW,NE,SE,SW,11,10,9";
+  text-dx: 2;
+  text-dy: 2;
+  
   
   [zoom>=3] {
     text-min-distance: 2;
     
     [scalerank=1] {
       text-size: 18;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
 
     [scalerank=2] {
       text-size: 15;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
@@ -42,57 +48,47 @@
   [zoom>=4] {
     [scalerank=1] {
       text-size: 24;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
     
     [scalerank=2] {
       text-size: 18;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
     }
     
     [scalerank=3] {
       text-size: 14;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,14,13,12,11";
     }
   }
-
-/*
-  [zoom>=3][scalerank=1],
-  [zoom>=4][scalerank=2],
-  [zoom>=5][scalerank=3],
-  [zoom>=6][scalerank>3] {
-    text-line-spacing: -4;
-    text-character-spacing: 2;
-    text-size: 20;
-  }
-  [zoom>=4][scalerank=1],
-  [zoom>=5][scalerank=2],
-  [zoom>=6][scalerank=3],
-  [zoom>=7][scalerank>3] {
-    text-character-spacing: 2.5;
-    text-size: 17;
-  }
-  */
   
   [zoom>=5] {
     [scalerank=1] {
       text-fill: @primary_label;
       text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
       text-size: 30;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,30,29,28,27,26";
       text-line-spacing: -8;
     }
 
     [scalerank=2] {
       text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
       text-size: 24;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
     }
     
     [scalerank=3] {
       text-size: 20;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
     }
     
     [scalerank>=4] {
       text-size: 15;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
       text-character-spacing: 1.5;
+      text-min-distance: 15;
     }
   }
   
@@ -115,24 +111,32 @@
   text-halo-radius: 2;
   text-size: 14;
   text-character-spacing: 1;
-  text-line-spacing: -2;
+  text-line-spacing: -4;
   text-wrap-width: 100;
   text-wrap-before: true;
+  text-placement-type: simple;
+  text-placements: "X,W,N,E,S,NW,NE,SE,SW,14,13,12";
+  text-dx: 2;
+  text-dy: 2;
+  text-min-padding: 1;
   
   [zoom>=5] {
     text-name: @name;
+    text-min-distance: 10;
   }
   
   [zoom>=6] {
-    text-size: 22;
+    text-size: 20;
+    text-placements: "X,W,N,E,S,NW,NE,SE,SW,20,19,18,17,16";
     text-halo-radius: 3;
     text-character-spacing: 2.5;
     text-line-spacing: -5;
-    text-min-distance: 5;
+    text-min-distance: 15;
   }
   
   [zoom>=7] {
     text-size: 26;
+    text-placements: "X,W,N,E,S,NW,NE,SE,SW,26,25,24,23,22";
   }
   
   [zoom>=8] {
@@ -140,16 +144,9 @@
   }
 }
 
-// TODO pay attention to attributes
 #country_label_line {
-  [zoom>=4] {
-    // text-face-name: "Frutiger LT 45 Light Bold";
-    // text-name: [z];
-    // text-fill: white;
-    
-    line-color: #4d73a0;
-    line-opacity: 0.5;
-  }
+  line-color: #4d73a0;
+  line-opacity: 0.5;
 }
 
 #place_label {
@@ -164,7 +161,7 @@
   text-fill: @label;
   text-halo-fill: @halo;
   text-transform: uppercase;
-  text-min-padding: 0;
+  text-min-padding: 2;
   
   [type='city'][zoom>=6][zoom<15] {
     text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
@@ -175,9 +172,10 @@
     text-character-spacing: 2;
     text-wrap-width: 100;
     text-wrap-before: true;
-    text-min-padding: 1;
     text-placement-type: simple;
-    text-placements: "X";
+    text-placements: "X,W,E,N,S,NW,NE,SE,SW,16,15,14,13,12";
+    text-dx: 2;
+    text-dy: 2;
     
     [zoom>=6] {
       [scalerank<=3] {
@@ -191,7 +189,14 @@
     [zoom>=7] {
       [scalerank<=3] {
         text-name: @name;
+        text-size: 18;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
+      }
+
+      [scalerank<=1] {
+        text-name: @name;
         text-size: 21;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,21,20,19,18,17";
       }
     }
     
@@ -200,7 +205,8 @@
         text-name: @name;
         text-fill: lighten(@label, 20%);
   
-        text-size: 21;
+        text-size: 16;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,16,15,14,13,12";
         text-character-spacing: 2;
         text-line-spacing: -5;
       
@@ -210,18 +216,21 @@
       [scalerank<=4] {
         text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
         text-fill: @primary_label;
-        text-size: 26;
+        text-size: 20;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
       }
       
       [scalerank<=2] {
-        text-size: 28;
+        text-size: 24;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
       }
     }
     
     [zoom>=9] {
       [scalerank<=9] {
         text-name: @name;
-        text-size: 21;
+        text-size: 16;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,16,15,14,13,12";
         text-character-spacing: 2;
         text-line-spacing: -5;
         text-min-distance: 50;
@@ -229,15 +238,18 @@
       
       [scalerank<=10] {
         text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
-        text-size: 24;
+        text-size: 18;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
       }
       
       [scalerank<=5] {
-        text-size: 26;
+        text-size: 20;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
       }
       
       [scalerank<=1] {
-        text-size: 28;
+        text-size: 24;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
       }
     }
     
@@ -245,22 +257,24 @@
       text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
       text-fill: @primary_label;
 
-      text-size: 32;
+      text-size: 20;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
       text-character-spacing: 5;
       text-line-spacing: -7;
       text-min-distance: 25;
 
       [scalerank<=10] {
-        text-size: 36;
-        text-placements: "X,36,35,34,33,32";
+        text-fill: @primary_label;
+        text-size: 24;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
       }
       
       [scalerank<=5] {
-        text-size: 40;
-        text-placements: "X,40,38,36,34,32";
+        text-size: 30;
+        text-placements: "X,W,E,N,S,NW,NE,SE,SW,30,29,28,27,26,25,24";
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
@@ -272,14 +286,17 @@
     text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
     text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
-    text-size: 21;
+    text-size: 16;
+    text-line-spacing: -2;
     text-wrap-width: 100;
     text-wrap-before: true;
     text-placement-type: simple;
+    text-placements: "X,W,E,N,S,NW,NE,SE,SW,16,15,14,13,12";
+    text-dx: 2;
+    text-dy: 2;
     
     [zoom>=10] {
       text-name: @name;
-      text-placements: "X,16,15,14";
       text-character-spacing: 1.5;
       text-min-distance: 100;
     }
@@ -287,20 +304,22 @@
     [zoom>=11] {
       text-face-name: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
       text-fill: @label;
-      text-placements: "X,24,23,22,21,20";
+      text-size: 18;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
+      text-line-spacing: -4;
       text-character-spacing: 2;
     }
     
     [zoom>=12] {
       text-name: @name;
-      text-size: 30;
-      text-placements: "X,30,28,26,24";
-      text-line-spacing: -8;
-      text-min-distance: 10;
+      text-size: 19;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,19,18,17,16,15";
+      text-line-spacing: -5;
+      text-min-distance: 100;
     }
     
     [zoom>=13] {
-      text-min-distance: 0;
+      text-min-distance: 10;
     }
   }
 
@@ -308,47 +327,48 @@
     text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
     text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
+    text-size: 15;
+    text-character-spacing: 1.5;
     text-wrap-width: 100;
     text-wrap-before: true;
+    text-placement-type: simple;
+    text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
+    text-dx: 2;
+    text-dy: 2;
 
     [zoom>=11] {
       text-name: @name;
-      text-size: 15;
-      text-character-spacing: 1.5;
       text-min-distance: 100;
-      text-min-padding: 1;
     }
     
     [zoom>=12] {
-      text-size: 21;
+      text-size: 18;
       text-min-distance: 50;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
     }
     
     [zoom>=13] {
       text-min-distance: 0;
     }
-    
-    [zoom>=14] { text-size: 27; }
   }
   
   [type='hamlet'],
   [type='suburb'],
   [type='neighbourhood'] {
-    //new type options here
-    //text-face-name: "Supernett cn Regular", "Arial Unicode MS Regular";
     text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
-    //text-face-name: "Supernett cn Bold";
-   // text-face-name: "Supernett cn Light";
-    text-fill: lighten(@label, 10%);
+    text-fill: lighten(@label, 15%);
     text-character-spacing: 1;
     text-halo-radius: 2.5;
-    //text-size: 20;
     text-size: 12;
     text-line-spacing: -2;
     text-wrap-width: 60;
     text-wrap-before: true;
-    text-avoid-edges: true;
     text-min-distance: 5;
+    text-placement-type: simple;
+    text-placements: "X,W,E,N,S,NW,NE,SE,SW,12,11,10,9";
+    text-dx: 2;
+    text-dy: 2;
+    text-align: center;
     
     [zoom>=13] {
       [type='suburb'],
@@ -361,9 +381,9 @@
       [type='hamlet'] {
         text-name: @name;
       }
-      text-size: 17;
-     // text-size: 24;
-      text-line-spacing: -4;
+      text-size: 15;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
+      text-line-spacing: -3;
       text-halo-radius: 3;
     }
   }
@@ -374,16 +394,23 @@
     text-name: '';
     text-transform: uppercase;
     text-face-name: "KG Second Chances Solid Regular", "Arial Unicode MS Regular";
-    text-fill: darken(#9ae89a, 40%);
+    // text-fill: darken(#9ae89a, 35%);
+    text-fill: #80aa80;
     text-halo-fill: mix(@park, @halo, 50);
     text-halo-radius: 1.8;
-    text-size: 11;
+    text-size: 12;
     text-wrap-width: 60;
     text-wrap-before: true;
-    text-line-spacing: -1;
-    // text-character-spacing: 1.5;
+    text-character-spacing: 1;
+    text-line-spacing: -2;
+    text-min-distance: 10;
     text-min-padding: 1;
-    // text-min-distance: 128;
+    text-placement-type: simple;
+    text-placements: "X,W,E,N,S,NW,NE,SE,SW,12,11,10,9";
+    text-dx: 2;
+    text-dy: 2;
+    text-horizontal-alignment: middle;
+    text-align: center;
     
     [zoom>=14][scalerank<=1] {
       text-name: @name;
@@ -391,10 +418,10 @@
 
     [zoom>=15][scalerank<=2] {
       text-wrap-width: 100;
-      text-size: 12;
+      text-size: 13;
+      text-placements: "X,W,E,N,S,NW,NE,SE,SW,13,12,11,10";
       text-halo-radius: 2;
       text-character-spacing: 1;
-      text-line-spacing: -1;
     }
     
     [zoom>=15][scalerank<=2] {
@@ -419,5 +446,11 @@
     text-wrap-width: 60;
     text-wrap-before: true;
     text-min-padding: 1;
+    text-placement-type: simple;
+    text-placements: "X,W,E,N,S,NW,NE,SE,SW,13,12,11,10";
+    text-dx: 2;
+    text-dy: 2;
+    text-horizontal-alignment: middle;
+    text-align: center;
   }
 }

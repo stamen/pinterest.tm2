@@ -36,7 +36,8 @@ Map {
     line-width: 0.5;
   }
 
-  polygon-pattern-file: url("images/blue_paper.png");
+  polygon-pattern-file: url("images/blue_paper2.png");
+  polygon-pattern-gamma: 0;
   
   [zoom>=6] {
     ::shadow,
@@ -44,8 +45,6 @@ Map {
     ::outline {
       line-gamma: 10;
     }
-    
-    polygon-pattern-gamma: 0;
   }
   
   [zoom>=14] {
