@@ -539,80 +539,80 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#e2e1e2" />
+    <LineSymbolizer stroke-width="3" stroke="#7ba4ae" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#e2e1e2" />
+    <LineSymbolizer stroke-width="2.5" stroke="#7ba4ae" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#e2e1e2" />
+    <LineSymbolizer stroke-width="2" stroke="#7ba4ae" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#e2e1e2" />
+    <LineSymbolizer stroke-width="1.5" stroke="#7ba4ae" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#e2e1e2" />
+    <LineSymbolizer stroke-width="1" stroke="#7ba4ae" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'stream')</Filter>
-    <LineSymbolizer stroke="#e2e1e2" stroke-width="0.5" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#e2e1e2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#e2e1e2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#e2e1e2" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
-    <LineSymbolizer stroke="#e2e1e2" stroke-width="0.5" />
+    <LineSymbolizer stroke="#7ba4ae" stroke-width="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'river')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#e2e1e2" />
+    <LineSymbolizer stroke-width="3" stroke="#7ba4ae" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'river')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#e2e1e2" />
+    <LineSymbolizer stroke-width="2" stroke="#7ba4ae" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'river')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#e2e1e2" />
+    <LineSymbolizer stroke-width="1" stroke="#7ba4ae" />
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'river')</Filter>
-    <LineSymbolizer stroke="#e2e1e2" stroke-width="0.5" />
+    <LineSymbolizer stroke="#7ba4ae" stroke-width="0.5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#7ba4ae" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#7ba4ae" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#7ba4ae" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke="#7ba4ae" stroke-width="0.5" />
   </Rule>
 </Style>
 <Layer name="waterway"
