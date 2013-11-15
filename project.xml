@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Map data © OpenStreetMap contributors]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">55.54687499999999,11.005904459659464,3</Parameter>
+  <Parameter name="center">-71.08343124389648,42.33684916943863,15</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -33,41 +33,41 @@
 <Style name="landuse" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'school')</Filter>
+    <Filter>([class] = 'hospital')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke-width="1" stroke="#d0bf93" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'school')</Filter>
+    <Filter>([class] = 'hospital')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke="#d0bf93" stroke-width="0.75" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'school')</Filter>
+    <Filter>([class] = 'hospital')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke="#d0bf93" stroke-width="0.5" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'school')</Filter>
+    <Filter>([class] = 'hospital')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke="#d0bf93" stroke-width="0.5" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([class] = 'school')</Filter>
+    <Filter>([class] = 'hospital')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke="#e0d4b6" stroke-width="0.5" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'school')</Filter>
+    <Filter>([class] = 'hospital')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke-width="0" />
   </Rule>
@@ -113,41 +113,41 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'hospital')</Filter>
+    <Filter>([class] = 'school')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke-width="1" stroke="#d0bf93" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'hospital')</Filter>
+    <Filter>([class] = 'school')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke="#d0bf93" stroke-width="0.75" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'hospital')</Filter>
+    <Filter>([class] = 'school')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke="#d0bf93" stroke-width="0.5" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'hospital')</Filter>
+    <Filter>([class] = 'school')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke="#d0bf93" stroke-width="0.5" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([class] = 'hospital')</Filter>
+    <Filter>([class] = 'school')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke="#e0d4b6" stroke-width="0.5" stroke-opacity="0.5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'hospital')</Filter>
+    <Filter>([class] = 'school')</Filter>
     <PolygonSymbolizer fill="#efe9da" fill-opacity="0.25" comp-op="multiply" />
     <LineSymbolizer stroke-width="0" />
   </Rule>
@@ -911,9 +911,66 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
+<Style name="tunnel" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="0.25" stroke="#56452e" stroke-opacity="0.4" stroke-dasharray="5, 2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#b8d0d1" stroke-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#b8d0d1" stroke-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#cbd7d7" stroke-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#b8d0d1" stroke-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#b8d0d1" stroke-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="0.75" stroke="#b8d0d1" stroke-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#b8d0d1" stroke-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#b8d0d1" stroke-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#b8d0d1" stroke-opacity="0.4" />
+  </Rule>
+</Style>
 <Layer name="tunnel"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>tunnel</StyleName>  </Layer>
 
 <Style name="road" filter-mode="first">
   <Rule>
@@ -941,12 +998,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="rgba(77, 115, 160, 0.3)" stroke-width="1.25" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke="rgba(77, 115, 160, 0.3)" stroke-width="1.25" />
   </Rule>
   <Rule>
@@ -1248,11 +1305,11 @@
     <LineSymbolizer stroke-width="0" stroke-linecap="square" />
   </Rule>
   <Rule>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="0" stroke-linecap="square" />
   </Rule>
   <Rule>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="0" stroke-linecap="square" />
   </Rule>
   <Rule>
@@ -1489,63 +1546,64 @@
     <StyleName>bridge-shadow</StyleName>
     <StyleName>bridge-left</StyleName>
     <StyleName>bridge-right</StyleName>
-    <StyleName>bridge</StyleName>  </Layer>
+    <StyleName>bridge</StyleName>
+    <StyleName>bridge-path</StyleName>  </Layer>
 
 <Style name="admin" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#bbbbbb" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke="#bbbbbb" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([maritime] = 1) and ([admin_level] = 4)</Filter>
+    <Filter>([maritime] = 1) and ([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
@@ -1586,106 +1644,106 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="2.75" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="2.5" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="2.25" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="2" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke="#959595" stroke-width="1.5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="1.25" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="1.5" stroke="#bbbbbb" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke="#bbbbbb" stroke-width="1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([admin_level] = 3)</Filter>
+    <Filter>([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="2.75" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="2.5" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="2.25" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="2" stroke="#a2a2a2" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke="#959595" stroke-width="1.5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="1.25" stroke="#959595" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="1.5" stroke="#bbbbbb" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke="#bbbbbb" stroke-width="1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
+    <Filter>([admin_level] = 3)</Filter>
     <LineSymbolizer stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>

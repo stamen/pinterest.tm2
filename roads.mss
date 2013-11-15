@@ -215,23 +215,74 @@
   }
 }
 
-/*
 #tunnel {
   ['mapnik::geometry_type'=2] {
-    [class='motorway'],
-    [class='main'],
-    [class='motorway_link'] {
-      ::outline {
-        line-color: darken(#aacacc, 10%);
+    // line-color: red;
+    // line-width: 2;
+
+    [class='motorway'] {
+      [zoom>=12] {
+        line-width: 2.5;
+        line-color: @road;
+        line-opacity: 0.4;
+      }
+      
+      [zoom>=14] {
         line-width: 3;
       }
+    }
+    
+    [class='motorway_link'] {
+      [zoom>=12] {
+        line-width: 1;
+        line-color: @road;
+        line-opacity: 0.4;
+      }
+    }
 
-      line-color: lighten(#aacacc, 10%);
-      line-width: 2.5;
+    [class='main'] {
+      [zoom>=12] {
+        line-width: 0.75;
+        line-color: @road;
+        line-opacity: 0.4;
+      }
+
+      [zoom>=13] {
+        line-width: 1;
+      }
+      
+      [zoom>=14] {
+        line-width: 3;
+      }
+    }
+    
+    [class='street'] {
+      [zoom>=12] {
+        line-width: 1;
+        line-color: mix(#ddd, @road, 50);
+        line-opacity: 0.4;
+      }
+      
+      [zoom>=15] {
+        line-width: 1.5;
+        line-color: @road;
+      }
+
+      [zoom>=16] {
+        line-width: 2;
+      }
+    }
+    
+    [class='path'] {
+      [zoom>=16] {
+        line-width: 0.25;
+        line-color: #56452e;
+        line-opacity: 0.4;
+        line-dasharray: 5,2;
+      }
     }
   }
 }
-*/
 
 #bridge {
   ::shadow {
@@ -421,7 +472,6 @@
         }
 
         line-width: 2;
-        line-color: @road;
       }
     }
     
@@ -462,7 +512,6 @@
         }
       }
     }
-
     
     [class='major_rail'] {
       // TODO
