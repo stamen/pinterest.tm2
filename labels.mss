@@ -236,7 +236,7 @@
       text-size: 16;
       text-character-spacing: 1.5;
       text-min-distance: 10;
-      text-min-padding: 0;
+      text-min-padding: 1;
     }
 
     [zoom>=11] {
