@@ -734,6 +734,8 @@
   }
 
   [type='taxiway'] {
+    line-color: darken(@airport_fill, 5%);
+    
     [zoom>=11] {
       line-width: 0.25;
     }
@@ -747,6 +749,7 @@
     }
 
     [zoom>=14] {
+      line-color: darken(@airport_fill, 2%);
       line-width: 3;
     }
 
@@ -764,6 +767,7 @@
         line-width: 9.5;
       }
       
+      line-color: @airport_fill;
       line-width: 8;
     }
 
@@ -789,6 +793,73 @@
       }
       
       line-width: 80;
+    }
+  }
+  
+  [type='runway'] {
+    ['mapnik::geometry_type'=2] {
+      ::outline {
+		line-color: @airport_outline;
+        line-cap: square;
+      }
+
+      line-color: darken(@airport_fill, 5%);
+      line-cap: square;
+      
+      [zoom>=11] {
+        line-width: 0.75;
+      }
+
+      [zoom>=12] {
+        line-width: 3;
+      }
+  
+      [zoom>=13] {
+        line-width: 6;
+      }
+
+      [zoom>=14] {
+        ::outline {
+          line-width: 13.5;
+        }
+        
+        line-width: 12;
+        line-color: darken(@airport_fill, 2%);
+      }
+
+      [zoom>=15] {
+        ::outline {
+          line-width: 31.5;
+          line-color: darken(@airport_outline, 10%);
+        }
+
+        line-width: 30;
+      }
+
+      [zoom>=16] {
+        ::outline {
+          line-width: 51.5;
+        }
+        
+        line-width: 50;
+        line-color: @airport_fill;
+      }
+
+      [zoom>=17] {
+        ::outline {
+          line-width: 93;
+        }
+
+        line-width: 90;
+      }
+
+      [zoom>=18] {
+        ::outline {
+          line-width: 163;
+        }
+
+        line-width: 160;
+      }
     }
   }
   
