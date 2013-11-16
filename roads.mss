@@ -334,6 +334,10 @@
       [zoom>=14] {
         line-width: 3;
       }
+    
+      [zoom>=17] {
+        line-width: 4;
+      }
     }
   
     [class='street'] {
@@ -424,12 +428,12 @@
         }
       
         ::left {
-          line-width: 0.75;
+          line-width: 0.25;
           line-offset: -1.25;
         }
       
         ::right {
-          line-width: 0.75;
+          line-width: 0.25;
           line-offset: 1.25;
         }
 
@@ -439,6 +443,20 @@
       
       [zoom>=14] {
         ::left {
+          line-width: 0.5;
+          line-offset: -1.5;
+        }
+       
+        ::right {
+          line-width: 0.5;
+          line-offset: 1.5;
+        }
+ 
+        line-width: 1.75;
+      }
+
+      [zoom>=17] {
+        ::left {
           line-offset: -1.75;
         }
        
@@ -447,18 +465,6 @@
         }
  
         line-width: 3;
-      }
-
-      [zoom>=17] {
-        ::left {
-          line-offset: -2.25;
-        }
-       
-        ::right {
-          line-offset: 2.25;
-        }
- 
-        line-width: 4;
       }
     }
     
