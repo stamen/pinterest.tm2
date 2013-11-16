@@ -22,24 +22,22 @@
   text-character-spacing: 1;
   text-line-spacing: -2;
   text-placement-type: simple;
-  text-placements: "X,W,E,N,S,NW,NE,SE,SW,11,10,9";
+  text-placements: "X,N,S,NW,NE,SE,SW,W,E,11,10,9";
   text-dx: 2;
   text-dy: 2;
-  
+  text-min-padding: 1;
   
   [zoom>=3] {
-    text-min-distance: 2;
-    
     [scalerank=1] {
       text-size: 18;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
 
     [scalerank=2] {
       text-size: 15;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
@@ -48,19 +46,19 @@
   [zoom>=4] {
     [scalerank=1] {
       text-size: 24;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
     
     [scalerank=2] {
       text-size: 18;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
     }
     
     [scalerank=3] {
       text-size: 14;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,14,13,12,11";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,14,13,12,11";
     }
   }
   
@@ -69,24 +67,24 @@
       text-fill: @primary_label;
       text-face-name: @sketch_label_font;
       text-size: 30;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,30,29,28,27,26";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26";
       text-line-spacing: -8;
     }
 
     [scalerank=2] {
       text-face-name: @sketch_label_font;
       text-size: 24;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
     }
     
     [scalerank=3] {
       text-size: 20;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
     }
     
     [scalerank>=4] {
       text-size: 15;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-character-spacing: 1.5;
       text-min-distance: 15;
     }
@@ -115,7 +113,7 @@
   text-wrap-width: 100;
   text-wrap-before: true;
   text-placement-type: simple;
-  text-placements: "X,W,N,E,S,NW,NE,SE,SW,14,13,12";
+  text-placements: "X,N,S,NW,NE,SE,SW,W,E,14,13,12";
   text-dx: 2;
   text-dy: 2;
   text-min-padding: 1;
@@ -127,7 +125,7 @@
   
   [zoom>=6] {
     text-size: 20;
-    text-placements: "X,W,N,E,S,NW,NE,SE,SW,20,19,18,17,16";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
     text-halo-radius: 3;
     text-character-spacing: 2.5;
     text-line-spacing: -5;
@@ -136,7 +134,7 @@
   
   [zoom>=7] {
     text-size: 26;
-    text-placements: "X,W,N,E,S,NW,NE,SE,SW,26,25,24,23,22";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,26,25,24,23,22";
   }
   
   [zoom>=8] {
@@ -173,7 +171,7 @@
     text-wrap-width: 100;
     text-wrap-before: true;
     text-placement-type: simple;
-    text-placements: "X,W,E,N,S,NW,NE,SE,SW,16,15,14,13,12";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12";
     text-dx: 2;
     text-dy: 2;
     
@@ -190,13 +188,13 @@
       [scalerank<=3] {
         text-name: @name;
         text-size: 18;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       }
 
       [scalerank<=1] {
         text-name: @name;
         text-size: 21;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,21,20,19,18,17";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,21,20,19,18,17";
       }
     }
     
@@ -206,7 +204,7 @@
         text-fill: lighten(@label, 20%);
   
         text-size: 16;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,16,15,14,13,12";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12";
         text-character-spacing: 2;
         text-line-spacing: -5;
       
@@ -217,12 +215,12 @@
         text-face-name: @sketch_label_font;
         text-fill: @primary_label;
         text-size: 20;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
       }
       
       [scalerank<=2] {
         text-size: 24;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       }
     }
     
@@ -230,7 +228,7 @@
       [scalerank<=9] {
         text-name: @name;
         text-size: 16;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,16,15,14,13,12";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12";
         text-character-spacing: 2;
         text-line-spacing: -5;
         text-min-distance: 50;
@@ -239,17 +237,17 @@
       [scalerank<=10] {
         text-face-name: @sketch_label_font;
         text-size: 18;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       }
       
       [scalerank<=5] {
         text-size: 20;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
       }
       
       [scalerank<=1] {
         text-size: 24;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       }
     }
     
@@ -258,7 +256,7 @@
       text-fill: @primary_label;
 
       text-size: 20;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,20,19,18,17,16";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
       text-character-spacing: 5;
       text-line-spacing: -7;
       text-min-distance: 25;
@@ -266,7 +264,7 @@
       [scalerank<=10] {
         text-fill: @primary_label;
         text-size: 24;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,24,23,22,21,20";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
@@ -274,7 +272,7 @@
       
       [scalerank<=5] {
         text-size: 30;
-        text-placements: "X,W,E,N,S,NW,NE,SE,SW,30,29,28,27,26,25,24,20,15";
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15";
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
@@ -295,7 +293,7 @@
     text-wrap-width: 100;
     text-wrap-before: true;
     text-placement-type: simple;
-    text-placements: "X,W,E,N,S,NW,NE,SE,SW,16,15,14,13,12";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12";
     text-dx: 2;
     text-dy: 2;
     
@@ -309,7 +307,7 @@
       text-face-name: @sketch_label_font;
       text-fill: @label;
       text-size: 18;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       text-line-spacing: -4;
       text-character-spacing: 2;
     }
@@ -317,7 +315,7 @@
     [zoom>=12] {
       text-name: @name;
       text-size: 19;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,19,18,17,16,15";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,19,18,17,16,15";
       text-line-spacing: -5;
       text-min-distance: 100;
     }
@@ -336,7 +334,7 @@
     text-wrap-width: 100;
     text-wrap-before: true;
     text-placement-type: simple;
-    text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
     text-dx: 2;
     text-dy: 2;
     text-min-padding: 1.4; // Prebbleton, NZ (near Christchurch)
@@ -349,7 +347,7 @@
     [zoom>=12] {
       text-size: 18;
       text-min-distance: 50;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,18,17,16,15,14";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
     }
     
     [zoom>=13] {
@@ -370,7 +368,7 @@
     text-wrap-before: true;
     text-min-distance: 5;
     text-placement-type: simple;
-    text-placements: "X,W,E,N,S,NW,NE,SE,SW,12,11,10,9";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,12,11,10,9";
     text-dx: 2;
     text-dy: 2;
     text-align: center;
@@ -387,7 +385,7 @@
         text-name: @name;
       }
       text-size: 15;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,15,14,13,12,11";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-line-spacing: -3;
       text-halo-radius: 3;
     }
@@ -410,7 +408,7 @@
     text-min-distance: 10;
     text-min-padding: 1;
     text-placement-type: simple;
-    text-placements: "X,W,E,N,S,NW,NE,SE,SW,12,11,10,9";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,12,11,10,9";
     text-dx: 2;
     text-dy: 2;
     text-horizontal-alignment: middle;
@@ -423,7 +421,7 @@
     [zoom>=15][scalerank<=2] {
       text-wrap-width: 100;
       text-size: 13;
-      text-placements: "X,W,E,N,S,NW,NE,SE,SW,13,12,11,10";
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,13,12,11,10";
       text-halo-radius: 2;
       text-character-spacing: 1;
     }
@@ -451,7 +449,7 @@
     text-wrap-before: true;
     text-min-padding: 1;
     text-placement-type: simple;
-    text-placements: "X,W,E,N,S,NW,NE,SE,SW,13,12,11,10";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,13,12,11,10";
     text-dx: 2;
     text-dy: 2;
     text-horizontal-alignment: middle;
