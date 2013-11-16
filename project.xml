@@ -2858,13 +2858,13 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 1) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer dy="5" size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 1) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer dy="5" size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
@@ -2898,13 +2898,13 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer dy="5" size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer dy="5" size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
@@ -2938,19 +2938,19 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 2) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 2) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 2) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="22" placements="X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -2978,19 +2978,19 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 2)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 2)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 2)</Filter>
-    <TextSymbolizer size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="22" placements="X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3018,19 +3018,19 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 3) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 3) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 3) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="22" placements="X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3058,19 +3058,19 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="22" placements="X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3098,19 +3098,19 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 4) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 4) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 4) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="22" placements="X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3132,19 +3132,19 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 4)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 4)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 4)</Filter>
-    <TextSymbolizer size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="22" placements="X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#cb2027" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3166,19 +3166,19 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 5) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 5) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 5) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="22" placements="X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3200,19 +3200,19 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 5)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" minimum-padding="2" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 5)</Filter>
-    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="30" placements="X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15" character-spacing="5" line-spacing="-7" minimum-distance="25" dy="3" fill="#cb2027" fontset-name="fontset-0" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 5)</Filter>
-    <TextSymbolizer size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="22" placements="X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18" fontset-name="fontset-0" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3246,7 +3246,7 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 6) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="18" placements="X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3280,7 +3280,7 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 6)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="18" placements="X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3314,7 +3314,7 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 9) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="18" placements="X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -3342,7 +3342,7 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 9)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="18" placements="X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" character-spacing="2" line-spacing="-5" minimum-distance="50" fill="#8ca7c7" halo-radius="3" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -3370,7 +3370,7 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 10) and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="18" placements="X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14" fill="#8ca7c7" halo-radius="3" line-spacing="-2" character-spacing="2" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fill="#8ca7c7" halo-radius="3" line-spacing="-2" character-spacing="2" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -3398,7 +3398,7 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 10)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="18" placements="X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14" fill="#8ca7c7" halo-radius="3" line-spacing="-2" character-spacing="2" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="20" placements="X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16" fill="#8ca7c7" halo-radius="3" line-spacing="-2" character-spacing="2" wrap-width="100" wrap-before="true" placement-type="simple" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -3560,12 +3560,12 @@
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'town') and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer character-spacing="1.5" minimum-distance="100" fontset-name="fontset-1" fill="#8ca7c7" halo-radius="2.5" size="16" line-spacing="-2" wrap-width="100" wrap-before="true" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer character-spacing="1.5" minimum-distance="100" fontset-name="fontset-1" fill="#8ca7c7" halo-radius="2.5" size="15" line-spacing="-2" wrap-width="100" wrap-before="true" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([type] = 'town') and ([osm_id] &lt; 0)</Filter>
-    <TextSymbolizer fontset-name="fontset-1" fill="#8ca7c7" halo-radius="2.5" size="16" line-spacing="-2" wrap-width="100" wrap-before="true" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-1" fill="#8ca7c7" halo-radius="2.5" size="15" line-spacing="-2" wrap-width="100" wrap-before="true" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11" dx="2" dy="2" orientation="[osm_id]*-1%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -3594,12 +3594,12 @@
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer character-spacing="1.5" minimum-distance="100" fontset-name="fontset-1" fill="#8ca7c7" halo-radius="2.5" size="16" line-spacing="-2" wrap-width="100" wrap-before="true" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer character-spacing="1.5" minimum-distance="100" fontset-name="fontset-1" fill="#8ca7c7" halo-radius="2.5" size="15" line-spacing="-2" wrap-width="100" wrap-before="true" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer fontset-name="fontset-1" fill="#8ca7c7" halo-radius="2.5" size="16" line-spacing="-2" wrap-width="100" wrap-before="true" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-1" fill="#8ca7c7" halo-radius="2.5" size="15" line-spacing="-2" wrap-width="100" wrap-before="true" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11" dx="2" dy="2" orientation="[osm_id]%3-1.5" halo-fill="rgba(245, 242, 231, 0.9)" text-transform="uppercase" minimum-padding="1" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -3664,7 +3664,13 @@
 
 <Style name="water_label" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([area] &gt; 500000)</Filter>
+    <TextSymbolizer fontset-name="fontset-1" fill="#719399" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.8" size="13" character-spacing="1" line-spacing="-2" wrap-width="60" wrap-before="true" minimum-padding="1" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,13,12,11,10" dx="2" dy="2" horizontal-alignment="middle" justify-alignment="center" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([area] &gt; 500000)</Filter>
     <TextSymbolizer fontset-name="fontset-1" fill="#719399" halo-fill="rgba(245, 242, 231, 0.9)" halo-radius="1.8" size="13" character-spacing="1" line-spacing="-2" wrap-width="60" wrap-before="true" minimum-padding="1" placement-type="simple" placements="X,N,S,NW,NE,SE,SW,W,E,13,12,11,10" dx="2" dy="2" horizontal-alignment="middle" justify-alignment="center" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>

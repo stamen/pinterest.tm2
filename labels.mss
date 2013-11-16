@@ -227,8 +227,8 @@
     [zoom>=9] {
       [scalerank<=9] {
         text-name: @name;
-        text-size: 16;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12";
+        text-size: 18;
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
         text-character-spacing: 2;
         text-line-spacing: -5;
         text-min-distance: 50;
@@ -236,13 +236,13 @@
       
       [scalerank<=10] {
         text-face-name: @sketch_label_font;
-        text-size: 18;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
+        text-size: 20;
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
       }
       
       [scalerank<=5] {
-        text-size: 20;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
+        text-size: 22;
+        text-placements: "X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18";
       }
       
       [scalerank<=1] {
@@ -276,9 +276,15 @@
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
+        
+        text-dy: 3; // Portland, OR
+      }
+      
+      [scalerank<=1] {
+        text-dy: 5; // London
       }
     }
-    
+
     [zoom>=13] {
         text-min-padding: 2; // Boston, MA
     }
@@ -288,12 +294,12 @@
     text-face-name: @solid_label_font;
     text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
-    text-size: 16;
+    text-size: 15;
     text-line-spacing: -2;
     text-wrap-width: 100;
     text-wrap-before: true;
     text-placement-type: simple;
-    text-placements: "X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12";
+    text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
     text-dx: 2;
     text-dy: 2;
     
