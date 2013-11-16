@@ -372,6 +372,7 @@
     text-dx: 2;
     text-dy: 2;
     text-align: center;
+    text-min-padding: 1.3; // North of Panhandle (SF)
     
     [zoom>=13] {
       [type='suburb'],

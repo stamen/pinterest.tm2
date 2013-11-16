@@ -198,8 +198,8 @@
     [class='service'],
     [class='driveway'],
     {
-      [zoom>=16] {
-        line-color: #4d73a0;
+      [zoom>=13] {
+        line-color: #bbb;
         line-opacity: 0.3;
         line-smooth: 0.5;
         line-width: 1.25;
@@ -208,11 +208,13 @@
     
     // closed / under construction
     [class='street_limited'] {
-      ::outline {
+      [zoom>=13] {
+        ::outline {
+          line-dasharray: 10, 20;
+        }
+
         line-dasharray: 10, 20;
       }
-
-      line-dasharray: 10, 20;
     }
     
     // footpath
@@ -367,7 +369,9 @@
     
     // closed / under construction
     [class='street_limited'] {
-      line-dasharray: 10, 20;
+      [zoom>=12] {
+        line-dasharray: 10, 20;
+      }
     }
     
     [class='path'] {
@@ -399,7 +403,6 @@
         line-width: 1;
       }
     }
-
   }
 }
 
@@ -683,13 +686,15 @@
     
     // closed / under construction
     [class='street_limited'] {
-      ::shadow,
-      ::left,
-      ::right {
+      [zoom>=12] {
+        ::shadow,
+        ::left,
+        ::right {
+          line-dasharray: 10, 20;
+        }
+
         line-dasharray: 10, 20;
       }
-
-      line-dasharray: 10, 20;
     }
     
     [class='path'] {
