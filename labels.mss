@@ -190,6 +190,13 @@
     text-name: @name;
   }
   
+  [zoom=6] {
+    [name='Kansas'] {
+      text-dy: 40;
+      text-min-distance: 0;
+    }
+  }
+  
   [zoom>=6] {
     text-size: 20;
     text-halo-radius: 3;
