@@ -151,15 +151,10 @@
       text-dx: 6;
       text-dy: 10;
     }
-    
-    [name='Illinois'] {
-      text-orientation: -90;
-      text-dx: 5;
-      text-size: 16;
-    }
-    
+
     [name='Kansas'] {
-      text-dx: -25;
+      text-orientation: 90;
+      text-dx: -58;
     }
     
     [name='Md.'] {
@@ -175,16 +170,11 @@
     }
     
     [name='Mississippi'] {
-      text-orientation: -90;
+      text-orientation: 80;
       text-dx: 5;
       text-size: 12;
     }
     
-    [name='Missouri'] {
-      text-orientation: -65;
-      text-dx: 20;
-    }
-
 	[name='R.I.'] {
       text-dx: 15;
       text-min-distance: 0;
@@ -193,10 +183,6 @@
     [name='Vt.'] {
       text-dy: -5;
       text-min-distance: 0;
-    }
-    
-    [name='Wisconsin'] {
-      text-orientation: -60;
     }
   }
   
