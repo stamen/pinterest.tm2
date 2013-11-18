@@ -184,6 +184,10 @@
       text-dy: -5;
       text-min-distance: 0;
     }
+    
+    [name='Washington'] {
+      text-dy: 12;
+    }
   }
   
   [zoom>=5] {
