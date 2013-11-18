@@ -72,6 +72,7 @@ Map {
   }
 
   line-join: round;
+  line-width: 0;
 
   // Countries
   [admin_level=2] {
