@@ -115,7 +115,13 @@
   }
 }
 
-#state_label {
+#state_label[zoom<=7] {
+  text-orientation: [osm_id] % 3 - 1.5;
+
+  [osm_id<0] {
+    text-orientation: ([osm_id] * -1) % 3 - 1.5;
+  }
+
   text-name: '';
   text-face-name: @solid_label_font;
   text-transform: uppercase;
@@ -124,23 +130,81 @@
   text-halo-radius: 2;
   text-size: 14;
   text-character-spacing: 1;
-  text-line-spacing: -4;
+  text-line-spacing: -3;
   text-wrap-width: 100;
   text-wrap-before: true;
   text-placement-type: simple;
-  text-placements: "X,N,S,NW,NE,SE,SW,W,E,14,13,12";
-  text-dx: 2;
-  text-dy: 2;
-  text-min-padding: 1;
+  text-placements: "X,14,13,12,11";
+  text-align: center;
+  text-horizontal-alignment: middle;
+  text-min-distance: 5;
+
+  [zoom=5] {
+    [name='California'] {
+      text-orientation: -44;
+      text-size: 20;
+    }
+    
+    [name='Florida'] {
+      text-orientation: -75;
+      text-dx: 6;
+      text-dy: 10;
+    }
+    
+    [name='Illinois'] {
+      text-orientation: -90;
+      text-dx: 5;
+      text-size: 16;
+    }
+    
+    [name='Kansas'] {
+      text-dx: -25;
+    }
+    
+    [name='Md.'] {
+      text-min-distance: 0;
+    }
+    
+    [name='Mass.'] {
+      text-min-distance: 0;
+    }
+    
+    [name='Michigan'] {
+      text-dy: 25;
+    }
+    
+    [name='Mississippi'] {
+      text-orientation: -90;
+      text-dx: 5;
+      text-size: 12;
+    }
+    
+    [name='Missouri'] {
+      text-orientation: -65;
+      text-dx: 20;
+    }
+
+	[name='R.I.'] {
+      text-dx: 15;
+      text-min-distance: 0;
+    }
+    
+    [name='Vt.'] {
+      text-dy: -5;
+      text-min-distance: 0;
+    }
+    
+    [name='Wisconsin'] {
+      text-orientation: -60;
+    }
+  }
   
   [zoom>=5] {
     text-name: @name;
-    text-min-distance: 10;
   }
   
   [zoom>=6] {
     text-size: 20;
-    text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
     text-halo-radius: 3;
     text-character-spacing: 2.5;
     text-line-spacing: -5;
@@ -149,11 +213,6 @@
   
   [zoom>=7] {
     text-size: 26;
-    text-placements: "X,N,S,NW,NE,SE,SW,W,E,26,25,24,23,22";
-  }
-  
-  [zoom>=8] {
-    text-name: '';
   }
 }
 
