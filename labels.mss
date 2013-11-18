@@ -181,6 +181,7 @@
         text-face-name: @sketch_label_font;
         text-fill: @primary_label;
         text-min-distance: 25;
+        text-min-padding: 1.5; // Atlanta, GA
       }
     }
 
