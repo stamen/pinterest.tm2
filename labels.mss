@@ -463,6 +463,7 @@
       text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-line-spacing: -3;
       text-halo-radius: 3;
+      text-min-padding: 1.7; // Akers (north of Stockton, CA)
     }
   }
 }
