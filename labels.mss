@@ -318,6 +318,16 @@
         text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       }
     }
+
+	[zoom=11] {
+      [name_en='London'] {
+        text-dy: 6;
+      }
+      
+      [name_en='Portland'] { // Oregon
+        text-dy: 3;
+      }
+    }
     
     [zoom>=11] {
       text-face-name: @sketch_label_font;
@@ -344,17 +354,20 @@
         text-character-spacing: 5;
         text-line-spacing: -7;
         text-min-distance: 25;
-        
-        text-dy: 3; // Portland, OR
-      }
-      
-      [scalerank<=1] {
-        text-dy: 5; // London
       }
     }
 
-    [zoom>=13] {
-        text-min-padding: 2; // Boston, MA
+  	[zoom=12] {
+      [name_en='Portland'] { // Oregon
+        text-dy: 3;
+      }
+    }
+
+    
+    [zoom=13] {
+      [name_en='Boston'] {
+        text-min-padding: 2;
+      }
     }
   }
 
