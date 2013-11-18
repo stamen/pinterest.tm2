@@ -9,7 +9,7 @@
     text-orientation: ([osm_id] * -1) % 3 - 1.5;
   }
 
-  text-name: @name;
+  text-name: '';
   text-face-name: @solid_label_font;
   text-transform: uppercase;
   text-wrap-width: 100;
@@ -28,71 +28,86 @@
   text-min-padding: 1;
   
   [zoom>=3] {
-    [scalerank=1] {
-      text-size: 18;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
+    [scalerank<=3] {
+      text-name: @name;
+    }
+
+    [scalerank<=2] {
+      text-size: 15;
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
 
-    [scalerank=2] {
-      text-size: 15;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
+    [scalerank<=1] {
+      text-size: 18;
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
   }
   
   [zoom>=4] {
-    [scalerank=1] {
+    [scalerank<=4] {
+      text-name: @name;
+    }
+    
+    [scalerank<=3] {
+      text-size: 14;
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,14,13,12,11";
+    }
+
+    [scalerank<=2] {
+      text-size: 18;
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
+    }
+
+    [scalerank<=1] {
       text-size: 24;
       text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
-    
-    [scalerank=2] {
-      text-size: 18;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
-    }
-    
-    [scalerank=3] {
-      text-size: 14;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,14,13,12,11";
-    }
   }
   
   [zoom>=5] {
-    [scalerank=1] {
+    [scalerank<=5] {
+      text-name: @name;
+      text-size: 15;
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
+      text-character-spacing: 1.5;
+      text-min-distance: 15;
+    }
+
+    [scalerank<=3] {
+      text-size: 20;
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
+    }
+
+    [scalerank<=2] {
+      text-face-name: @sketch_label_font;
+      text-size: 24;
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
+    }
+    
+    [scalerank<=1] {
       text-fill: @primary_label;
       text-face-name: @sketch_label_font;
       text-size: 30;
       text-placements: "X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26";
       text-line-spacing: -8;
     }
-
-    [scalerank=2] {
-      text-face-name: @sketch_label_font;
-      text-size: 24;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
-    }
-    
-    [scalerank=3] {
-      text-size: 20;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
-    }
-    
-    [scalerank>=4] {
-      text-size: 15;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
-      text-character-spacing: 1.5;
-      text-min-distance: 15;
-    }
   }
   
-  [zoom>=6][scalerank=1] {
-    text-face-name: @sketch_label_font;
-    text-size: 36;
+  [zoom>=6] {
+    [scalerank<=6] {
+      text-name: @name;
+    }
+    
+    [scalerank<=1] {
+      text-face-name: @sketch_label_font;
+      text-size: 36;
+    }
   }
   
   [zoom>=8] {
@@ -140,11 +155,6 @@
   [zoom>=8] {
     text-name: '';
   }
-}
-
-#country_label_line {
-  line-color: #4d73a0;
-  line-opacity: 0.5;
 }
 
 #place_label {
