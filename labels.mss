@@ -18,14 +18,15 @@
   text-halo-fill: @halo;
   text-halo-radius: 2;
   text-size: 11;
-  text-min-distance: 25;
+  text-min-distance: 2;
   text-character-spacing: 1;
   text-line-spacing: -2;
   text-placement-type: simple;
   text-placements: "X,N,S,NW,NE,SE,SW,W,E,11,10,9";
   text-dx: 2;
   text-dy: 2;
-  text-min-padding: 1;
+  text-align: center;
+  text-horizontal-alignment: middle;
   
   [zoom>=3] {
     [scalerank<=3] {
@@ -229,6 +230,8 @@
   text-halo-fill: @halo;
   text-transform: uppercase;
   text-min-padding: 1;
+  text-align: center;
+  text-horizontal-alignment: middle;
   
   [type='city'][zoom>=6][zoom<15] {
     text-face-name: @solid_label_font;
