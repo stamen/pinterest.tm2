@@ -223,8 +223,6 @@
   text-halo-fill: @halo;
   text-transform: uppercase;
   text-min-padding: 1;
-  text-align: center;
-  text-horizontal-alignment: middle;
   
   [type='city'][zoom>=6][zoom<15] {
     text-face-name: @solid_label_font;
