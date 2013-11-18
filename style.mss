@@ -17,21 +17,21 @@ Map {
 #water {
   ::shadow {
     line-color: #ccc;
-    line-gamma: 20;
+    // line-gamma: 20;
     line-width: 1;
     image-filters: agg-stack-blur(2, 2);
   }
   
   ::outline_blur {
     line-color: #5e7884;
-    line-gamma: 5;
+    // line-gamma: 5;
     line-width: 0.5;
     image-filters: agg-stack-blur(1, 1);
   }
   
   ::outline {
     line-color: #4d73a0;
-    line-gamma: 5;
+    // line-gamma: 5;
     line-width: 0.5;
   }
 
@@ -42,11 +42,11 @@ Map {
     ::shadow,
     ::outline_blur,
     ::outline {
-      line-gamma: 10;
+      // line-gamma: 10;
     }
     
     ::outline_blur {
-      line-width: 2;
+      line-width: 1;
     }
   }
   
