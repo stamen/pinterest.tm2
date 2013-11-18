@@ -12,12 +12,12 @@ center:
   - 42.61779143282346
   - 6
 description: ''
-format: "png8:m=h"
+format: "png8:m=h:c=64"
 interactivity_layer: ''
 maxzoom: 22
 minzoom: 0
-mtime: 1384736985514
-name: Pinterest 8
+mtime: 1384802563610
+name: Pinterest
 scale: 1
 source: "mapbox:///mapbox.mapbox-streets-v4"
 styles: 
