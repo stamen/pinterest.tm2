@@ -63,7 +63,7 @@ Map {
 
 // Political boundaries //
 //////////////////////////\\\\\\\\\\\\\\//////////////\\\\\\\\\//////
-#admin {
+#admin[maritime=0] {
   ::outline {
     line-cap: round;
     line-join: miter;
@@ -150,14 +150,6 @@ Map {
       [zoom>=11] { line-width: 2.5; }
       [zoom>=12] { line-width: 2.75; }
     }
-  }
-
-  [maritime=1][admin_level>=0][zoom>=0] {
-    ::outline {
-      line-width: 0;
-    }
-
-    line-width: 0;
   }
 }
 
