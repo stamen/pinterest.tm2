@@ -302,12 +302,6 @@
         text-min-distance: 50;
       }
       
-      [scalerank<=10] {
-        text-face-name: @sketch_label_font;
-        text-size: 20;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
-      }
-      
       [scalerank<=5] {
         text-size: 22;
         text-placements: "X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18";
@@ -317,6 +311,16 @@
         text-size: 24;
         text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       }
+    }
+    
+    [zoom>=10] {
+      // introduce cities without scaleranks
+      text-name: @name;
+      text-size: 18;
+      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
+      text-character-spacing: 2;
+      text-line-spacing: -5;
+      text-min-distance: 50;
     }
 
 	[zoom=11] {
@@ -330,20 +334,21 @@
     }
     
     [zoom>=11] {
+      text-name: @name;
       text-face-name: @sketch_label_font;
       text-fill: @primary_label;
 
       text-size: 20;
       text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
-      text-character-spacing: 5;
-      text-line-spacing: -7;
+      text-character-spacing: 2;
+      text-line-spacing: -6;
       text-min-distance: 25;
 
       [scalerank<=10] {
         text-fill: @primary_label;
         text-size: 24;
         text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
-        text-character-spacing: 5;
+        text-character-spacing: 2;
         text-line-spacing: -7;
         text-min-distance: 25;
       }
@@ -417,6 +422,7 @@
     text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
     text-size: 15;
+    text-line-spacing: -3;
     text-character-spacing: 1.5;
     text-wrap-width: 100;
     text-wrap-before: true;
