@@ -430,7 +430,7 @@
     text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
     text-dx: 2;
     text-dy: 2;
-    text-min-padding: 1.4; // Prebbleton, NZ (near Christchurch)
+    text-min-padding: 1.7; // Poestenkill, NY (near Albany)
 
     [zoom>=11] {
       text-name: @name;
