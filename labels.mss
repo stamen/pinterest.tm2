@@ -369,7 +369,7 @@
     }
 
     
-    [zoom=13] {
+    [zoom>=13] {
       [name_en='Boston'] {
         text-min-padding: 2;
       }
