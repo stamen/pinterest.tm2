@@ -10,7 +10,6 @@
 @sketch_label_font: "KG Second Chances Sketch Regular", "Arial Unicode MS Regular";
 
 Map {
-  font-directory: url("fonts/");
   background-image: url("images/ricepaper_15.png");
 }
 
