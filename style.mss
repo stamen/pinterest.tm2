@@ -31,6 +31,7 @@ Map {
     comp-op: soft-light;
     // blurring reveals the polygon fill from ::shadow around
     // the edges of the water
+    // NOTE: image-filters cannot be set per-zoom
     image-filters: agg-stack-blur(10, 10);
   }
 
