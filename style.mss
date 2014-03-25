@@ -15,8 +15,13 @@ Map {
 }
 
 #hillshade {
+  polygon-fill: transparent;
   polygon-opacity: 0.33;
-  comp-op: multiply;
+  polygon-comp-op: multiply;
+
+  [zoom>=11] {
+    polygon-opacity: 0.2;
+  }
 
   [class='medium_shadow'] {
     polygon-fill: #eee;
@@ -28,10 +33,22 @@ Map {
 
   [class='medium_highlight'] {
     polygon-fill: #e9e9e9;
+    polygon-opacity: 0.3;
+    polygon-comp-op: lighten;
+
+    [zoom>=11] {
+      polygon-opacity: 0.1;
+    }
   }
 
   [class='full_highlight'] {
-    polygon-fill: #fff;
+    polygon-fill: #f0f0f0;
+    polygon-opacity: 0.35;
+    polygon-comp-op: lighten;
+
+    [zoom>=11] {
+      polygon-opacity: 0.25;
+    }
   }
 }
 
