@@ -14,6 +14,27 @@ Map {
   background-image: url("images/ricepaper_15.png");
 }
 
+#hillshade {
+  polygon-opacity: 0.33;
+  comp-op: multiply;
+
+  [class='medium_shadow'] {
+    polygon-fill: #eee;
+  }
+
+  [class='full_shadow'] {
+    polygon-fill: #ddd;
+  }
+
+  [class='medium_highlight'] {
+    polygon-fill: #e9e9e9;
+  }
+
+  [class='full_highlight'] {
+    polygon-fill: #fff;
+  }
+}
+
 #water {
   ::shadow {
     polygon-fill: #444;
