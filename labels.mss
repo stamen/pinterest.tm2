@@ -18,15 +18,8 @@
   text-halo-fill: @halo;
   text-halo-radius: 2;
   text-size: 11;
-  text-min-distance: 2;
   text-character-spacing: 1;
   text-line-spacing: -2;
-  text-placement-type: simple;
-  text-placements: "X,N,S,NW,NE,SE,SW,W,E,11,10,9";
-  text-dx: 2;
-  text-dy: 2;
-  text-align: center;
-  text-horizontal-alignment: middle;
   
   [zoom>=3] {
     [scalerank<=3] {
@@ -35,14 +28,12 @@
 
     [scalerank<=2] {
       text-size: 15;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
 
     [scalerank<=1] {
       text-size: 18;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
@@ -55,17 +46,14 @@
     
     [scalerank<=3] {
       text-size: 14;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,14,13,12,11";
     }
 
     [scalerank<=2] {
       text-size: 18;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
     }
 
     [scalerank<=1] {
       text-size: 24;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
@@ -75,27 +63,23 @@
     [scalerank<=5] {
       text-name: @name;
       text-size: 15;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-character-spacing: 1.5;
       text-min-distance: 15;
     }
 
     [scalerank<=3] {
       text-size: 20;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
     }
 
     [scalerank<=2] {
       text-face-name: @sketch_label_font;
       text-size: 24;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
     }
     
     [scalerank<=1] {
       text-fill: @primary_label;
       text-face-name: @sketch_label_font;
       text-size: 30;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26";
       text-line-spacing: -8;
     }
   }
@@ -134,11 +118,6 @@
   text-line-spacing: -3;
   text-wrap-width: 100;
   text-wrap-before: true;
-  text-placement-type: simple;
-  text-placements: "X,14,13,12,11";
-  text-align: center;
-  text-horizontal-alignment: middle;
-  text-min-distance: 5;
 
   [zoom=5] {
     [name='California'] {
@@ -148,21 +127,16 @@
     
     [name='Florida'] {
       text-orientation: -75;
-      text-dx: 6;
-      text-dy: 10;
+      text-vertical-alignment: bottom;
+      text-align: center;
+      text-horizontal-alignment: middle;
+      text-dx: 5;
+      text-dy: 7;
     }
 
     [name='Kansas'] {
       text-orientation: 90;
-      text-dx: -58;
-    }
-    
-    [name='Md.'] {
-      text-min-distance: 0;
-    }
-    
-    [name='Mass.'] {
-      text-min-distance: 0;
+      text-dx: -30;
     }
     
     [name='Michigan'] {
@@ -171,18 +145,10 @@
     
     [name='Mississippi'] {
       text-orientation: 80;
-      text-dx: 5;
-      text-size: 12;
     }
     
 	[name='R.I.'] {
       text-dx: 15;
-      text-min-distance: 0;
-    }
-    
-    [name='Vt.'] {
-      text-dy: -5;
-      text-min-distance: 0;
     }
     
     [name='Washington'] {
