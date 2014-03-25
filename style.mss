@@ -12,6 +12,7 @@
 Map {
   font-directory: url("fonts/");
   background-image: url("images/ricepaper_15.png");
+  buffer-size: 128;
 }
 
 #water {
