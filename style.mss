@@ -21,15 +21,15 @@ Map {
   polygon-comp-op: multiply;
 
   [zoom>=11] {
-    polygon-opacity: 0.2;
+    polygon-opacity: 0.25;
   }
 
   [class='medium_shadow'] {
-    polygon-fill: #eee;
+    polygon-fill: lighten(#eee, 5%);
   }
 
   [class='full_shadow'] {
-    polygon-fill: #ddd;
+    polygon-fill: lighten(#ddd, 5%);
   }
 
   [class='medium_highlight'] {
@@ -44,18 +44,18 @@ Map {
 
   [class='full_highlight'] {
     polygon-fill: #f0f0f0;
-    polygon-opacity: 0.35;
+    polygon-opacity: 0.25;
     polygon-comp-op: lighten;
 
     [zoom>=11] {
-      polygon-opacity: 0.25;
+      polygon-opacity: 0.35;
     }
   }
 }
 
 #water {
   ::shadow {
-    polygon-fill: #444;
+    polygon-fill: lighten(#444, 3%);
 
     [zoom<=5] {
       // fill in ocean seams
