@@ -303,7 +303,7 @@
     text-character-spacing: 1.5;
     text-wrap-width: 100;
     text-wrap-before: true;
-    text-min-distance: 64;
+    text-min-distance: 5;
     
     [zoom>=10] {
       text-name: @name;
@@ -341,15 +341,14 @@
     text-character-spacing: 1.5;
     text-wrap-width: 100;
     text-wrap-before: true;
+    text-min-distance: 5;
 
     [zoom>=11] {
       text-name: @name;
-      text-min-distance: 100;
     }
 
     [zoom>=12] {
       text-size: 18;
-      text-min-distance: 0;
     }
 
     // don't display long names without dashes in them (near
