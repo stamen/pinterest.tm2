@@ -264,7 +264,6 @@
       [scalerank=''],
       {
         text-name: @name;
-        text-fill: pink;
         text-size: 18;
         text-line-spacing: -5;
       }
@@ -301,13 +300,13 @@
     text-halo-radius: 2.5;
     text-size: 15;
     text-line-spacing: -2;
+    text-character-spacing: 1.5;
     text-wrap-width: 100;
     text-wrap-before: true;
+    text-min-distance: 64;
     
     [zoom>=10] {
       text-name: @name;
-      text-character-spacing: 1.5;
-      text-min-distance: 100;
     }
 
     [zoom>=11] {
@@ -322,7 +321,6 @@
       text-name: @name;
       text-size: 19;
       text-line-spacing: -5;
-      text-min-distance: 100;
     }
     
     [zoom>=13] {
@@ -351,11 +349,13 @@
 
     [zoom>=12] {
       text-size: 18;
-      text-min-distance: 50;
+      text-min-distance: 0;
     }
 
-    [zoom>=13] {
-      text-min-distance: 0;
+    // don't display long names without dashes in them (near
+    // Neustadt an der Orla, Germany)
+    [name =~ '^[^-]{12,}$'] {
+      text-name: '';
     }
   }
 
