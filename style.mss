@@ -17,7 +17,7 @@ Map {
 
 #water {
   ::shadow {
-    polygon-fill: lighten(#444, 3%);
+    polygon-fill: lighten(#444, 1%);
 
     [zoom<=5] {
       // fill in ocean seams
