@@ -25,7 +25,7 @@ Map {
   }
 
   [class='medium_shadow'] {
-    polygon-fill: lighten(#eee, 5%);
+    polygon-fill: lighten(#eee, 4%);
   }
 
   [class='full_shadow'] {
