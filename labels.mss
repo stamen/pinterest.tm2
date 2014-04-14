@@ -18,15 +18,8 @@
   text-halo-fill: @halo;
   text-halo-radius: 2;
   text-size: 11;
-  text-min-distance: 2;
   text-character-spacing: 1;
   text-line-spacing: -2;
-  text-placement-type: simple;
-  text-placements: "X,N,S,NW,NE,SE,SW,W,E,11,10,9";
-  text-dx: 2;
-  text-dy: 2;
-  text-align: center;
-  text-horizontal-alignment: middle;
   
   [zoom>=3] {
     [scalerank<=3] {
@@ -35,14 +28,12 @@
 
     [scalerank<=2] {
       text-size: 15;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
 
     [scalerank<=1] {
       text-size: 18;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
@@ -55,17 +46,14 @@
     
     [scalerank<=3] {
       text-size: 14;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,14,13,12,11";
     }
 
     [scalerank<=2] {
       text-size: 18;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
     }
 
     [scalerank<=1] {
       text-size: 24;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       text-character-spacing: 2.5;
       text-line-spacing: -5;
     }
@@ -75,27 +63,23 @@
     [scalerank<=5] {
       text-name: @name;
       text-size: 15;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
       text-character-spacing: 1.5;
       text-min-distance: 15;
     }
 
     [scalerank<=3] {
       text-size: 20;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
     }
 
     [scalerank<=2] {
       text-face-name: @sketch_label_font;
       text-size: 24;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
     }
     
     [scalerank<=1] {
       text-fill: @primary_label;
       text-face-name: @sketch_label_font;
       text-size: 30;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26";
       text-line-spacing: -8;
     }
   }
@@ -134,11 +118,6 @@
   text-line-spacing: -3;
   text-wrap-width: 100;
   text-wrap-before: true;
-  text-placement-type: simple;
-  text-placements: "X,14,13,12,11";
-  text-align: center;
-  text-horizontal-alignment: middle;
-  text-min-distance: 5;
 
   [zoom=5] {
     [name='California'] {
@@ -148,21 +127,16 @@
     
     [name='Florida'] {
       text-orientation: -75;
-      text-dx: 6;
-      text-dy: 10;
+      text-vertical-alignment: bottom;
+      text-align: center;
+      text-horizontal-alignment: middle;
+      text-dx: 5;
+      text-dy: 7;
     }
 
     [name='Kansas'] {
       text-orientation: 90;
-      text-dx: -58;
-    }
-    
-    [name='Md.'] {
-      text-min-distance: 0;
-    }
-    
-    [name='Mass.'] {
-      text-min-distance: 0;
+      text-dx: -30;
     }
     
     [name='Michigan'] {
@@ -171,18 +145,10 @@
     
     [name='Mississippi'] {
       text-orientation: 80;
-      text-dx: 5;
-      text-size: 12;
     }
     
 	[name='R.I.'] {
       text-dx: 15;
-      text-min-distance: 0;
-    }
-    
-    [name='Vt.'] {
-      text-dy: -5;
-      text-min-distance: 0;
     }
     
     [name='Washington'] {
@@ -215,21 +181,19 @@
 }
 
 #place_label {
+  text-face-name: @solid_label_font;
+  // text-fill: @label;
+  text-halo-fill: @halo;
+  text-transform: uppercase;
+  text-name: '';
+
   text-orientation: [osm_id] % 3 - 1.5;
 
   [osm_id<0] {
     text-orientation: ([osm_id] * -1) % 3 - 1.5;
   }
-
-  text-name: '';
-  text-face-name: @solid_label_font;
-  text-fill: @label;
-  text-halo-fill: @halo;
-  text-transform: uppercase;
-  text-min-padding: 1;
   
-  [type='city'][zoom>=6][zoom<15] {
-    text-face-name: @solid_label_font;
+  [type='city'] {
     text-fill: lighten(@label, 20%);
     text-halo-radius: 3;
     text-size: 16;
@@ -237,18 +201,12 @@
     text-character-spacing: 2;
     text-wrap-width: 100;
     text-wrap-before: true;
-    text-placement-type: simple;
-    text-placements: "X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12";
-    text-dx: 2;
-    text-dy: 2;
     
     [zoom>=6] {
       [scalerank<=3] {
         text-name: @name;
         text-face-name: @sketch_label_font;
         text-fill: @primary_label;
-        text-min-distance: 25;
-        text-min-padding: 1.5; // Atlanta, GA
       }
     }
 
@@ -256,13 +214,11 @@
       [scalerank<=3] {
         text-name: @name;
         text-size: 18;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       }
 
       [scalerank<=1] {
         text-name: @name;
         text-size: 21;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,21,20,19,18,17";
       }
     }
     
@@ -272,23 +228,17 @@
         text-fill: lighten(@label, 20%);
   
         text-size: 16;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,16,15,14,13,12";
-        text-character-spacing: 2;
         text-line-spacing: -5;
-      
-        text-min-distance: 50;
       }
       
       [scalerank<=4] {
         text-face-name: @sketch_label_font;
         text-fill: @primary_label;
         text-size: 20;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
       }
       
       [scalerank<=2] {
         text-size: 24;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       }
     }
     
@@ -296,110 +246,73 @@
       [scalerank<=9] {
         text-name: @name;
         text-size: 18;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
-        text-character-spacing: 2;
         text-line-spacing: -5;
-        text-min-distance: 50;
       }
       
       [scalerank<=5] {
         text-size: 22;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,22,21,20,19,18";
       }
       
       [scalerank<=1] {
         text-size: 24;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
       }
     }
     
     [zoom>=10] {
       // introduce cities without scaleranks
-      text-name: @name;
-      text-size: 18;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
-      text-character-spacing: 2;
-      text-line-spacing: -5;
-      text-min-distance: 50;
+      [scalerank=10],
+      [scalerank=''],
+      {
+        text-name: @name;
+        text-size: 18;
+        text-line-spacing: -5;
+      }
     }
 
-	[zoom=11] {
-      [name_en='London'] {
-        text-dy: 6;
-      }
-      
-      [name_en='Portland'] { // Oregon
-        text-dy: 3;
-      }
-    }
-    
     [zoom>=11] {
-      text-name: @name;
       text-face-name: @sketch_label_font;
       text-fill: @primary_label;
 
       text-size: 20;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,20,19,18,17,16";
-      text-character-spacing: 2;
       text-line-spacing: -6;
-      text-min-distance: 25;
 
       [scalerank<=10] {
         text-fill: @primary_label;
         text-size: 24;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,24,23,22,21,20";
-        text-character-spacing: 2;
         text-line-spacing: -7;
-        text-min-distance: 25;
       }
       
       [scalerank<=5] {
         text-size: 30;
-        text-placements: "X,N,S,NW,NE,SE,SW,W,E,30,29,28,27,26,25,24,20,15";
-        text-character-spacing: 5;
+        text-character-spacing: 3.2; // constrained by Vancouver, WA at z11
         text-line-spacing: -7;
-        text-min-distance: 25;
       }
     }
-
-  	[zoom=12] {
-      [name_en='Portland'] { // Oregon
-        text-dy: 3;
-      }
-    }
-
     
-    [zoom>=13] {
-      [name_en='Boston'] {
-        text-min-padding: 2;
-      }
+    [zoom>=15] {
+      text-name: '';
     }
   }
 
-  [type='town'][zoom<=17] {
+  [type='town'] {
     text-face-name: @solid_label_font;
     text-fill: lighten(@label, 20%);
     text-halo-radius: 2.5;
     text-size: 15;
     text-line-spacing: -2;
+    text-character-spacing: 1.5;
     text-wrap-width: 100;
     text-wrap-before: true;
-    text-placement-type: simple;
-    text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
-    text-dx: 2;
-    text-dy: 2;
+    text-min-distance: 5;
     
     [zoom>=10] {
       text-name: @name;
-      text-character-spacing: 1.5;
-      text-min-distance: 100;
     }
 
     [zoom>=11] {
       text-face-name: @sketch_label_font;
       text-fill: @label;
       text-size: 18;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
       text-line-spacing: -4;
       text-character-spacing: 2;
     }
@@ -407,13 +320,15 @@
     [zoom>=12] {
       text-name: @name;
       text-size: 19;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,19,18,17,16,15";
       text-line-spacing: -5;
-      text-min-distance: 100;
     }
     
     [zoom>=13] {
       text-min-distance: 10;
+    }
+
+    [zoom>=18] {
+      text-name: '';
     }
   }
 
@@ -426,28 +341,23 @@
     text-character-spacing: 1.5;
     text-wrap-width: 100;
     text-wrap-before: true;
-    text-placement-type: simple;
-    text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
-    text-dx: 2;
-    text-dy: 2;
-    text-min-padding: 1.7; // Poestenkill, NY (near Albany)
+    text-min-distance: 5;
 
     [zoom>=11] {
       text-name: @name;
-      text-min-distance: 100;
     }
-    
+
     [zoom>=12] {
       text-size: 18;
-      text-min-distance: 50;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,18,17,16,15,14";
     }
-    
-    [zoom>=13] {
-      text-min-distance: 0;
+
+    // don't display long names without dashes in them (near
+    // Neustadt an der Orla, Germany)
+    [name =~ '^[^-]{12,}$'] {
+      text-name: '';
     }
   }
-  
+
   [type='hamlet'],
   [type='suburb'],
   [type='neighbourhood'] {
@@ -460,29 +370,46 @@
     text-wrap-width: 60;
     text-wrap-before: true;
     text-min-distance: 5;
-    text-placement-type: simple;
-    text-placements: "X,N,S,NW,NE,SE,SW,W,E,12,11,10,9";
-    text-dx: 2;
-    text-dy: 2;
-    text-align: center;
-    text-min-padding: 1.3; // North of Panhandle (SF)
-    
+
     [zoom>=13] {
       [type='suburb'],
       [type='neighbourhood'] {
         text-name: @name;
       }
     }
-    
+
     [zoom>=14] {
       [type='hamlet'] {
         text-name: @name;
       }
-      text-size: 15;
-      text-placements: "X,N,S,NW,NE,SE,SW,W,E,15,14,13,12,11";
-      text-line-spacing: -3;
+
+      text-size: 14;
+      text-line-spacing: -4;
       text-halo-radius: 3;
-      text-min-padding: 1.7; // Akers (north of Stockton, CA)
+    }
+  }
+
+  [zoom<9] {
+    // beyond this point, labels are sufficiently dense that Winston-Salem,
+    // NC, Spartanburg, SC, etc. bump other labels in the buffered area
+    [ldir=~'W'] {
+      text-horizontal-alignment: left;
+      text-align: right;
+      text-dx: -5;
+    }
+
+    [ldir=~'E'] {
+      text-horizontal-alignment: right;
+      text-align: left;
+      text-dx: 5;
+    }
+
+    [ldir=~'S'] {
+      text-dy: 5;
+    }
+
+    [ldir=~'N'] {
+      text-dy: -5;
     }
   }
 }
