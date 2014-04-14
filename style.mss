@@ -1,5 +1,5 @@
 // Languages: name (local), name_en, name_fr, name_es, name_de
-@name: [name_fr];
+@name: "[name_fr].replace('-', '- ')";
 
 // Common Colors //
 @water: #719399;
@@ -11,52 +11,75 @@
 
 Map {
   background-image: url("images/ricepaper_15.png");
+  buffer-size: 128;
+}
+
+#hillshade {
+  polygon-fill: transparent;
+  polygon-opacity: 0.33;
+  polygon-comp-op: multiply;
+
+  [zoom>=11] {
+    polygon-opacity: 0.25;
+  }
+
+  [class='medium_shadow'] {
+    polygon-fill: lighten(#eee, 4%);
+  }
+
+  [class='full_shadow'] {
+    polygon-fill: lighten(#ddd, 5%);
+  }
+
+  [class='medium_highlight'] {
+    polygon-fill: #e9e9e9;
+    polygon-opacity: 0.3;
+    polygon-comp-op: lighten;
+
+    [zoom>=11] {
+      polygon-opacity: 0.1;
+    }
+  }
+
+  [class='full_highlight'] {
+    polygon-fill: #f0f0f0;
+    polygon-opacity: 0.25;
+    polygon-comp-op: lighten;
+
+    [zoom>=11] {
+      polygon-opacity: 0.35;
+    }
+  }
 }
 
 #water {
   ::shadow {
-    line-color: #ccc;
-    // line-gamma: 20;
-    line-width: 1;
-    image-filters: agg-stack-blur(2, 2);
-  }
-  
-  ::outline_blur {
-    line-color: #5e7884;
-    // line-gamma: 5;
-    line-width: 0.5;
-    image-filters: agg-stack-blur(1, 1);
-  }
-  
-  ::outline {
-    line-color: #4d73a0;
-    // line-gamma: 5;
-    line-width: 0.5;
+    polygon-fill: lighten(#444, 1%);
+
+    [zoom<=5] {
+      // fill in ocean seams
+      polygon-gamma: 0.3;
+    }
   }
 
-  polygon-pattern-file: url("images/blue_paper_512.png");
-  polygon-pattern-gamma: 0;
-  
-  [zoom>=6] {
-    ::shadow,
-    ::outline_blur,
-    ::outline {
-      // line-gamma: 10;
-    }
-    
-    ::outline_blur {
-      line-width: 1;
-    }
+  ::fill {
+    // a white fill and overlay comp-op lighten the polygon-
+    // fill from ::shadow.
+    polygon-fill: #fff;
+    comp-op: soft-light;
+    // blurring reveals the polygon fill from ::shadow around
+    // the edges of the water
+    // NOTE: image-filters cannot be set per-zoom
+    image-filters: agg-stack-blur(10, 10);
   }
-  
-  [zoom>=14] {
-    ::outline_blur {
-      line-width: 1.5;
-    }
-    
-    ::outline {
-      line-width: 2;
-    }
+
+  ::background {
+    // applying the image with hard-light allows it to pick up
+    // the shadow that was just applied
+    // ::shadow's polygon-fill may need to be tweaked according
+    // to the background in use
+    polygon-pattern-file: url("images/blue_paper_512.png");
+    comp-op: hard-light;
   }
 }
 
