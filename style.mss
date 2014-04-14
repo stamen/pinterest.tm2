@@ -15,6 +15,44 @@ Map {
   buffer-size: 128;
 }
 
+#hillshade {
+  polygon-fill: transparent;
+  polygon-opacity: 0.33;
+  polygon-comp-op: multiply;
+
+  [zoom>=11] {
+    polygon-opacity: 0.25;
+  }
+
+  [class='medium_shadow'] {
+    polygon-fill: lighten(#eee, 4%);
+  }
+
+  [class='full_shadow'] {
+    polygon-fill: lighten(#ddd, 5%);
+  }
+
+  [class='medium_highlight'] {
+    polygon-fill: #e9e9e9;
+    polygon-opacity: 0.3;
+    polygon-comp-op: lighten;
+
+    [zoom>=11] {
+      polygon-opacity: 0.1;
+    }
+  }
+
+  [class='full_highlight'] {
+    polygon-fill: #f0f0f0;
+    polygon-opacity: 0.25;
+    polygon-comp-op: lighten;
+
+    [zoom>=11] {
+      polygon-opacity: 0.35;
+    }
+  }
+}
+
 #water {
   ::shadow {
     polygon-fill: lighten(#444, 1%);
