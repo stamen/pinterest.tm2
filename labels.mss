@@ -389,7 +389,7 @@
     }
   }
 
-  [zoom<9] {
+  [type='city'][zoom<9] {
     // beyond this point, labels are sufficiently dense that Winston-Salem,
     // NC, Spartanburg, SC, etc. bump other labels in the buffered area
     [ldir=~'W'] {
