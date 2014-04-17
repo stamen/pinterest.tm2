@@ -57,7 +57,7 @@ Map {
   ::shadow {
     polygon-fill: lighten(#444, 1%);
 
-    [zoom<=6] {
+    [zoom<=7] {
       // fill in ocean seams
       polygon-gamma: 0.3;
     }
@@ -80,6 +80,7 @@ Map {
     // ::shadow's polygon-fill may need to be tweaked according
     // to the background in use
     polygon-pattern-file: url("images/blue_paper_512.png");
+    polygon-pattern-alignment: global;
     comp-op: hard-light;
   }
 }
