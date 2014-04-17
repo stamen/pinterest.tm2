@@ -56,7 +56,7 @@ Map {
   ::shadow {
     polygon-fill: lighten(#444, 1%);
 
-    [zoom<=5] {
+    [zoom<=6] {
       // fill in ocean seams
       polygon-gamma: 0.3;
     }
